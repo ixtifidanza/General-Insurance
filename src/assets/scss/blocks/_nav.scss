@@ -1,0 +1,39 @@
+.nav {
+    padding: 23px 0;
+    &--news {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    } 
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__list {
+        display: flex;
+        &-item {
+            list-style-type: none;
+           
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 22px;
+        border: 1px solid #221F39;
+        border-radius: 4px;
+        padding: 8px;
+     
+        &--search {
+            margin-right: 67px;
+            padding: 8px 20px;
+        }
+        &--menu {
+            margin-left: 67px;
+            padding: 8px 20px ;
+        }
+        &--lang {
+            margin: 0 34px;
+        }
+    }
+}

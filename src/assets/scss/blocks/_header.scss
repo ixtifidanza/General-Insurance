@@ -1,0 +1,138 @@
+.header {
+    background-image: url("./../img/bg-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding:  0 40px;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    &__list  {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;;
+        margin: 0;
+        padding: 0;
+        &-item{
+            margin: 0;
+            padding: 0;
+        }
+        :nth-child(3) {
+            margin: 0 33px;
+        }
+    }
+    &__list--item {
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 15px;
+    }
+    &__menu {
+        margin-left: 67px;
+    }
+    &__search {
+        margin-right: 67px;
+    }
+    .swiper-slide{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .header__block{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    &__bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    &__block {
+        width: 100%;
+        position: absolute;
+        margin: 0 auto;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+
+        font-size: 126px;
+        font-weight: bold;
+
+        color: #fff;
+
+        &--first {
+            margin-right: auto;
+        }
+
+        &--second {
+            margin-left: auto;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            padding: 17px 92px;
+            font-size: 22px;
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px 40px;
+    }
+    &__sos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 10px;  
+        font-size: 20px;
+
+        background-color: #C12929; 
+        color: #fff;
+        text-decoration: none;
+        img {
+            padding-left: 10px;
+        }
+    }
+    &__chat {
+        background-color: #0ABE3D;
+        font-size: 20px;
+        padding: 15px 10px;
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+
+}

@@ -1,0 +1,79 @@
+.about-header {
+    &--apartment {
+        background-image: url(../img/apartment-header-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    &__btn {
+        &--apartment {
+            padding-top: 35px;
+            a {
+                text-align: center;
+                width: 320px;
+            }
+        }
+    }
+}
+
+
+.apartment {
+    &__subtitle {
+        margin: 93px 0 91px;
+        text-align: center;
+        font-size: 22px;
+    }
+    &-block {
+        background-color: #f5f5f5;
+        &__item {
+            display: flex;
+            justify-content: center;
+        }
+        &__btn {
+            background: none;
+            text-decoration: none;
+            border: 1px solid #000;
+            color: #000;
+            border-radius: 5px;
+            transition: .5s all;
+            text-align: center;
+            width: 477px;
+            &:first-child {
+                margin-right: 32px;
+            }
+            &:hover {
+                background-color: #0ABE3D;
+                border: 1px solid transparent;
+                color: #fff;
+            }
+        }
+    }
+    &-text {
+        padding-bottom: 30px;
+        padding-left: 35px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+        &-content {
+            margin: 0 34px;
+            &__title {
+                font-size: 20px;
+                margin-top: 0;
+            }
+            p {
+                font-size: 18px;
+            }
+
+        }
+
+        &-download {
+            text-align: center;
+            padding: 50px 0 50px;
+            &__btn {
+                text-decoration: none;
+            }
+        }
+
+    
+}
