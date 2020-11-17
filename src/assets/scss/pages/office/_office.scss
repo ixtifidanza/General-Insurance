@@ -1,34 +1,41 @@
-.office {
-       &__block {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
+.office { 
     &__map {
         position: relative;
         iframe {
             width: 100%;
             height: 600px;
-            
         }
-
-      
+    }
+    &-branch {
+        margin: 35px 0 55px;
+    }
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+        &__title {
+            font-size: 35px;
+            color: #221F39;
+            margin: 0;
+        }
     }
     &-item {
-        &__map {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 330px;
-            background-color: #fff;
-        }
         width: 25%;
         padding: 0 25px;
+        margin-top: 43px;
         &__title {
+            width: 396px;
             color: #221F39;
             font-size: 30px;
             font-weight: 600;
+            h4 {
+                margin: 0;
+            }
         }
         &__list {
             margin: 0 auto;
@@ -37,6 +44,7 @@
         &__location {
             display: flex;
             align-items: center;
+            margin: 27px 0 24px;
            
         }
         &__img {
@@ -53,25 +61,14 @@
             margin: 0;
         }
     }
-    &-branch {
-        padding: 47px 0 55px;
-        &__list {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 450px;
-            list-style: none;
-            font-size: 35px;
-            margin-top: 18px;
-            padding: 0;
-        }
-        &__block {
-            padding: 0;
-        }
+    &-icon {
+        margin-left: 15px;
     }
-  
 }
-// .swiper-container{
-//     overflow: visible;  
-// }
+.names {
+    display: block;
+    height: min-content;
+    cursor: pointer;
+}
+
 

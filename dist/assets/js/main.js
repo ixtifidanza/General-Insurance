@@ -1,14 +1,14 @@
 
 var mySwiper = new Swiper('.swiper-container', {
-  
+
+  duration: 500,
   loop: true,
   slidesPerView: 1,
     // cssMode: true,
     
     centeredSlides: true,
-
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
     // If we need pagination
     pagination: {
@@ -25,12 +25,26 @@ var mySwiper = new Swiper('.swiper-container', {
   });
 
   var swiper2 = new Swiper('.swiper-container2', {
-    // autoplay: true,
+    autoplay: true,
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    centeredSlides: true
+    // centeredSlides: true,
   });
+
+
+  $('.names').on('click', function () {
+    const officeBlock = $(this).parent().next();
+    if(officeBlock.is(':hidden')) {
+    officeBlock.slideDown('slow');
+      $('.office-icon').css('transform', 'rotate(180deg)');
+    } else {
+      officeBlock.hide('slow');
+      $('.office-icon').css('transform', '');
+    }
+  })
+
+ 
   
   // var menu = $('#menu-toggle');
   // var menuBlock = $("#menu-block");

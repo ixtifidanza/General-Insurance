@@ -1,22 +1,14 @@
 .footer {
-    background-image: url(../img/bg-footer.jpg);
+    background-image: url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
     padding: 56px 0 30px;
-    &--news {
-        background-image: none;
-        background-color: #e5e5e5;
-    }
-    &--announ {
-        background-image: none;
-        background-color: #0f0f0f;
-    }
+
 
     &__block {
         display: flex;
         justify-content: space-between;
-        
     }   
 
     &-list {
@@ -35,11 +27,9 @@
         &__title {
             font-weight: bold;
             font-size: 22px;
-            color: #fff;
         }
         &__text {
             font-size: 18px;
-            color: #fff;
             line-height: 1.8;
         }
         &__copyright {
@@ -47,15 +37,13 @@
             justify-content: space-between;
             width: 100%;
             font-size: 16px;
-            color: #fff;
         }
         &__link {
             font-size: 18px;
             text-decoration: none;
-            color: #fff;
+            color: #000;
         }
         &__adress {
-            color: #fff;
             font-size: 18px;
             margin: 0;
         }

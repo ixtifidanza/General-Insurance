@@ -1,8 +1,12 @@
 .nav {
+    box-shadow: 0 0 10px rgba(0,0,0, .35);
     padding: 23px 0;
-    &--news {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    } 
+    &--about {
+        box-shadow: none;
+    }
+    &--apartment {
+        box-shadow: none;
+    }
 
     &__block {
         display: flex;
@@ -36,4 +40,6 @@
             margin: 0 34px;
         }
     }
+
+
 }

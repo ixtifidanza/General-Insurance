@@ -1,25 +1,34 @@
-.about-header {
-    &--apartment {
-        background-image: url(../img/apartment-header-bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
-    &__btn {
-        &--apartment {
-            padding-top: 35px;
+.apartment {
+    &-header {
+            background-image: url(../img/apartment-header-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        &__title {
+            text-align: center;
+            font-size: 70px;
+            color: #fff;
+            margin-bottom: 15px;
+            h2{
+                margin-bottom: 0;
+            }   
+        }
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             a {
-                text-align: center;
-                width: 320px;
+                text-decoration: none;
+                border: 1px solid #fff;
+                padding: 17px 60px;
+                color: #fff;
+                font-size: 22px;
+                background: rgba(0, 0, 0, .35);
             }
         }
+
     }
-}
-
-
-.apartment {
     &__subtitle {
-        margin: 93px 0 91px;
         text-align: center;
         font-size: 22px;
     }
@@ -54,7 +63,7 @@
         font-size: 18px;
         margin: 0;
     }
-
+    
         &-content {
             margin: 0 34px;
             &__title {
@@ -64,9 +73,9 @@
             p {
                 font-size: 18px;
             }
-
+    
         }
-
+    
         &-download {
             text-align: center;
             padding: 50px 0 50px;
@@ -74,6 +83,8 @@
                 text-decoration: none;
             }
         }
+}
+
+
 
     
-}

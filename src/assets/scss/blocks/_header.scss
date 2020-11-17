@@ -70,14 +70,16 @@
         width: 100%;
         position: absolute;
         margin: 0 auto;
+        padding-bottom: 215px;
     }
 
     &__title {
         display: flex;
         flex-direction: column;
+        margin-top: 0;
         margin-bottom: 0;
 
-        font-size: 126px;
+        font-size: 100px;
         font-weight: bold;
 
         color: #fff;
