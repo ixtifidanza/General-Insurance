@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>General Insuranse-Cabinet</title>
+    <title>General Insuranse-Обращение к директору</title>
 </head>
 
 <body>
+
     <nav class="nav">
         <div class="nav-container">
             <div class="nav__block">
@@ -17,66 +18,54 @@
                     <a href="#">
                         <img src="assets/img/Logo dd.png" alt="Logo">
                     </a>
-                    
+
                 </div>
                 <ul class="nav__list">
-                   <li class="nav__list-item"><a class="nav__link nav__link--search black" href="#">Поиск</a></li>
-                    
-                   <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li> 
-                   <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
-                   <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
-                  
-                   <li class="nav__list-item"><a class="nav__link nav__link--menu black" href="#">Меню</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--search black" href="#">Поиск</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--menu black" href="#">Меню</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <h4 class="director-title title">Обращение к директору</h4>
+    <p class="director__subtitle">Ваше обращение будет отправлено на почту директора компании </p>
 
-
-    <section class="cabinet">
+    <section class="director">
         <div class="container">
-            <h4 class="cabinet__title">
-                Добро пожаловать в личный кабинет
-            </h4>
-            <div class="cabinet-block">
-                <div class="cabinet-item">
-                    <ul class="cabinet-list">
-                        <li class="cabinet-item__list">
-                            <img src="assets/img/cabinet-man-icon.svg" alt="">
-                            <p>
-                                <div class="active">
-                                    <img src="assets/img/active crcle.svg" alt="">
-                                </div>
-                                Мои данные</p>
-                        </li>
-
-                        <li class="cabinet-item__list">
-                            <img src="assets/img/cabinet-money-icon.svg" alt="">
-                            <p>История покупок</p>
-                        </li>
-
-                        <li class="cabinet-item__list">
-                            <img src="assets/img/cabinet-card-icon.svg" alt="">
-                            <p>Мои полюса</p>
-                        </li>
-                    </ul>
-                        <div class="cabinet-item__btn">
-                            <a class="cabinet-item__link" href="#">Купить полюс</a>  
-                        </div>
-                        <div class="cabinet-item__btn">
-                            <a class="cabinet-item__link" href="#">Продлить полюс</a>  
-                        </div>
-
-                    
-                      
-
-
+            <div class="director-block">
+                <label class="director-item">
+                    <span>Ф.И.О</span>    
+                    <input type="text" placeholder="Каримов Шамсиддин Шавкатович ">
+                </label>
+                
+                <div class="director-form__group">
+                    <label class="director-form__item">
+                    <span>Email</span> 
+                        <input type="text" placeholder="General@mail.ru">
+                    </label>
+                    <label class="director-form__item">
+                        <span>Телефон</span>
+                        <input type="phone" placeholder="+998933 333 33 33">
+                    </label>
                 </div>
+
+                <label class="director-item">
+                    <span>Тема</span>    
+                    <input type="text" placeholder="Хочу попросить вас добавить услугу юридической поддержи">
+                </label>
+
+                <label class="director-item">
+                    <span>Сообщение</span>    
+                    <textarea class="director-item__area" placeholder="Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании "></textarea>
+                </label>
             </div>
+                <a class="director-btn" href="#">Отправить</a>
         </div>
     </section>
-
-
 
     <footer class="footer">
         <div class="container">
@@ -174,8 +163,8 @@
         </div>
     </footer>
 
-
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>
-    </body>
+</body>
+
 </html>
