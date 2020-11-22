@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.0",
+    "blueimp-file-upload": "^10.31.0",
     "flexboxgrid2": "^7.2.1",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",

@@ -9,6 +9,7 @@
             text-align: center;
             font-size: 70px;
             color: #fff;
+            margin-top: 121px;
             margin-bottom: 15px;
             h2{
                 margin-bottom: 0;
@@ -55,6 +56,11 @@
         padding-bottom: 60px;
         p {
             margin-top: 55px;
+        }
+    }
+    &-license {
+        &__title {
+            margin-bottom: 50px;
         }
     }
     &__license{

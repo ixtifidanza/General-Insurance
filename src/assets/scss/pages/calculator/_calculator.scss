@@ -1,0 +1,119 @@
+.calculator {
+    &-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 122px;
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 600px;
+            padding-top: 16px;
+        }
+    }
+    &-item {
+        &__title {
+            color: #fff;
+            text-align: center;
+            font-size: 35px;
+            padding-top: 28px;
+            padding-bottom: 11px;
+        }
+        &__subtitle {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 41px;
+            margin-left: 42px;
+        }
+        &__text {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 42px;
+            margin-top: 5px;
+
+            span {
+                color: #0ABE3D;
+            }
+        }
+        &__step {
+            background-color:rgba(255, 255, 255, .90%);
+            width: 657px;
+            height: 122px;
+            border-radius: 15px;
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+.decor {
+    display: flex;
+
+    &-calculator {
+        background-image: url(../img/cal-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 701px;
+        height: 364px;
+        margin-top: 41px;
+        flex: 2;
+    }
+
+    &-aside {
+        background-color: #e6e6e6;
+        width: 330px;
+        margin-top: 41px;
+        color: #221F39;
+        border-radius: 8px;
+        // box-shadow: rgba (252, 252, 252 .35);   
+    
+        flex: 1;
+        &__title {
+            margin-top: 29px;
+            font-size: 20px;
+            text-align: center;
+        }
+        &__block {
+            font-size: 18px;
+            padding: 0 42px;
+            list-style: none;
+        }
+        &__list {
+            width: 236px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            span {
+                font-weight: bold;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+       
+        &__line {
+
+            border: 1px solid #C6C2C2; 
+            width: 197px;
+            margin: 0 auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__price {
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 9px;    
+            margin-bottom: 28px;
+            text-decoration: none;
+            width: 203px;
+        }
+    }
+}

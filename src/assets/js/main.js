@@ -1,3 +1,4 @@
+@@include('components/image-uploader.min.js');
 
 var mySwiper = new Swiper('.swiper-container', {
 
@@ -44,19 +45,6 @@ var mySwiper = new Swiper('.swiper-container', {
     }
   })
 
- 
-  
-  // var menu = $('#menu-toggle');
-  // var menuBlock = $("#menu-block");
-
-
-
-  //  menu.on('click', function() {
-  //     $('.menu').toggleClass('menu--active');
-  //     menuBlock.toggleClass('menu__block--active');
-  //  });
-
-
   $(function() {
     $('.about__license').magnificPopup({
       delegate: 'a',
@@ -70,6 +58,35 @@ var mySwiper = new Swiper('.swiper-container', {
       },
     });
   });
+
+
+  // Menu
+  var menu = $('.menu');
+  var menuBtn = $('#menu-btn')
+  var close = $('#menu__close');
+
+  menuBtn.on('click', function() {
+  menu.css('transform', 'translateX(0)');
+  });
+
+  close.on('click', function() {
+  menu.css('transform', 'translateX(100%)');
+  });
+
+
+  $('#upload').imageUploader({
+    extensions: ['.jpg','.jpeg','.png','.gif','.svg'],
+      mimes: ['image/jpeg','image/png','image/gif','image/svg+xml'],
+      maxSize: undefined,
+      maxFiles: undefined,
+    
+  });
+
+   
+
+
+
+
   
 
 

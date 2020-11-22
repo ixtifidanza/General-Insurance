@@ -15,10 +15,11 @@
 @import "./base";
 @import "./fonts";
 @import "blocks/header";
-@import "blocks/menu";
 @import "blocks/nav";
 @import "blocks/footer";
 
+@import "components/_styles.imageuploader.scss";
+@import "components/menu";
 @import "components/slider";
 
 @import "pages/register/register";
@@ -31,8 +32,8 @@
 @import "pages/about/about";
 @import "pages/apartment/apartment";
 @import "pages/product/product";
-@import "pages/immovable/immovable";
 @import "pages/cabinet/cabinet";      
 @import "pages/list/list";      
 @import "pages/director/director";      
+@import "pages/calculator/calculator";      
 
