@@ -31,6 +31,7 @@
     &__subtitle {
         text-align: center;
         font-size: 22px;
+        margin: 93px 0 83px;
     }
     &-block {
         background-color: #f5f5f5;
@@ -47,6 +48,7 @@
             transition: .5s all;
             text-align: center;
             width: 477px;
+            box-shadow: none;
             &:first-child {
                 margin-right: 32px;
             }
@@ -88,10 +90,12 @@
                     margin-left: 30px;
                     padding: 15px 49px;
                     transition: .4s linear;
+                    box-shadow: none;
                     &:hover {
                         background-color: #0ABE3D;
                         color: #fff;
                         border: 1px solid #fff;
+                        box-shadow: 9px 14px 19px 0px rgba(120,255,44,0.26);
                     }
                 }
             }

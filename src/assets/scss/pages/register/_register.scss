@@ -19,13 +19,13 @@
             font-weight: bold;
             color: #0ABE3D; 
             margin: 0;
-       
         }
 
         &__subtitle {
             text-align: center;
             font-size: 20px;
             line-height: 1.5;
+            margin: 20px 0 25px;
         }
 
         &__group {
@@ -34,7 +34,6 @@
             align-items: center;
             max-width: 430px;
             padding-bottom: 50px;
-           
                 input {
                     display: block;
                     background-color: #D9D4FF;
@@ -69,7 +68,7 @@
             background-color: #0ABE3D;
             text-align: center;
             font-size: 18px;
-
+            box-shadow: 9px 14px 19px 0px rgba(120,255,44,0.26);
             a {
                 color: #fff;
                 text-decoration: none;

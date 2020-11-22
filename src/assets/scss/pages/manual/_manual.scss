@@ -25,11 +25,13 @@
         &__text {
             line-height: 1.5;
             font-size: 18px;
+            margin: 12px 0 29px;
         }
         &__day {
             font-size: 20px;
             span {
                 font-weight: bold;
+                margin-right: 7px;
             }
         }
         &__social {

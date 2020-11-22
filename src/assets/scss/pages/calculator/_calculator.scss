@@ -46,6 +46,12 @@
             margin: 0 auto;
         }
     }
+    &-policy {
+        display: flex;
+    }
+    &-list {
+        display: flex;
+    }
     
 }
 
@@ -91,7 +97,6 @@
                 margin-top: 10px;
             }
         }
-       
         &__line {
 
             border: 1px solid #C6C2C2; 
@@ -116,4 +121,5 @@
             width: 203px;
         }
     }
+   
 }

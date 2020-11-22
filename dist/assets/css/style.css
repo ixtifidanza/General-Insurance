@@ -64,6 +64,12 @@ body {
     margin-top: 27px;
     margin-bottom: 60px;
     cursor: pointer;
+    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+}
+
+li {
+    list-style: none;
 }
 
 @font-face {
@@ -1336,6 +1342,7 @@ h6 {
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
+    margin: 20px 0 25px;
 }
 
 .register-item__group {
@@ -1388,6 +1395,8 @@ h6 {
     background-color: #0ABE3D;
     text-align: center;
     font-size: 18px;
+    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
 }
 
 .register-item__btn a {
@@ -1467,6 +1476,8 @@ h6 {
     color: #fff;
     background-color: #0ABE3D;
     padding: 9px 19px;
+    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
 }
 
 .verify-input {
@@ -1476,7 +1487,7 @@ h6 {
 }
 
 .verify-input input {
-    padding: 0 30px;
+    padding: 0 20px;
     letter-spacing: 5px;
     text-align: center;
     background-color: #D9D4FF;
@@ -1505,6 +1516,8 @@ h6 {
     color: #fff;
     background-color: #0ABE3D;
     padding: 15px 14px;
+    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
 }
 
 .office__map {
@@ -1743,6 +1756,7 @@ h6 {
 .news__btn :hover {
     background-color: #0ABE3D;
     border: solid 1px transfarom #fff;
+    color: #fff;
 }
 
 .news__link {
@@ -1802,6 +1816,7 @@ h6 {
 .manual-content__text {
     line-height: 1.5;
     font-size: 18px;
+    margin: 12px 0 29px;
 }
 
 .manual-content__day {
@@ -1810,6 +1825,7 @@ h6 {
 
 .manual-content__day span {
     font-weight: bold;
+    margin-right: 7px;
 }
 
 .manual-content__social {
@@ -1878,6 +1894,7 @@ h6 {
     -ms-flex-align: center;
     align-items: center;
     width: 50%;
+    margin: 22px 0 37px;
 }
 
 .reporting-item--center {
@@ -1906,6 +1923,7 @@ h6 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     list-style-type: none;
+    margin-top: 40px;
 }
 
 .reporting-list__btn {
@@ -1924,6 +1942,17 @@ h6 {
     font-size: 18px;
     padding: 15px 42px;
     color: #221F39;
+}
+
+.reporting-list__download:hover {
+    background-color: #0ABE3D;
+    -webkit-transition: .4s linear;
+    -o-transition: .4s linear;
+    transition: .4s linear;
+    border: 1px solid #fff;
+    color: #fff;
+    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
 }
 
 .about-header {
@@ -2062,6 +2091,7 @@ h6 {
 .apartment__subtitle {
     text-align: center;
     font-size: 22px;
+    margin: 93px 0 83px;
 }
 
 .apartment-block {
@@ -2088,6 +2118,8 @@ h6 {
     transition: .5s all;
     text-align: center;
     width: 477px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .apartment-block__btn:first-child {
@@ -2138,12 +2170,16 @@ h6 {
     -webkit-transition: .4s linear;
     -o-transition: .4s linear;
     transition: .4s linear;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .apartment-download__btn--list:hover {
     background-color: #0ABE3D;
     color: #fff;
     border: 1px solid #fff;
+    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
 }
 
 .product-block {
@@ -2516,6 +2552,18 @@ h6 {
     height: 122px;
     border-radius: 15px;
     margin: 0 auto;
+}
+
+.calculator-policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.calculator-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .decor {
