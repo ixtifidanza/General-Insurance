@@ -64,8 +64,8 @@ body {
     margin-top: 27px;
     margin-bottom: 60px;
     cursor: pointer;
-    -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
-    box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+    -webkit-box-shadow: 14px 18px 12px 8px #CEEDDC;
+    box-shadow: 14px 18px 12px 8px #CEEDDC;
 }
 
 li {
@@ -2292,14 +2292,36 @@ h6 {
     align-items: center;
     width: 182px;
     height: 50px;
-    background-color: #0ABE3D;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 18px;
+    border: 1px solid #000;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.cabinet-item__link:hover {
+    background-color: #0ABE3D;
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 14px 18px 12px 8px #CEEDDC;
+    box-shadow: 14px 18px 12px 8px #CEEDDC;
 }
 
 .cabinet-item__btn {
     margin-bottom: 25px;
+}
+
+.cabinet-form {
+    background-color: #e6e6e6;
+    width: 812px;
+    border-radius: 5px;
+}
+
+.cabinet-form__title {
+    text-align: center;
 }
 
 .list-img {
@@ -2488,6 +2510,21 @@ h6 {
     text-align: center;
 }
 
+.calculator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.calculator-block {
+    background-image: url(../img/cal-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 701px;
+    height: 364px;
+    margin: 41px 0 30px;
+}
+
 .calculator-step {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2560,12 +2597,6 @@ h6 {
     display: flex;
 }
 
-.calculator-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
 .decor {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2573,23 +2604,21 @@ h6 {
 }
 
 .decor-calculator {
-    background-image: url(../img/cal-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 701px;
-    height: 364px;
-    margin-top: 41px;
+    max-width: 701px;
     -webkit-box-flex: 2;
     -ms-flex: 2;
     flex: 2;
+    margin-bottom: 95px;
 }
 
 .decor-aside {
     background-color: #e6e6e6;
     width: 330px;
+    height: 683px;
     margin-top: 41px;
     color: #221F39;
     border-radius: 8px;
+    margin-left: 30px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -2597,7 +2626,7 @@ h6 {
 
 .decor-aside__title {
     margin-top: 29px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -2648,4 +2677,125 @@ h6 {
     margin-bottom: 28px;
     text-decoration: none;
     width: 203px;
+}
+
+.policyholder {
+    background-color: #e6e6e6;
+    width: 701px;
+    padding: 28px 92px 43px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.policyholder-title {
+    margin-bottom: 27px;
+    font-size: 22px;
+    color: #221F39;
+}
+
+.policyholder-block__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.policyholder-form__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 518px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.policyholder-form__group--price {
+    padding-bottom: 0 !important;
+}
+
+.policyholder-form__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.policyholder-form__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 518px;
+    font-size: 22px;
+}
+
+.policyholder-form__price span {
+    margin-left: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.policyholder-form__btn {
+    text-align: center;
+    width: 203px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.policyholder-input input {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background-color: #e6e6e6;
+    outline: none;
+    border-bottom: 2px solid #000;
+    -webkit-transition: border .3s linear;
+    -o-transition: border .3s linear;
+    transition: border .3s linear;
+}
+
+.policyholder-input input:focus {
+    border-bottom: 2px solid #0ABE3D;
+}
+
+.policyholder-input--long input {
+    outline: none;
+    width: 518px;
+}
+
+.policyholder-input__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.policyholder-input__checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.policyholder-input__checkbox p {
+    margin-left: 10px;
 }
