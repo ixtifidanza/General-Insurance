@@ -64,17 +64,36 @@ var mySwiper = new Swiper('.swiper-container', {
 
   // Menu
   var menu = $('.menu');
-  var menuBtn = $('#menu-btn')
+  var menuBtn = $('#menu-btn');
   var close = $('#menu__close');
 
   menuBtn.on('click', function() {
-  menu.css('transform', 'translateX(0)');
+    menu.css('transform', 'translateX(0)');
   });
-
+  
   close.on('click', function() {
-  menu.css('transform', 'translateX(100%)');
+    menu.css('transform', 'translateX(100%)');
   });
 
+  // login
+  
+  var login = $('#login');
+  var cabinet = $('#cabinet');
+  var prevBtn = $('#prev');
+
+  cabinet.on('click', function() {
+    login.css('opacity', '1');
+    login.css('z-index', '9');
+    menu.css('opacity', '0');
+    menu.css('z-index', '-1');
+  });
+
+  prevBtn.on('click', function() {
+    menu.css('opacity', '1');
+    menu.css('z-index', '9');
+    login.css('opacity', '0');
+    login.css('z-index', '-1');
+  });
 
   $('#upload').imageUploader({
     extensions: ['.jpg','.jpeg','.png','.gif','.svg'],

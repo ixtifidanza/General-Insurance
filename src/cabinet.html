@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>General Insuranse-Cabinet</title>
+    <title>General Insuranse-Cabinet-2</title>
 </head>
 
 <body>
@@ -14,100 +14,348 @@
         <div class="nav-container">
             <div class="nav__block">
                 <div class="nav__logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="assets/img/Logo dd.png" alt="Logo">
                     </a>
-                    
+
                 </div>
                 <ul class="nav__list">
-                   <li class="nav__list-item"><a class="nav__link nav__link--search black" href="#">Поиск</a></li>
-                    
-                   <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li> 
-                   <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
-                   <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
-                  
-                   <li class="nav__list-item"><a class="nav__link nav__link--menu black" href="#">Меню</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--search black" href="#">Поиск</a></li>
+
+                    <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
+
+                    <li class="nav__list-item"><a class="nav__link nav__link--menu black" href="#">Меню</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <h4 class="cabinet__title">
+        Добро пожаловать в личный кабинет
+    </h4>
+    <div class="cabinet-block">
 
-    <section class="cabinet">
-        <div class="container">
-            <h4 class="cabinet__title">
-                Добро пожаловать в личный кабинет
-            </h4>
-            <div class="cabinet-block">
-                <div class="cabinet-item">
-                    <ul class="cabinet-list">
-                        <li class="cabinet-item__list">
-                            <img src="assets/img/cabinet-man-icon.svg" alt="">
-                            <p>
-                                <div class="active">
-                                    <img src="assets/img/active crcle.svg" alt="">
-                                </div>
-                                Мои данные</p>
-                        </li>
-
-                        <li class="cabinet-item__list">
-                            <img src="assets/img/cabinet-money-icon.svg" alt="">
-                            <p>История покупок</p>
-                        </li>
-
-                        <li class="cabinet-item__list">
-                            <img src="assets/img/cabinet-card-icon.svg" alt="">
-                            <p>Мои полюса</p>
-                        </li>
-                    </ul>
-                        <div class="cabinet-item__btn">
-                            <a class="cabinet-item__link" href="#">Купить полюс</a>  
+        <aside class="cabinet-sidebar">
+            
+            <div class="cabinet-item">
+                <ul class="cabinet-list">
+                    <li class="cabinet-item__list">
+                        <img src="assets/img/cabinet-man-icon.svg" alt="">
+                        <div class="active">
+                            <img src="assets/img/active crcle.svg" alt="">
                         </div>
-                        <div class="cabinet-item__btn">
-                            <a class="cabinet-item__link" href="#">Продлить полюс</a>  
-                        </div>
+                        <p>Мои данные</p>
+                    </li>
+
+                    <li class="cabinet-item__list">
+                        <img src="assets/img/cabinet-money-icon.svg" alt="">
+                        <p>История покупок</p>
+                    </li>
+
+                    <li class="cabinet-item__list">
+                        <img src="assets/img/cabinet-card-icon.svg" alt="">
+                        <p>Мои полюса</p>
+                    </li>
+                </ul>
+                <div class="cabinet-item__btn">
+                    <a class="cabinet-item__link" href="#">Купить полюс</a>
+                </div>
+                <div class="cabinet-item__btn">
+                    <a class="cabinet-item__link" href="#">Продлить полюс</a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-          <div class="cabinet-form">
-                <p class="cabinet-form__title">
-                    Заполните указанные поля, для того,чтобы система автоматически <br> 
-                    использовала их при оформлении страхового полиса
-                </p>
+        </aside>
 
-                <div class="cabinet-item">
-                    <div class="cabinet-item__title">
-                        <h4>Персональные данные</h4>
+        <!-- <div class="content-table">
+                    <h4 class="content__title">Мои полюса</h4>
+                    <table class="table">
+                        <tbody>
+
+                            <tr class="table-info">
+                                <th>Статус</th>
+                                <th>Продукт</th>
+                                <th>Дата покупки</th>
+                                <th>Сумма покупки (UZS)</th>
+                                <th>Страховая сумма (UZS)</th>
+                                <th>Срок полюса (от - до)</th>
+                                <th>Объект страхования</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th>На рассмотрении</th>
+                                <th>Страхование квартиры</th>
+                                <th>10.11.2020</th>
+                                <th>650 000</th>
+                                <th>12 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Квартира</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th>Купленно
+                                    <div>
+                                        <a href="#">Продлить полюс</a>
+                                    </div>
+                                </th>
+                                <th>Страхование машины</th>
+                                <th>10.11.2020</th>
+                                <th>340 000</th>
+                                <th>8 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Машина</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th class="table-red">Забракован</th>
+                                <th>Страхование квартиры</th>
+                                <th>10.11.2020</th>
+                                <th>650 000</th>
+                                <th>12 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Квартира</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th class="table-red">Расторгнут</th>
+                                <th>Страхование квартиры</th>
+                                <th>10.11.2020</th>
+                                <th>650 000</th>
+                                <th>12 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Квартира</th>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div> -->
+
+
+        <!-- <div class="cabinet-form">
+            <p class="cabinet-form__title">
+                Заполните указанные поля, для того,чтобы система автоматически <br>
+                использовала их при оформлении страхового полиса
+            </p>
+            <h4 class="cabinet-form__subtitle">Персональные данные</h4>
+
+            <div class="cabinet-form__block">
+                <div class="cabinet-form__photo">
+                    <div class="cabinet-form__img">
+                        <img src="assets/img/form-item-photo.png" alt="">
                     </div>
-                    <div class="cabinet-item__photo">
-                        <div class="cabinet-item__img">
-                            <img src="assets/img/form-item-photo.png" alt="">
-                        </div>
-                        <a href="#">Добавить фото</a>
-                    </div>
+                    <a href="#">Добавить фото</a>
+                </div>
+                <div class="cabinet-form">
+                    <p class="cabinet-form__text">User ID: 007</p>
+
                     <div class="cabinet-form__group">
-                        <label>
+                        <label class="cabinet-form__list">
                             <p>Имя</p>
                             <input type="text">
-    
-                            <p>Имя</p>
+
+                            <p>Фамилия</p>
                             <input type="text">
                         </label>
-    
-                            <label>
-                                <p>Имя</p>
-                                <input type="te">
-        
-                                <p>Имя</p>
-                                <input type="text">
-                            </label>
+
+                        <label class="cabinet-form__list">
+                            <p>Отчество</p>
+                            <input type="text">
+
+                            <p>Дата рождения</p>
+                            <input type="date">
+                        </label>
                     </div>
-                    
+
                 </div>
+            </div>      
+                  
+                        <h4 class="cabinet-form__subtitle">Паспортные данные</h4>
+            
+                        <div class="cabinet-form__block">
+
+                            <div class="cabinet-form__group">
+
+                            <label class="cabinet-form__list">
+                                <p>Имя</p>
+                                <input class="cabinet-form__" type="text">
+                            </label>
+                            <label class="cabinet-form__list">
+                                <p>Фамилия</p>
+                                <input class="cabinet-form__" type="text">
+                            </label>
+                            </div>
+                        </div>
+        </div> -->
+        <div class="container">
+
+            <div class="cabinet-form">
+    
+                <h3 class="cabinet-form__title text-center">
+                    Заполните указанные поля, для того,чтобы система автоматически 
+                    использовала их при оформлении страхового полиса
+                </h3>
+    
+                <div class="cabinet-group">
+                    <h4 class="cabinet-group__title text-center">
+                        Персональные данные
+                    </h4>
+                    <div class="cabinet-group__block">
+                        <div class="cabinet-group__item">
+                            <div class="cabinet-group__avatar">
+                                <img src="assets/img/form-item-photo.png" alt="">
+                            </div>
+                            <a href="#" class="cabinet-group__add text-center">Добавить фото</a>
+                        </div>
+                        <div class="cabinet-group__item">
+                            <p class="cabinet-group__id">User ID: 007</p>
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Имя</span>
+                                    <input class="cabinet-form__top-input cabinet-input" type="text" placeholder="Шамсиддин">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Отчество</span>
+                                    <input class="cabinet-form__top-input cabinet-input" type="text" placeholder="Шамсиддин">
+                                </label>
+                            </div>
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Фамилия</span>
+                                    <input class="cabinet-form__top-input cabinet-input" type="text" placeholder="Каримов">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Дата рождения</span>
+                                    <input class="cabinet-form__top-input cabinet-input" type="text-date" placeholder="12/01/1998">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="cabinet-group">
+                    <h4 class="cabinet-group__title text-center">
+                         Паспортные данные
+                    </h4>
+                    <div class="cabinet-group__block">
+                        <div class="cabinet-group__item-medium">
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Серия и номер паспорта</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text" placeholder="AA 12332167">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Дата выдачи</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text" placeholder="12/01/2016">
+                                </label>
+                            </div>
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Кем выдан</span>
+                                    <input class="cabinet-form__full-input cabinet-input" type="text" placeholder="IIB Yunusobod tumani">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cabinet-group">
+                    <h4 class="cabinet-group__title text-center">
+                        Контактные данные
+                    </h4>
+                    <div class="cabinet-group__block">
+                        <div class="cabinet-group__item-medium">
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Номер телефона</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="tel">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">E-Mail адрес</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text" placeholder="General@mail.ru">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cabinet-group">
+                    <h4 class="cabinet-group__title text-center">
+                        Адрес проживания
+                    </h4>
+                    <div class="cabinet-group__block">
+                        <div class="cabinet-group__item-medium">
+    
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Индекс</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Область/Город</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text">
+                                </label>
+                            </div>
+    
+                            <div class="cabinet-form__group cabinet-form__group--middle">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Район</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Улица/Квартал</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text">
+                                </label>
+                            </div>
+    
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Номер дома</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Номер квартиры</span>
+                                    <input class="cabinet-form__medium-input cabinet-input" type="text">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="cabinet-group">
+                    <h4 class="cabinet-group__title text-center">
+                        Мой аккаунт
+                    </h4>
+                    <div class="cabinet-group__block">
+                        <div class="cabinet-group__item-medium">
+                            <div class="cabinet-form__group">
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Старый пароль</span>
+                                    <input class="cabinet-form__bottom-input cabinet-input" type="password">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Новый пароль</span>
+                                    <input class="cabinet-form__bottom-input cabinet-input" type="password">
+                                </label>
+                                <label class="cabinet-form__label">
+                                    <span class="cabinet-form__text">Повторите пароль</span>
+                                    <input class="cabinet-form__bottom-input cabinet-input" type="password">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cabinet-form__btn">
+                    <a href="#">Сохранить</a>
+                </div>
+    
             </div>
         </div>
-    </section>
+
+    </div>
 
 
 
@@ -115,9 +363,11 @@
         <div class="container">
             <div class="footer__block">
                 <div class="footer-item">
-    
+
                     <div class="footer-item__logo">
-                        <img src="assets/img/Logo dd.png" alt="">
+                        <a href="index.html">
+                            <img src="assets/img/Logo dd.png" alt="">
+                        </a>
                     </div>
                     <div class="footer-item__content">
                         <p class="footer-item__text">
@@ -127,7 +377,7 @@
                             сообщений), разрешается только при <br>
                             указании источника этой информации.</p>
                     </div>
-                    
+
                 </div>
                 <div class="footer-item">
                     <div class="footer-item__title">
@@ -142,7 +392,7 @@
                                 Тошкент шаҳар, <br>
                                 Амир Темур шоҳ кўчаси, 16A
                             </p>
-                            
+
                         </li>
                         <li class="footer-list__item">
                             <div class="footer-item__img">
@@ -157,58 +407,58 @@
                             <a href="mailto:info@general.uz" class="footer-item__link">info@general.uz</a>
                         </li>
                     </ul>
-    
+
                 </div>
                 <div class="footer-item">
                     <div class="footer-item__title">
                         <h4>Соц. сети</h4>
                     </div>
                     <ul class="footer-list">
-                        
+
                         <li class="footer-list__item">
                             <div class="footer-item__img">
                                 <img src="assets/img/footer-instagram-icon.svg" alt="">
                             </div>
                             <a class="footer-item__link" href="#">instagram</a>
                         </li>
-    
+
                         <li class="footer-list__item">
                             <div class="footer-item__img">
                                 <img src="assets/img/footer-facebook-icon.svg" alt="">
                             </div>
                             <a class="footer-item__link" href="#">facebook</a>
                         </li>
-    
+
                         <li class="footer-list__item">
                             <div class="footer-item__img">
-                                
+
                                 <img src="assets/img/footer-telegram-icon.svg" alt="">
                             </div>
                             <a class="footer-item__link" href="#">telegram</a>
                         </li>
-                        
+
                     </ul>
-                    
+
                 </div>
-    
+
             </div>
-            
+
             <div class="footer-item__copyright">
                 <span class="footer-item__copy">© Copyright - 2020 by
                     <a class="footer-item__link" href="#">QWERTY.UZ</a>
                 </span>
-                    <a class="footer-item__link" href="#">Все услуги лицензированы </a>
+                <a class="footer-item__link" href="#">Все услуги лицензированы </a>
             </div>
-            
-            
-            
-            
-    
+
+
+
+
+
         </div>
     </footer>
 
-
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>
-    </body>
+</body>
+
 </html>

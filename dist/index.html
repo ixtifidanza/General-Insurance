@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <header class="header">
         <nav class="nav nav--index">
             <div class="nav-container">
@@ -19,20 +19,27 @@
                         <a href="#">
                             <img src="assets/img/Logo.png" alt="Logo">
                         </a>
-                        
+
                     </div>
                     <ul class="nav__list">
-                       <li class="nav__list-item"><a class="nav__link nav__link--search white" href="#">Поиск</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link--search white" href="#">Поиск</a></li>
                         
-                       <li class="nav__list-item"><a class="nav__link nav__link white" href="#">Uz</a></li> 
-                       <li class="nav__list-item"><a class="nav__link nav__link--lang white" href="#">Ru</a></li>
-                       <li class="nav__list-item"><a class="nav__link nav__link white" href="#">En</a></li>
-                      
-                       <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu white" href="#">Меню</a></li>
+                        <div class="nav-search__icon">
+                            <img src="assets/img/nav-search-icon.svg" alt="">
+                            <input class="nav__search" type="text" placeholder="найти на сайте">
+                        </div>
+
+                        <li class="nav__list-item"><a class="nav__link nav__link white" href="#">Uz</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link--lang white" href="#">Ru</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link white" href="#">En</a></li>
+
+                        <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu white"
+                                href="#">Меню</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="menu">
             <div id="menu-block" class="menu__block">
 
@@ -41,11 +48,12 @@
                 </div>
 
                 <div class="menu__title">
-                   <a class="menu__title menu__title--link" href="cabinet.html"> Личный кабинет</a>
+                    <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
                 </div>
                 <ul class="menu-list">
                     <div class="menu__name">Компания</div>
-                    <li class="menu__item"> <a class="menu__link" href="director.html">Приветствие Генерального Директора</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="director.html">Приветствие Генерального
+                            Директора</a></li>
                     <li class="menu__item"> <a class="menu__link" href="about.html">О нас</a></li>
                     <li class="menu__item"> <a class="menu__link" href="announ.html">Руководство</a></li>
                     <li class="menu__item"> <a class="menu__link" href="#">Лицензия (сертификат)</a></li>
@@ -80,6 +88,43 @@
             </div>
         </div>
 
+        <div class="login" id="login">
+            <div class="login-main">
+                <a href="#" id="prev" class="login-arrow">
+                    <img src="assets/img/login-arrow.svg" alt="">
+                </a>
+                <h4 class="login-title">
+                    Личный кабинет
+                </h4>
+            </div>
+            <div class="login-form">
+                <div class="login-form__group">
+                    <label class="login-form__label">
+                        <span class="login-form__text">Логин</span>
+                        <input class="login-form__input" type="email">
+                </div>
+    
+                <div class="login-form__group">
+                    <label class="login-form__label">
+                        <span class="login-form__text">Пароль</span>
+                        <input class="login-form__input" type="password">
+                    </label>
+                </div>
+            </div>
+
+            <div class="login-form__link">
+                <a class="login-form__btn" href="cabinet.html">Войти</a>
+                <a class="login-form__btn" href="register.html">Регистрация</a>
+            </div>
+            
+            
+            
+            
+        </div>
+
+
+
+
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -90,7 +135,7 @@
                                 <span class="header__title header__title--second">путешествий</span>
                             </h1>
                             <div class="header__btn">
-                                <a href="#">Узнать подробнее</a>
+                                <a href="apartment.html">Узнать подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +151,7 @@
                                 <a href="#">Узнать подробнее</a>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -123,21 +168,21 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-        
+
         </div>
 
-        
+
 
         <div class="header__bottom">
             <div class="header__btns">
-    
+
                 <a class="header__sos" href="#">SOS
                     <img src="assets/img/sos.png" alt="">
                 </a>
-    
+
                 <a class="header__chat" href="#">Онлайн чат</a>
             </div>
         </div>

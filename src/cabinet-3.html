@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>General Insuranse-Товары для частных клиентов</title>
+    <title>General Insuranse-Cabinet-2</title>
 </head>
 
 <body>
@@ -21,59 +21,119 @@
                 </div>
                 <ul class="nav__list">
                     <li class="nav__list-item"><a class="nav__link nav__link--search black" href="#">Поиск</a></li>
+
                     <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
+
                     <li class="nav__list-item"><a class="nav__link nav__link--menu black" href="#">Меню</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="product">
-        <div class="container">
-            <h4 class="product__title title">Товары для частных клиентов</h4>
-            <div class="product-block">
-                <div class="product-block__item">
-                    <div class="product-block__link">
-                        <a href="#">Транспортные средства</a>
+        <h4 class="cabinet__title">
+            Добро пожаловать в личный кабинет
+        </h4>
+        <div class="cabinet-block">
+            <aside class="cabinet-sidebar">
+                <div class="cabinet-item">
+                    <ul class="cabinet-list">
+                        <li class="cabinet-item__list">
+                            <img src="assets/img/cabinet-man-icon.svg" alt="">
+                            <p>Мои данные</p>
+                        </li>
+    
+                        <li class="cabinet-item__list">
+                            <img src="assets/img/cabinet-money-icon.svg" alt="">
+                            <div class="active">
+                                <img src="assets/img/active crcle.svg" alt="">
+                            </div>
+                            <p>История покупок</p>
+                        </li>
+    
+                        <li class="cabinet-item__list">
+                            <img src="assets/img/cabinet-card-icon.svg" alt="">
+                            <p>Мои полюса</p>
+                        </li>
+                    </ul>
+                    <div class="cabinet-item__btn">
+                        <a class="cabinet-item__link" href="#">Купить полюс</a>
                     </div>
                 </div>
-                <div class="product-block__item">
-                    <div class="product-block__link">
-                        <a href="#">Недвижимое имущество</a>
-                    </div>
-                </div>
-                <div class="product-block__item">
-                    <div class="product-block__link">
-                        <a href="#">Здоровье</a>
-                    </div>
-                </div>
-                <div class="product-block__item">
-                    <div class="product-block__link">
-                        <a href="#">Путешествия</a>
-                    </div>
-                </div>
-                <div class="product-block__item">
-                    <div class="product-block__link">
-                        <a href="#">Финансы</a>
-                    </div>
-                </div>
-                <div class="product-block__item">
-                    <div class="product-block__link">
-                        <a href="#">Программа лояльности</a>
-                    </div>
-                </div>
-            </div>
+            </aside>
 
+                <div class="content-table">
+                    <h4 class="content__title">Мои полюса</h4>
+                    <table class="table">
+                        <tbody>
+
+                            <tr class="table-info">
+                                <th>Статус</th>
+                                <th>Продукт</th>
+                                <th>Дата покупки</th>
+                                <th>Сумма покупки (UZS)</th>
+                                <th>Страховая сумма (UZS)</th>
+                                <th>Срок полюса (от - до)</th>
+                                <th>Объект страхования</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th>На рассмотрении</th>
+                                <th>Страхование квартиры</th>
+                                <th>10.11.2020</th>
+                                <th>650 000</th>
+                                <th>12 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Квартира</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th>Купленно
+                                    <div>
+                                        <a href="#">Продлить полюс</a>
+                                    </div>
+                                </th>
+                                <th>Страхование машины</th>
+                                <th>10.11.2020</th>
+                                <th>340 000</th>
+                                <th>8 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Машина</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th class="table-red">Забракован</th>
+                                <th>Страхование квартиры</th>
+                                <th>10.11.2020</th>
+                                <th>650 000</th>
+                                <th>12 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Квартира</th>
+                            </tr>
+
+                            <tr class="table-info">
+                                <th class="table-red">Расторгнут</th>
+                                <th>Страхование квартиры</th>
+                                <th>10.11.2020</th>
+                                <th>650 000</th>
+                                <th>12 000 000</th>
+                                <th>24.11.2020 - 24.11.2021</th>
+                                <th>Квартира</th>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
         </div>
-    </section>
+
+
 
     <footer class="footer">
         <div class="container">
             <div class="footer__block">
                 <div class="footer-item">
-    
+
                     <div class="footer-item__logo">
                         <a href="index.html">
                             <img src="assets/img/Logo dd.png" alt="">
@@ -87,7 +147,7 @@
                             сообщений), разрешается только при <br>
                             указании источника этой информации.</p>
                     </div>
-                    
+
                 </div>
                 <div class="footer-item">
                     <div class="footer-item__title">
@@ -102,7 +162,7 @@
                                 Тошкент шаҳар, <br>
                                 Амир Темур шоҳ кўчаси, 16A
                             </p>
-                            
+
                         </li>
                         <li class="footer-list__item">
                             <div class="footer-item__img">
@@ -117,53 +177,53 @@
                             <a href="mailto:info@general.uz" class="footer-item__link">info@general.uz</a>
                         </li>
                     </ul>
-    
+
                 </div>
                 <div class="footer-item">
                     <div class="footer-item__title">
                         <h4>Соц. сети</h4>
                     </div>
                     <ul class="footer-list">
-                        
+
                         <li class="footer-list__item">
                             <div class="footer-item__img">
                                 <img src="assets/img/footer-instagram-icon.svg" alt="">
                             </div>
                             <a class="footer-item__link" href="#">instagram</a>
                         </li>
-    
+
                         <li class="footer-list__item">
                             <div class="footer-item__img">
                                 <img src="assets/img/footer-facebook-icon.svg" alt="">
                             </div>
                             <a class="footer-item__link" href="#">facebook</a>
                         </li>
-    
+
                         <li class="footer-list__item">
                             <div class="footer-item__img">
-                                
+
                                 <img src="assets/img/footer-telegram-icon.svg" alt="">
                             </div>
                             <a class="footer-item__link" href="#">telegram</a>
                         </li>
-                        
+
                     </ul>
-                    
+
                 </div>
-    
+
             </div>
-            
+
             <div class="footer-item__copyright">
                 <span class="footer-item__copy">© Copyright - 2020 by
                     <a class="footer-item__link" href="#">QWERTY.UZ</a>
                 </span>
-                    <a class="footer-item__link" href="#">Все услуги лицензированы </a>
+                <a class="footer-item__link" href="#">Все услуги лицензированы </a>
             </div>
-            
-            
-            
-            
-    
+
+
+
+
+
         </div>
     </footer>
 

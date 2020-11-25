@@ -10,6 +10,24 @@
     &--index {
         box-shadow: none;
     }
+  
+    &__search {
+        @keyframes fullWidth {
+            
+        }
+        position: absolute;
+        width: 628px;
+        height: 41px;
+        top: 39px;
+        bottom: 0;
+        left: 260px;
+        
+        font-size: 20px;
+        color: #fff;
+        background: none ;
+        border: 1px solid #fff;
+    }
+
 
     &__block {
         display: flex;
