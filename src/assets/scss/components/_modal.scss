@@ -78,7 +78,7 @@
         
         &-price {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             margin: 0 45px;
             &__text {
@@ -88,6 +88,7 @@
                 span {
                     font-size: 35px;
                     font-weight: bold;
+                    margin-left: 10px;
                 }
             }
         }

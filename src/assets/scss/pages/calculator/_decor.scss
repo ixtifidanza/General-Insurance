@@ -59,5 +59,31 @@
             width: 203px;
         }
     }
-   
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid  #000;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+}
+input[type="checkbox"]:checked + label:before {
+    border: 1px solid  #80F1B1;
+    background: #80F1B1;
+    color: white;
+    content: "\2713";
+    text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
 }

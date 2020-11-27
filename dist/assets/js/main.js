@@ -70,17 +70,57 @@ var mySwiper = new Swiper('.swiper-container', {
   });
 
 
+  
+
+
+
+
+
   // Menu
   var menu = $('.menu');
+  var backgroundColor = $('#overlay'); /* overlay */
+
+  var register = $('#register'); /* register */
+  var registerBtn = $('#registerBtn'); /* registerBtn */
+  var registerClose = $('#registerClose'); /* registerClose */
+  var registerClose2 = $('#registerClose2'); /* registerClose2 */
+
+  var registerNext = $('#registerNext'); /* registerNext */
+  var register2 = $('#register2'); /* register2 */
+
   var menuBtn = $('#menu-btn');
   var close = $('#menu__close');
 
+  registerNext.on('click', function() {
+    register2.css('opacity', '1');
+    register2.css('z-index', '999');
+  });
+
+  registerBtn.on('click', function() {
+    register.css('opacity', '1');
+    register.css('z-index', '999');
+  });
+
+  registerClose.on('click', function() {
+    register.css('opacity', '');
+    register.css('z-index', '-1');
+  });
+
+  registerClose2.on('click', function() {
+    register2.css('opacity', '');
+    register2.css('z-index', '-1');
+  });
+
   menuBtn.on('click', function() {
     menu.css('transform', 'translateX(0)');
+    backgroundColor.css('opacity', '1');
+    backgroundColor.css('z-index', '9');
   });
   
   close.on('click', function() {
     menu.css('transform', 'translateX(100%)');
+    backgroundColor.css('opacity', '');
+    backgroundColor.css('z-index', '-1');
   });
 
   // login
