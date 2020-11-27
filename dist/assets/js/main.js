@@ -35,6 +35,14 @@ var mySwiper = new Swiper('.swiper-container', {
     // centeredSlides: true,
   });
 
+  var swiper3 = new Swiper('.swiper-container3', {
+    autoplay: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    // centeredSlides: true,
+  });
+
 
   $('.names').on('click', function () {
     const officeBlock = $(this).parent().next();
@@ -95,6 +103,21 @@ var mySwiper = new Swiper('.swiper-container', {
     login.css('z-index', '-1');
   });
 
+
+  // search
+
+  var search = $('#search');
+  var searchInput = $('#input');
+
+
+  search.on('click', function () {
+    search.css('opacity', '0');
+    search.hide();
+    searchInput.css('opacity', '1');
+    searchInput.show();
+  });
+
+
   $('#upload').imageUploader({
     extensions: ['.jpg','.jpeg','.png','.gif','.svg'],
       mimes: ['image/jpeg','image/png','image/gif','image/svg+xml'],
@@ -102,18 +125,3 @@ var mySwiper = new Swiper('.swiper-container', {
       maxFiles: undefined,
     
   });
-
-   
-
-
-
-
-  
-
-
-
-
-  
-
-
-  

@@ -19,23 +19,26 @@
                         <a href="#">
                             <img src="assets/img/Logo.png" alt="Logo">
                         </a>
-
                     </div>
-                    <ul class="nav__list">
-                        <li class="nav__list-item"><a class="nav__link nav__link--search white" href="#">Поиск</a></li>
-                        
-                        <div class="nav-search__icon">
-                            <img src="assets/img/nav-search-icon.svg" alt="">
-                            <input class="nav__search" type="text" placeholder="найти на сайте">
-                        </div>
 
+                    <div class="nav-search" id="input">
+                        <input type="text" placeholder="найти на сайте">
+                        <div>
+                            <img class="nav-search__icon" src="assets/img/nav-search-icon.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a class="nav__link nav__link--search white" id="search" href="#">Поиск</a></li>
+                        
+                        
                         <li class="nav__list-item"><a class="nav__link nav__link white" href="#">Uz</a></li>
                         <li class="nav__list-item"><a class="nav__link nav__link--lang white" href="#">Ru</a></li>
                         <li class="nav__list-item"><a class="nav__link nav__link white" href="#">En</a></li>
-
+                        
                         <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu white"
-                                href="#">Меню</a></li>
-                    </ul>
+                            href="#">Меню</a></li>
+                        </ul>
                 </div>
             </div>
         </nav>
@@ -108,6 +111,7 @@
                     <label class="login-form__label">
                         <span class="login-form__text">Пароль</span>
                         <input class="login-form__input" type="password">
+                        <img class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
                     </label>
                 </div>
             </div>
@@ -148,10 +152,9 @@
                                 <span class="header__title header__title--second">путешествий</span>
                             </h1>
                             <div class="header__btn">
-                                <a href="#">Узнать подробнее</a>
+                                <a href="apartment.html">Узнать подробнее</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -163,29 +166,30 @@
                             </h1>
                         </div>
                         <div class="header__btn">
-                            <a href="#">Узнать подробнее</a>
+                            <a href="apartment.html">Узнать подробнее</a>
                         </div>
                     </div>
                 </div>
+                
             </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
+            
         </div>
-
-
-
+        
+        
+        
         <div class="header__bottom">
             <div class="header__btns">
-
+                
                 <a class="header__sos" href="#">SOS
                     <img src="assets/img/sos.png" alt="">
                 </a>
-
+                
                 <a class="header__chat" href="#">Онлайн чат</a>
+                
             </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </header>
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>

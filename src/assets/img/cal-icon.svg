@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.646" height="75.333" viewBox="0 0 60.646 75.333">
+  <defs>
+    <filter id="cal-icon" x="0" y="0" width="60.646" height="75.333" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#0abe3d" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#cal-icon)">
+    <path id="cal-icon-2" data-name="cal-icon" d="M15.323-14.687S30.646,6.86,30.646,15.323A15.323,15.323,0,0,1,0,15.323C0,6.86,15.323-14.687,15.323-14.687Z" transform="translate(15 26.69)" fill="#0abe3d"/>
+  </g>
+</svg>

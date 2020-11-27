@@ -1,4 +1,5 @@
 .apartment {
+    margin-top: 100px;
     &-header {
             background-image: url(../img/apartment-header-bg.jpg);
             background-size: cover;
@@ -6,8 +7,10 @@
             height: 100vh;
         &__title {
             text-align: center;
-            font-size: 70px;
+            font-size: 50px;
             color: #fff;
+
+            padding-top: 100px;
             margin: 0 auto;
             margin-bottom: 15px;
             h2{
@@ -102,7 +105,3 @@
             }
         }
 }
-
-
-
-    

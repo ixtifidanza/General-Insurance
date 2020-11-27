@@ -3,6 +3,20 @@
     &-container {
         width: 100%;
         height: 100%;
+        overflow: hidden;
+    }
+
+    &-container2 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    
+    &-container3 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
     
     &-wrapper {
@@ -24,22 +38,71 @@
     &-button {
         &-prev {
             position: absolute;
+
             top: 91%;
             left: 45%;
+
+            width: 73px;
+            height: 73px;
+            outline: none;
+
             color: #fff;
-            padding: 10px 28px;
-            border: 4px solid #fff;
-            z-index: 999;
+            border: 2px solid #fff;
+            background: rgba(0,0,0,.35);
         }
         &-next {
             position: absolute;
+
             top: 91%;
             left: 50%;
+
+            width: 73px;
+            height: 73px;
+
+            outline: none;
+
+            background: rgba(0,0,0,.35);
+            border: 2px solid #fff;
             color: #fff;
-            padding: 10px 28px;
-            border: 4px solid #fff;
         }
     }
+}
+
+
+// Range
+.slider {
+    -webkit-appearance: none;
+    width: 630px;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: #4CAF50;
+    background: url(../img/cal-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: #4CAF50;
+    background: url(../img/cal-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 

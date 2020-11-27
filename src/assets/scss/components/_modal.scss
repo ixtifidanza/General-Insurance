@@ -1,0 +1,96 @@
+.modal {
+    width: 496px;
+    height: 359px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    color: #221F39;
+
+    &--modal2 {
+        width: 608px;
+        height: 518px;
+    }
+
+    &__group {
+        padding-left: 79px;
+    }
+    
+    &__list {
+        span {
+            color: #0ABE3D;
+        }
+        padding-top: 15px;
+    }
+
+    &-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-close {
+        position: absolute;
+        top: 24px;
+        right: 20px;
+    }
+
+    &-form {
+        display: block;
+        margin: 0 108px;
+        margin-top: 26px;
+        margin-bottom: 40px;
+    }
+
+    &-input {
+        &__group {
+            width: 391px;
+            margin: 22px 0;
+
+            &--center {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+        &__card {
+            span {
+                display: block;
+                font-size: 18px;
+                padding-bottom: 3px;
+            }
+            input {
+                width: 100%;
+                padding-left: 18px;
+                padding-top: 12px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                outline: none ;
+            }
+
+            &--center {
+                input {
+                    width: 180px;
+                }
+            }
+        }
+
+        
+        &-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 45px;
+            &__text {
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                span {
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+}
+

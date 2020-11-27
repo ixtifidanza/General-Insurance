@@ -51,7 +51,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: #221F39;
-    margin: 33px 0 17px;
+    margin: 33px 0 30px;
 }
 
 .btn {
@@ -228,7 +228,7 @@ li {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 40px 40px;
+    padding: 0 40px 20px;
 }
 
 .header__sos {
@@ -281,23 +281,28 @@ li {
     box-shadow: none;
 }
 
-.nav__search {
-    position: absolute;
+.nav-search {
+    display: none;
+    position: relative;
+}
+
+.nav-search input {
     width: 628px;
     height: 41px;
-    top: 39px;
-    bottom: 0;
-    left: 260px;
+    padding-left: 50px;
     font-size: 20px;
-    color: #fff;
-    background: none;
+    border-radius: 5px;
     border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    outline: none;
 }
 
-@-webkit-keyframes fullWidth {
-}
-
-@keyframes fullWidth {
+.nav-search__icon {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 10px;
 }
 
 .nav__block {
@@ -342,6 +347,20 @@ li {
 
 .nav__link--lang {
     margin: 0 34px;
+}
+
+#search {
+    opacity: 1;
+    -webkit-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+#input {
+    opacity: 0;
+    -webkit-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    transition: opacity .3s linear;
 }
 
 .footer {
@@ -1351,6 +1370,10 @@ h6 {
     margin-left: 60px;
 }
 
+.login-form__label {
+    position: relative;
+}
+
 .login-form :last-child {
     margin-top: 8px;
 }
@@ -1404,9 +1427,28 @@ h6 {
     border-color: #0ABE3D;
 }
 
+.login-form__eye {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
 .swiper-container {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.swiper-container2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-container3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -1434,19 +1476,176 @@ h6 {
     position: absolute;
     top: 91%;
     left: 45%;
+    width: 73px;
+    height: 73px;
+    outline: none;
     color: #fff;
-    padding: 10px 28px;
-    border: 4px solid #fff;
-    z-index: 999;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .swiper-button-next {
     position: absolute;
     top: 91%;
     left: 50%;
+    width: 73px;
+    height: 73px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.35);
+    border: 2px solid #fff;
     color: #fff;
-    padding: 10px 28px;
-    border: 4px solid #fff;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 630px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: #4CAF50;
+    background: url(../img/cal-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: #4CAF50;
+    background: url(../img/cal-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.modal {
+    width: 496px;
+    height: 359px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    color: #221F39;
+}
+
+.modal--modal2 {
+    width: 608px;
+    height: 518px;
+}
+
+.modal__group {
+    padding-left: 79px;
+}
+
+.modal__list {
+    padding-top: 15px;
+}
+
+.modal__list span {
+    color: #0ABE3D;
+}
+
+.modal-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+}
+
+.modal-form {
+    display: block;
+    margin: 0 108px;
+    margin-top: 26px;
+    margin-bottom: 40px;
+}
+
+.modal-input__group {
+    width: 391px;
+    margin: 22px 0;
+}
+
+.modal-input__group--center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.modal__card span {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+.modal__card input {
+    width: 100%;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.modal__card--center input {
+    width: 180px;
+}
+
+.modal-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 45px;
+}
+
+.modal-price__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.modal-price__text span {
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .register {
@@ -2193,6 +2392,10 @@ h6 {
     padding: 0 50px 74px;
 }
 
+.apartment {
+    margin-top: 100px;
+}
+
 .apartment-header {
     background-image: url(../img/apartment-header-bg.jpg);
     background-size: cover;
@@ -2202,8 +2405,9 @@ h6 {
 
 .apartment-header__title {
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
+    padding-top: 100px;
     margin: 0 auto;
     margin-bottom: 15px;
 }
@@ -2340,6 +2544,8 @@ h6 {
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .product-block :nth-child(1) {
@@ -3085,12 +3291,6 @@ h6 {
 .policyholder-form__check {
     padding: 15px 0;
     font-size: 18px;
-}
-
-.policyholder-form__range {
-    width: 630px;
-    border: 5px solid #e6e6e6;
-    border-radius: 15px;
 }
 
 .policyholder-input input {
