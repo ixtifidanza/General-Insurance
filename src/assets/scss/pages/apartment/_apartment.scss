@@ -5,6 +5,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
+            position: relative;
+            overflow: hidden;
         &__title {
             text-align: center;
             font-size: 50px;

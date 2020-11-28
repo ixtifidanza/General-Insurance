@@ -6,16 +6,21 @@
     top: 0;
     right: 0;
     bottom: 0;
+
     width: 480px;
     z-index: 999;
     margin-right: -30px;
     overflow: hidden;
     transition: all .5s ease-in;
     transform: translateX(100%);
-    // opacity: 1;
+    opacity: 1;
+
     &--white {
-        background-image: url(../img/white-menu-bg.jpg);
+        overflow-y: scroll;
+        background: rgba(255, 255, 255, .4);
+        backdrop-filter: blur(10px);
     }
+   
     &-list {
         margin-left: 50px;
     }
@@ -76,7 +81,7 @@
     width: 100%;
     height: 100%;
     background: rgba($color: #000000, $alpha: .5);
-
+    overflow-x: hidden;
     transition: all .5s linear;
 }
 
@@ -102,6 +107,16 @@
     transition: all .8s ease-in;
     opacity: 0;
     z-index: -1;
+    overflow: hidden;
+
+    &--white {
+        background: rgba(255, 255, 255, .5);
+        backdrop-filter: blur(8px);
+        transition: all .8s ease-in;
+        opacity: 0;
+        z-index: -1;
+        margin-right: -30px;
+    }
 
 
     &-box {

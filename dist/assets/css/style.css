@@ -305,6 +305,13 @@ li {
     left: 10px;
 }
 
+.nav-search--white input {
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    outline: none;
+}
+
 .nav__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1266,10 +1273,14 @@ h6 {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
+    opacity: 1;
 }
 
 .menu--white {
-    background-image: url(../img/white-menu-bg.jpg);
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .menu-list {
@@ -1334,6 +1345,7 @@ h6 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
     -webkit-transition: all .5s linear;
     -o-transition: all .5s linear;
     transition: all .5s linear;
@@ -1367,6 +1379,19 @@ h6 {
     transition: all .8s ease-in;
     opacity: 0;
     z-index: -1;
+    overflow: hidden;
+}
+
+.login--white {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-transition: all .8s ease-in;
+    -o-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+    opacity: 0;
+    z-index: -1;
+    margin-right: -30px;
 }
 
 .login-box {
@@ -1699,7 +1724,8 @@ h6 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow-y: auto;
     background-color: #fff;
     z-index: -1;
     opacity: 0;
@@ -1821,6 +1847,7 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
+    overflow-y: auto;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
@@ -1930,6 +1957,11 @@ h6 {
     box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
 }
 
+.office {
+    position: relative;
+    overflow: hidden;
+}
+
 .office__map {
     position: relative;
 }
@@ -2027,6 +2059,12 @@ h6 {
     height: -moz-min-content;
     height: min-content;
     cursor: pointer;
+}
+
+.announ {
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
 }
 
 .announ__block {
@@ -2142,6 +2180,17 @@ h6 {
 .announ-pagination__link {
     color: #221F39;
     text-decoration: none;
+}
+
+.page {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.news {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .news__content {
@@ -2275,6 +2324,11 @@ h6 {
     color: #1D8EFF;
 }
 
+.reporting {
+    position: relative;
+    overflow: hidden;
+}
+
 .reporting__subtitle {
     text-align: center;
     font-size: 20px;
@@ -2369,7 +2423,9 @@ h6 {
     background-image: url(../img/about-bg-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 .about-header__title {
@@ -2468,6 +2524,8 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .apartment-header__title {

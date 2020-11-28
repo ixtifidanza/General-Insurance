@@ -17,7 +17,6 @@
         display: none;
         position: relative;
         input {
-            
             width: 628px;
             height: 41px;
             
@@ -27,7 +26,7 @@
             border-radius: 5px;
             border: 1px solid #fff;
             background: rgba(0,0,0,.35);
-
+            
             color: #fff;
             outline: none;
         }
@@ -38,6 +37,15 @@
             top: 9px;
             left: 10px;
 
+        }
+        &--white {
+            input {
+                border: 1px solid #000;
+                background: rgba(255,255,255, .5);
+                
+                color: #000;
+                outline: none;
+            }
         }
     }
 

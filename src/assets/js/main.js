@@ -67,17 +67,20 @@ var mySwiper = new Swiper('.swiper-container', {
     });
   });
 
-
   
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
   // Menu
+  var announ = $('#announ'); /* page Announ */
   var menu = $('.menu');
   var backgroundColor = $('#overlay'); /* overlay */
-
+  var body = $('body'); /* body */
+  var announPage = $('#page'); /* announ page */
   var register = $('#register'); /* register */
   var registerBtn = $('#registerBtn'); /* registerBtn */
   var registerClose = $('#registerClose'); /* registerClose */
@@ -111,14 +114,21 @@ var mySwiper = new Swiper('.swiper-container', {
 
   menuBtn.on('click', function() {
     menu.css('transform', 'translateX(0)');
+    body .css('overflow', 'hidden');
+    announPage.css('position', 'static');
     backgroundColor.css('opacity', '1');
     backgroundColor.css('z-index', '9');
+
+    announ.css('z-index', '-1')
   });
   
   close.on('click', function() {
     menu.css('transform', 'translateX(100%)');
     backgroundColor.css('opacity', '');
     backgroundColor.css('z-index', '-1');
+    announPage.css('position', '');
+    body .css('overflow', '')
+    announ.css('z-index', '9');
   });
 
   // login

@@ -1,4 +1,8 @@
 .announ {
+        position: relative;
+        overflow: hidden;
+   
+        z-index: 9;
     &__block {
         display: flex;
         flex-wrap: wrap;
@@ -93,4 +97,9 @@
         }
     }
 
+}
+
+.page {
+    position: relative;
+    overflow-x: hidden;
 }

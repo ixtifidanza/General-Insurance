@@ -1,4 +1,6 @@
 .office { 
+    position: relative;
+    overflow: hidden;
     &__map {
         position: relative;
         iframe {
