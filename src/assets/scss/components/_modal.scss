@@ -1,14 +1,22 @@
 .modal {
     width: 496px;
     height: 359px;
+
     background-color: #fff;
+
     position: absolute;
     top: 0;
-    right: 0;
+
     font-size: 18px;
     color: #221F39;
 
-    &--modal2 {
+    z-index: -1;
+    opacity: 0;
+    transform: translateZ(100px);
+    transition: all .5s linear;
+
+
+    &--calmodal2 {
         width: 608px;
         height: 518px;
     }

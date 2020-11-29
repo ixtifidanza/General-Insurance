@@ -68,13 +68,6 @@ var mySwiper = new Swiper('.swiper-container', {
   });
 
   
-  
-  
-  
-  
-  
-  
-  
   // Menu
   var announ = $('#announ'); /* page Announ */
   var menu = $('.menu');
@@ -113,6 +106,7 @@ var mySwiper = new Swiper('.swiper-container', {
   });
 
   menuBtn.on('click', function() {
+    alert('nma gap');
     menu.css('transform', 'translateX(0)');
     body .css('overflow', 'hidden');
     announPage.css('position', 'static');
@@ -164,6 +158,9 @@ var mySwiper = new Swiper('.swiper-container', {
     searchInput.css('opacity', '1');
     searchInput.show();
   });
+
+
+  
 
 
   $('#upload').imageUploader({

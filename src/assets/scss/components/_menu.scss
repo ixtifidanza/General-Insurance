@@ -20,11 +20,11 @@
         background: rgba(255, 255, 255, .4);
         backdrop-filter: blur(10px);
     }
-   
+
     &-list {
         margin-left: 50px;
     }
- 
+
     
     &__block{
         position: absolute;
@@ -81,7 +81,7 @@
     width: 100%;
     height: 100%;
     background: rgba($color: #000000, $alpha: .5);
-    overflow-x: hidden;
+    overflow: hidden;
     transition: all .5s linear;
 }
 
