@@ -222,7 +222,7 @@ $('#cardNumber').on('keyup', function(e){
 // siema Slider
   var mySiema = new Siema({
     selector: '.siema',
-    duration: 1000,
+    duration: 800,
     easing: 'ease',
     perPage: 1,
     startIndex: 1,
@@ -232,13 +232,18 @@ $('#cardNumber').on('keyup', function(e){
     loop: true,
   });
 
-setInterval(() => mySiema.next(), 2000)
+setInterval(() => mySiema.next(), 6000);
 
+  var prev = $('#prev');
+  var next = $('#next');
 
+  prev.on('click', function() {
+    mySiema.prev();
+  });
+  next.on('click', function() {
+    mySiema.next();
+  });
 
-
- 
-  
 
 
   $('#upload').imageUploader({

@@ -1,10 +1,10 @@
 .header {
-    // // background-image: url("./../img/bg-header.jpg");
-    // // background-size: cover;
-    // // background-repeat: no-repeat;
-    // height: 100vh;
-    // position: relative;
-    // overflow: hidden;
+    // background-image: url("./../img/bg-header.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 
 
     &__top {
@@ -19,6 +19,13 @@
         
         padding-top: 15px;
         padding:  0 40px;
+    }
+    &__content {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     &__list  {
@@ -48,13 +55,36 @@
     &__search {
         margin-right: 67px;
     }
+
+    &-pagination {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__btn {
+            border: 2px solid #fff;
+            border-radius: 3px;
+            background: rgba(0,0,0,.35);
+            padding: 20px 28px;
+        }
+        &__pp {
+            width: 176px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
     
     &__bottom{
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index: 9;
     }
     &__block {
         width: 100%;
@@ -66,27 +96,24 @@
     &__title {
         display: flex;
         flex-direction: column;
-        margin-top: 0;
-        margin-bottom: 0;
-
+        width: 100%;
         font-size: 100px;
         font-weight: bold;
+        
 
         color: #fff;
 
-        &--first {
-            margin-right: auto;
-        }
 
         &--second {
-            margin-left: auto;
+            text-align: right;
         }
     }
 
     &__btn {
         display: flex;
         justify-content: center;
-        margin-top: 25px;
+        margin-top: 50px;
+
 
         a {
             text-decoration: none;
@@ -123,7 +150,6 @@
         padding: 15px 10px;
         text-decoration: none;
         color: #fff;
-
     }
 
 

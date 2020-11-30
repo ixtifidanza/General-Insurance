@@ -9,6 +9,10 @@
     }
     &--index {
         box-shadow: none;
+        position: absolute;
+        left: 50%;
+        top: 1em;
+        transform: translate(-50%, 0);
     }
 
 
@@ -52,7 +56,6 @@
 
 
     &__block {
-     
         display: flex;
         justify-content: space-between;
         align-items: center;

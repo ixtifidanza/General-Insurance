@@ -1,5 +1,11 @@
+.siema{
+    &__background {
+        width: 100%;
+        height: 100vh;
+    }
+    
+}
 .swiper {
-
     &-container {
         width: 100%;
         height: 100%;
@@ -105,10 +111,6 @@
     cursor: pointer;
 }
 
-.siema{
-    width: 100%;
-    height: 100vh;
-}
 
 
 
