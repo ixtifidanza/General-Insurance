@@ -108,7 +108,6 @@ var mySwiper = new Swiper('.swiper-container', {
   });
 
   menuBtn.on('click', function() {
-    alert('nma gap');
     menu.css('transform', 'translateX(0)');
     body .css('overflow', 'hidden');
     announPage.css('position', 'static');
@@ -161,7 +160,84 @@ var mySwiper = new Swiper('.swiper-container', {
     searchInput.show();
   });
 
+// modal
+ var modalBtn = $('.modalBtn');
+ var modalClose = $('.modal-close__icon');
 
+ modalBtn.on('click', function(e) {
+   e.preventDefault();
+  var modal = $(this).next();
+  modal.css('z-index', '9');
+  modal.css('opacity', '1');
+  backgroundColor.css('opacity', '1');
+  backgroundColor.css('z-index', '9');
+  body.css('overflow', 'hidden');
+ });
+
+ modalClose.on('click', function(e) {
+    e.preventDefault();
+  var modal = $(this).parent();
+  modal.css('z-index', '-1');
+  modal.css('opacity', '');
+  backgroundColor.css('opacity', '');
+  backgroundColor.css('z-index', '-1');
+  body.css('overflow', '');
+ });
+
+//  modal2
+
+var modalPay = $('#modalPay');
+var payBtn = $('#payBtn');
+
+modalClose.on('click', function(e) {
+   e.preventDefault(); 
+  modalPay.css('z-index', '-1');
+  modalPay.css('opacity', '');
+
+  backgroundColor.css('opacity', '');
+  backgroundColor.css('z-index', '-1');
+});
+
+payBtn.on('click', function(e) {
+    e.preventDefault();
+  modalPay.css('z-index', '9');
+  modalPay.css('opacity', '1');
+  backgroundColor.css('opacity', '1');
+  backgroundColor.css('z-index', '9');
+});
+
+
+$('#cardNumber').on('keyup', function(e){
+  var val = $(this).val();
+  var newval = '';
+  val = val.replace(/\s/g, '');
+  for(var i=0; i < val.length; i++) {
+      if(i%4 == 0 && i > 0) newval = newval.concat(' ');
+      newval = newval.concat(val[i]);
+  }
+  $(this).val(newval);
+});
+
+
+// siema Slider
+  var mySiema = new Siema({
+    selector: '.siema',
+    duration: 1000,
+    easing: 'ease',
+    perPage: 1,
+    startIndex: 1,
+    draggable: true,
+    multipleDrag: true,
+    threshold: 20,
+    loop: true,
+  });
+
+setInterval(() => mySiema.next(), 2000)
+
+
+
+
+ 
   
 
 

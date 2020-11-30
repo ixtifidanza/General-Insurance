@@ -133,7 +133,10 @@
                     <div class="product-block__item">
                         <div class="product-block__link">
                             <a class="modalBtn" href="#">Транспортные средства</a>
-                            <div class="modal" class="modal">
+                            <div class="modal" id="modal">
+                                <a href="#" class="modal-close__icon">
+                                    <img src="assets/img/modal-close.svg" alt="">
+                                </a>
                                 <h4 class="modal__title title">
                                     Транспортные средства
                                 </h4>
@@ -147,14 +150,15 @@
                                 </ul>
                             </div>
                         </div>
-
-
                     </div>
 
                     <div class="product-block__item" style="background-image: url(/assets/img/product-image-2.jpg);">
                         <div class="product-block__link">
                             <a class="modalBtn" href="#">Недвижимое имущество</a>
-                            <div class="modal" class="modal">
+                            <div class="modal" id="modal">
+                                <a href="#" class="modal-close__icon">
+                                    <img src="assets/img/modal-close.svg" alt="">
+                                </a>
                                 <h4 class="modal__title title">
                                     Недвижимое имущество
                                 </h4>
@@ -174,7 +178,10 @@
                     <div class="product-block__item" style="background-image: url(/assets/img/product-image-3.jpg);">
                         <div class="product-block__link">
                             <a class="modalBtn" href="#">Здоровье</a>
-                            <div class="modal" class="modal">
+                            <div class="modal" id="modal">
+                                <a href="#" class="modal-close__icon">
+                                    <img src="assets/img/modal-close.svg" alt="">
+                                </a>
                                 <h4 class="modal__title title">
                                     Здоровье
                                 </h4>
@@ -188,13 +195,15 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
-
+                    
                     <div class="product-block__item" style="background-image: url(/assets/img/product-image-4.jpg);">
                         <div class="product-block__link">
                             <a class="modalBtn" href="#">Путешествия</a>
-                            <div class="modal" class="modal">
+                            <div class="modal" id="modal">
+                                <a href="#" class="modal-close__icon">
+                                    <img src="assets/img/modal-close.svg" alt="">
+                                </a>
                                 <h4 class="modal__title title">
                                     Путешествия
                                 </h4>
@@ -215,7 +224,10 @@
                     <div class="product-block__item" style="background-image: url(/assets/img/product-image-5.jpg);">
                         <div class="product-block__link">
                             <a class="modalBtn" href="#">Финансы</a>
-                            <div class="modal" class="modal">
+                            <div class="modal" id="modal">
+                                <a href="#" class="modal-close__icon">
+                                    <img src="assets/img/modal-close.svg" alt="">
+                                </a>
                                 <h4 class="modal__title title">
                                     Финансы
                                 </h4>
@@ -235,7 +247,10 @@
                     <div class="product-block__item" style="background-image: url(/assets/img/product-image-6.jpg);">
                         <div class="product-block__link">
                             <a class="modalBtn" href="#">Программа лояльности</a>
-                            <div class="modal" class="modal">
+                            <div class="modal" id="modal">
+                                <a href="#" class="modal-close__icon">
+                                    <img src="assets/img/modal-close.svg" alt="">
+                                </a>
                                 <h4 class="modal__title title">
                                     Программа лояльности
                                 </h4>
@@ -248,8 +263,7 @@
                                         транспортных средств</li>
                                 </ul>
                             </div>
-                        </div>
-
+                        </div>\
                     </div>
 
                 </div>
@@ -442,50 +456,6 @@
     </div>
 
     <script src="assets/js/libs.min.js"></script>
-
-    <script>
-        var modalBtn = $('.modalBtn');
-
-        modalBtn.on('click', function (e) {
-            e.preventDefault();
-            var modal = $(this).next();
-
-            modal.css('transform', 'translateX(10px)');
-            modal.css('opacity', '1');
-            modal.css('z-index', '9');
-
-            backgroundColor.css('opacity', '1');
-            backgroundColor.css('z-index', '9');
-            body.css('overflow', 'hidden');
-
-            $(document).on('click', function (e) {
-                if (!$(e.target).closest(".product-block__link").length) {
-
-                    $('.modal').css('opacity', '0');
-                    $('.modal').css('z-index', '-1');
-                    body.css('overflow', '');
-
-                    backgroundColor.css('z-index', '-1');
-                    backgroundColor.css('opacity', '0');
-                }
-                e.stopPropagation();
-            });
-        });
-
-        // $(document).on('click', function (e) {
-        //     var card = $(".modal");
-        //     if (card.has(e.target).length === 0) {
-    
-        //         $('.modal').css('opacity', '0');
-        //         $('.modal').css('z-index', '-1');
-        //         body.css('overflow', '');
-    
-        //         backgroundColor.css('z-index', '-1');
-        //         backgroundColor.css('opacity', '0');
-        //     }
-        // });
-    </script>
-
     <script src="assets/js/main.js"></script>
 
 </body>

@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+<div class="page" id="page">
     <nav class="nav">
         <div class="nav-container">
             <div class="nav__block">
@@ -15,10 +15,17 @@
                     <a href="index.html">
                         <img src="assets/img/Logo dd.png" alt="Logo">
                     </a>
-
                 </div>
+
+                <div class="nav-search nav-search--white" id="input">
+                    <input type="text" placeholder="найти на сайте">
+                    <div>
+                        <img class="nav-search__icon" src="assets/img/black-icon-search.svg" alt="">
+                    </div>
+                </div>
+
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a class="nav__link nav__link--search black" href="#">Поиск</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--search black"  id="search" href="#">Поиск</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
@@ -28,53 +35,89 @@
         </div>
     </nav>
 
-    <!-- <div class="menu menu--white">
-        <div id="menu-block" class="menu__block">
+    <div class="overlay" id="overlay">
+        <div class="menu menu--white">
+            <div id="menu-block" class="menu__block">
 
-            <div id="menu__close" class="menu__close">
-                <a href="#"><img src="assets/img/close-icon.svg" alt=""></a>
+                <div id="menu__close" class="menu__close">
+                    <a href="#"><img src="assets/img/close-icon.svg" alt=""></a>
+                </div>
+
+                <div class="menu__title">
+                    <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="menu__name">Компания</div>
+                    <li class="menu__item"> <a class="menu__link" href="director.html">Приветствие Генерального
+                            Директора</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="about.html">О нас</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="announ.html">Руководство</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="#">Лицензия (сертификат)</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="#">Документы (нужные от заказчика)</a></li>
+                </ul>
+
+                <ul class="menu-list">
+                    <div class="menu__name">Продукты для Юр. Лиц</div>
+                    <li class="menu__item"> <a class="menu__link" href="product.html">Товары</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="product-2.html">Товары <span>с возможностью
+                                покупки</span></a></li>
+                </ul>
+                <ul class="menu-list">
+                    <div class="menu__name">Продукты для Физ. Лиц</div>
+                    <li class="menu__item"> <a class="menu__link" href="#">Товары</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="#">Товары <span>с возможностью
+                                покупки</span></a></li>
+                </ul>
+                <ul class="menu-list">
+                    <div class="menu__name">Обращение</div>
+                    <li class="menu__item"><a class="menu__link" href="#">Обращение к директору</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Обращение по страховому случаю</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Обращение по общим вопросам</a></li>
+                </ul>
+                <ul class="menu-list">
+                    <div class="menu__name">Калькулятор</div>
+                    <div class="menu__name">Информационная служба</div>
+                    <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+
+                </ul>
+
             </div>
-
-            <div class="menu__title">
-                <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
-            </div>
-            <ul class="menu-list">
-                <div class="menu__name">Компания</div>
-                <li class="menu__item"> <a class="menu__link" href="director.html">Приветствие Генерального
-                        Директора</a></li>
-                <li class="menu__item"> <a class="menu__link" href="about.html">О нас</a></li>
-                <li class="menu__item"> <a class="menu__link" href="announ.html">Руководство</a></li>
-                <li class="menu__item"> <a class="menu__link" href="#">Лицензия (сертификат)</a></li>
-                <li class="menu__item"> <a class="menu__link" href="#">Документы (нужные от заказчика)</a></li>
-            </ul>
-
-            <ul class="menu-list">
-                <div class="menu__name">Продукты для Юр. Лиц</div>
-                <li class="menu__item"> <a class="menu__link" href="product.html">Товары</a></li>
-                <li class="menu__item"> <a class="menu__link" href="product-2.html">Товары <span>с возможностью
-                            покупки</span></a></li>
-            </ul>
-            <ul class="menu-list">
-                <div class="menu__name">Продукты для Физ. Лиц</div>
-                <li class="menu__item"> <a class="menu__link" href="#">Товары</a></li>
-                <li class="menu__item"> <a class="menu__link" href="#">Товары <span>с возможностью
-                            покупки</span></a></li>
-            </ul>
-            <ul class="menu-list">
-                <div class="menu__name">Обращение</div>
-                <li class="menu__item"><a class="menu__link" href="#">Обращение к директору</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Обращение по страховому случаю</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Обращение по общим вопросам</a></li>
-            </ul>
-            <ul class="menu-list">
-                <div class="menu__name">Калькулятор</div>
-                <div class="menu__name">Информационная служба</div>
-                <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-
-            </ul>
-
         </div>
-    </div> -->
+    </div>
+
+    <div class="login login--white" id="login">
+        <div class="login-box">
+            <div class="login-main">
+                <a href="#" id="prev" class="login-arrow">
+                    <img src="assets/img/login-arrow.svg" alt="">
+                </a>
+                <h4 class="login-title">
+                    Личный кабинет
+                </h4>
+            </div>
+            <div class="login-form">
+                <div class="login-form__group">
+                    <label class="login-form__label">
+                        <span class="login-form__text">Логин</span>
+                        <input class="login-form__input" type="email">
+                    </label>
+                </div>
+
+                <div class="login-form__group">
+                    <label class="login-form__label">
+                        <span class="login-form__text">Пароль</span>
+                        <input class="login-form__input" type="password">
+                        <img class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
+                    </label>
+                </div>
+            </div>
+
+            <div class="login-form__link">
+                <a class="login-form__btn" href="cabinet.html">Войти</a>
+                <a class="login-form__btn login-form__btn--reg" href="#" id="registerBtn">Регистрация</a>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="decor">
@@ -210,7 +253,7 @@
                                     <span>300$</span>
                                 </p>
                             </div>
-                            <a class="policyholder-form__btn btn" href="#">Оплатить полюс</a>
+                            <a id="payBtn" class="policyholder-form__btn btn" href="#">Оплатить полюс</a>
                         </div>
                     </div>
             </section>
@@ -262,14 +305,14 @@
     </div>
 
 
-    <div class="modal modal--calmodal2">
+    <div id="modalPay" class="modal modal--calmodal2">
 
         <div class="modal-main">
             <h4 class="modal-title title">
                 Оплата
             </h4>
         </div>
-                <div class="modal-close">
+                <div class="modal-close__icon">
                     <a href="#">
                         <img src="assets/img/modal-close.svg" alt="">
                     </a>
@@ -281,7 +324,7 @@
                                 Номер карты
                                 <img src="assets/img/uzkard.svg" alt="">
                             </span>
-                            <input type="text" maxlength="4">
+                            <input id="cardNumber" type="text">
                         </label>
                     </div>
     
@@ -424,13 +467,102 @@
                 </span>
                 <a class="footer-item__link" href="#">Все услуги лицензированы </a>
             </div>
-
-
-
-
-
         </div>
     </footer>
+
+    <div class="register" id="register">
+        <div class="container">
+            <div class="register-block">
+                <div class="register-item">
+                    <a href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                </div>
+                <div class="register-item">
+                    <h4 class="register-item__title">
+                        Регистрирация в системе
+                    </h4>
+                    <p class="register-item__subtitle">
+                        Немного информации для вашей <br>
+                        учетной записи и вы можете начать!
+                    </p>
+                    <div class="register-item__group">
+                        <label class="register-item__list">Адрес электронной почты<input type="email"></label>
+                        <label class="register-item__list">Пароль
+                            <div class="register-item__password">
+                                <input type="password">
+                                <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                            </div>
+                        </label>
+                        <label class="register-item__list">Повторите пароль
+                            <div class="register-item__password">
+                                <input type="password">
+                                <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                            </div>
+                        </label>
+                        <label class="register-item__list">Имя<input type="text"></label>
+                        <label class="register-item__list">Фамилия<input type="text"></label>
+                    </div>
+                    <div class="register-item__btn">
+                        <a href="#" id="registerNext">Далее</a>
+                    </div>
+                    <div class="register-item__sign">
+                        <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+                    </div>
+                </div>
+                <div class="register-item">
+                    <div class="register-item__close">
+                        <a href="#" id="registerClose">
+                            <img src="assets/img/registr-close-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="verify" id="register2">
+        <div class="container">
+
+            <div class="verify-block">
+                <div class="verify-item">
+                    <a href="index.html">
+                        <img src="assets/img/Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="verify-item">
+                    <a href="#" id="registerClose2">
+                        <img src="assets/img/registr-close-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <h4 class="verify__title">Регистрирация в системе</h4>
+            <p class="verify__text">
+                Введите код который мы вам <br>
+                отправили по электронной почте, <br>
+                для авторизации вашего аккаунта.</p>
+
+            <div class="verify-group">
+                <label class="verify-code">
+                    <span>Код авторизации</span>
+                    <div class="verify-input">
+                        <input type="text" maxlength="4">
+                        <a class="verify-code__link" href="#">Прислать код заного</a>
+                    </div>
+                </label>
+            </div>
+            <div class="verify-link">
+                <a class="verify-link__btn" href="cabinet.html">Зарегистрироваться</a>
+            </div>
+
+            <div class="register-item__sign">
+                <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>

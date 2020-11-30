@@ -1,4 +1,7 @@
 .decor {
+    position: relative;
+    overflow: hidden;
+   
     display: flex;
     &-calculator {
         max-width: 701px;

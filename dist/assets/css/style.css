@@ -99,15 +99,6 @@ li {
   font-style: normal;
 }
 
-.header {
-    background-image: url("./../img/bg-header.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
 .header__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1605,6 +1596,11 @@ h6 {
     cursor: pointer;
 }
 
+.siema {
+    width: 100%;
+    height: 100vh;
+}
+
 .modal {
     width: 496px;
     height: 359px;
@@ -1622,9 +1618,24 @@ h6 {
     transition: all .5s linear;
 }
 
+.modal-close__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -50px;
+}
+
 .modal--calmodal2 {
-    width: 608px;
-    height: 518px;
+    position: absolute;
+    width: 590px;
+    height: 510px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
 }
 
 .modal__group {
@@ -3218,6 +3229,8 @@ h6 {
 }
 
 .decor {
+    position: relative;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
