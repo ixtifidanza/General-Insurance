@@ -1,6 +1,6 @@
 .decor {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
    
     display: flex;
     &-calculator {
@@ -64,6 +64,15 @@
     }
 }
 
+input[type="checkbox"]:checked + label:before {
+    border: 1px solid  #80F1B1;
+    background: #80F1B1;
+
+    color: white;
+    content: "\2713";
+    text-align: center;
+}
+
 input[type="checkbox"] {
     visibility: hidden;
 }
@@ -80,13 +89,7 @@ input[type="checkbox"] + label:before {
     vertical-align: top;
     width: 16px;
 }
-input[type="checkbox"]:checked + label:before {
-    border: 1px solid  #80F1B1;
-    background: #80F1B1;
-    color: white;
-    content: "\2713";
-    text-align: center;
-}
+
 input[type="checkbox"]:checked + label:after {
     font-weight: bold;
 }

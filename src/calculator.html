@@ -96,7 +96,7 @@
                                 </li>
                             </ul>
                         </div>
-    
+
                         <div class="policyholder-form__group">
                             <ul class="policyholder-form__list">
                                 <li>
@@ -136,36 +136,33 @@
                         Сумма покрытия
                     </h4>
                     <span class="policyholder-subtitle">Конструктивные элементы</span>
+
                     <div class="policyholder-form__group">
-
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                          </div>
-
+                        
+                        <span id="rs-bullet" class="rs-label">0</span>
+                        <input class="rs-range" type="range" value="0" min="0" max="5000">
                     </div>
 
                     <span class="policyholder-subtitle">Отделка и оборудование</span>
+
                     <div class="policyholder-form__group">
-                       
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                          </div>
+                        <span id="rs-bullet2" class="rs-label">0</span>
+                        <input class="rs-range2" type="range" value="0" min="1000" max="200">
+                        
                     </div>
 
                     <span class="policyholder-subtitle">Домашнее имущество</span>
+
                     <div class="policyholder-form__group">
-                       
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                          </div>
+                        <span id="rs-bullet3" class="rs-label">0</span>
+                        <input class="rs-range3" type="range" value="0" min="1000" max="200">
                     </div>
 
-                    <span class="policyholder-subtitle">Ответственность перед соседями</span>
+                    <span class="policyholder-subtitle">Ответственность перед соседями</span> 
+                
                     <div class="policyholder-form__group">
-                      
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                          </div>
+                        <span id="rs-bullet4" class="rs-label">0</span>
+                        <input  class="rs-range4" type="range" value="0" min="300" max="200">
                     </div>
 
                     <div class="policyholder-form__price">
@@ -226,6 +223,7 @@
             </aside>
         </div>
     </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -317,16 +315,36 @@
                 </span>
                 <a class="footer-item__link" href="#">Все услуги лицензированы </a>
             </div>
-
-
-
-
-
         </div>
     </footer>
 
-    <script src="assets/js/libs.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div>
+
+
+
+        <script src="assets/js/libs.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            var procentCalc = function(procent) {
+                var rng1 = $('.range').val(); //rng - это Input
+                $('.rs-label').html(rng1 + ' сум');
+            }
+            $('#range').on('input', function() {
+                var pr = $('.range-label').html();
+                procentCalc(+pr);
+            });
+
+            var procentCalc = function(procent) {
+                var rng1 = $('.range').val(); //rng - это Input
+                $('.rs-label').html(rng1 + ' сум');
+            }
+            $('#range').on('input', function() {
+                var pr = $('.range-label').html();
+                procentCalc(+pr);
+            });
+
+        </script>
 </body>
 
 </html>

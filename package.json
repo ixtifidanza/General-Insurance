@@ -32,6 +32,7 @@
     "blueimp-file-upload": "^10.31.0",
     "flexboxgrid2": "^7.2.1",
     "jquery": "^3.5.1",
+    "jrange": "^1.0.4",
     "normalize.css": "^8.0.1",
     "pagepiling.js": "^1.5.6",
     "selectric": "^1.13.0",

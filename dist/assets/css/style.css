@@ -14,8 +14,9 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    width: 1170px;
     margin: 0 auto;
+    overflow: visible;
 }
 
 /* ------------nav background Color--------- */
@@ -139,6 +140,7 @@ li {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 0 30px;
 }
 
 .header__list {
@@ -1623,44 +1625,6 @@ h6 {
     background: rgba(0, 0, 0, 0.35);
     border: 2px solid #fff;
     color: #fff;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 630px;
-    height: 15px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    -webkit-transition: opacity .2s;
-    -o-transition: opacity .2s;
-    transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 30px;
-    height: 45px;
-    border: 0;
-    background: #4CAF50;
-    background: url(../img/cal-icon.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-    width: 30px;
-    height: 45px;
-    border: 0;
-    background: #4CAF50;
-    background: url(../img/cal-icon.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
 }
 
 .modal {
@@ -3203,12 +3167,6 @@ h6 {
     text-align: center;
 }
 
-.calculator {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
 .calculator-block {
     background-image: url(../img/cal-bg.jpg);
     background-size: cover;
@@ -3290,9 +3248,15 @@ h6 {
     display: flex;
 }
 
+.calculator-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .decor {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3374,6 +3338,14 @@ h6 {
     width: 203px;
 }
 
+input[type="checkbox"]:checked + label:before {
+    border: 1px solid  #80F1B1;
+    background: #80F1B1;
+    color: white;
+    content: "\2713";
+    text-align: center;
+}
+
 input[type="checkbox"] {
     visibility: hidden;
 }
@@ -3391,14 +3363,6 @@ input[type="checkbox"] + label:before {
     padding: 0;
     vertical-align: top;
     width: 16px;
-}
-
-input[type="checkbox"]:checked + label:before {
-    border: 1px solid  #80F1B1;
-    background: #80F1B1;
-    color: white;
-    content: "\2713";
-    text-align: center;
 }
 
 input[type="checkbox"]:checked + label:after {
@@ -3445,10 +3409,11 @@ input[type="checkbox"]:checked + label:after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 518px;
+    position: relative;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-top: 50px;
     padding-bottom: 30px;
 }
 
@@ -3478,7 +3443,6 @@ input[type="checkbox"]:checked + label:after {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 518px;
     font-size: 22px;
 }
 

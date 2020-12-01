@@ -75,41 +75,7 @@
 }
 
 
-// Range
-.slider {
-    -webkit-appearance: none;
-    width: 630px;
-    height: 15px;
-    border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
 
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 30px;
-    height: 45px;
-    border: 0;
-    background: #4CAF50;
-    background: url(../img/cal-icon.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-.slider::-moz-range-thumb {
-    width: 30px;
-    height: 45px;
-    border: 0;
-    background: #4CAF50;
-    background: url(../img/cal-icon.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
 
 
 
