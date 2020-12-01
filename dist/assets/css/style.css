@@ -205,7 +205,7 @@ li {
     border: 2px solid #fff;
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.35);
-    padding: 20px 28px;
+    padding: 10px 20px;
 }
 
 .header-pagination__pp {
@@ -278,6 +278,7 @@ li {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 40px 20px;
+    cursor: pointer;
 }
 
 .header__sos {
@@ -292,6 +293,7 @@ li {
     align-items: center;
     padding: 10px 10px;
     font-size: 20px;
+    cursor: pointer;
     background-color: #C12929;
     color: #fff;
     text-decoration: none;
@@ -307,6 +309,7 @@ li {
     padding: 15px 10px;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .nav {
@@ -1580,6 +1583,7 @@ h6 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .swiper-wrapper {
@@ -1597,6 +1601,7 @@ h6 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-left: 20px;
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -3457,6 +3462,7 @@ input[type="checkbox"]:checked + label:after {
     width: 203px;
     margin: 0;
     text-decoration: none;
+    margin-left: 50px;
 }
 
 .policyholder-form__block {

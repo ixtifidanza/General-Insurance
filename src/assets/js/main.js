@@ -161,7 +161,7 @@ var modalBtn = $('.modalBtn');
 var modalClose = $('.modal-close__icon');
 
 modalBtn.on('click', function(e) {
-   e.preventDefault();
+    e.preventDefault();
   var modal = $(this).next();
   modal.css('z-index', '9');
   modal.css('opacity', '1');

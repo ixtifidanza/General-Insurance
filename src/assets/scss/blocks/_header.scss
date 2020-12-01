@@ -69,7 +69,7 @@
             border: 2px solid #fff;
             border-radius: 3px;
             background: rgba(0,0,0,.35);
-            padding: 20px 28px;
+            padding: 10px 20px;
         }
         &__pp {
             width: 176px;
@@ -127,6 +127,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 40px 20px;
+        cursor: pointer;
     }
     &__sos {
         display: flex;
@@ -135,7 +136,7 @@
 
         padding: 10px 10px;  
         font-size: 20px;
-
+        cursor: pointer;
         background-color: #C12929; 
         color: #fff;
         text-decoration: none;
@@ -149,6 +150,7 @@
         padding: 15px 10px;
         text-decoration: none;
         color: #fff;
+        cursor: pointer;
     }
 
 
