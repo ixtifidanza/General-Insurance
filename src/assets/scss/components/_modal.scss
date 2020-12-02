@@ -24,7 +24,7 @@
         }
     }
     &--calmodal2 {
-        position: absolute;
+        position: fixed;
         width: 590px;
         height: 510px;
         top: 50%;
@@ -36,7 +36,16 @@
 
     &__group {
         padding-left: 79px;
+    
     }
+
+    &-link {
+        color: #000;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+    
+    
     
     &__list {
         span {
@@ -113,8 +122,5 @@
                 }
             }
         }
-
-     
-        
 }
 

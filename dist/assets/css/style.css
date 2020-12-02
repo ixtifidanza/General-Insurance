@@ -209,7 +209,7 @@ li {
 }
 
 .header-pagination__pp {
-    width: 176px;
+    width: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -242,13 +242,18 @@ li {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: bold;
     color: #fff;
 }
 
+.header__title--first {
+    margin-left: 100px;
+}
+
 .header__title--second {
     text-align: right;
+    margin-right: 100px;
 }
 
 .header__btn {
@@ -266,7 +271,7 @@ li {
     color: #fff;
     border: 1px solid #fff;
     border-radius: 2px;
-    padding: 17px 92px;
+    padding: 17px 80px;
     font-size: 22px;
 }
 
@@ -315,7 +320,7 @@ li {
 .nav {
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-    padding: 23px 0;
+    padding: 5px 0;
 }
 
 .nav--about {
@@ -479,6 +484,11 @@ li {
     font-size: 18px;
     line-height: 1.8;
     margin: 42px 0 31px;
+}
+
+.footer-item__text a {
+    color: #000;
+    text-decoration: none;
 }
 
 .footer-item__copyright {
@@ -1387,10 +1397,16 @@ h6 {
 }
 
 .menu__name {
+    text-decoration: none;
     color: #fff;
     font-size: 22px;
     font-weight: bold;
     margin-top: 27px;
+}
+
+.menu-link__product {
+    color: #fff;
+    text-decoration: none;
 }
 
 .overlay {
@@ -1657,7 +1673,7 @@ h6 {
 }
 
 .modal--calmodal2 {
-    position: absolute;
+    position: fixed;
     width: 590px;
     height: 510px;
     top: 50%;
@@ -1671,6 +1687,12 @@ h6 {
 
 .modal__group {
     padding-left: 79px;
+}
+
+.modal-link {
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px;
 }
 
 .modal__list {
@@ -2236,7 +2258,6 @@ h6 {
 }
 
 .news {
-    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -2746,7 +2767,7 @@ h6 {
     padding: 81px 0;
 }
 
-.product-block__link a {
+.modalBtn {
     color: #fff;
     text-decoration: none;
 }
@@ -2793,8 +2814,21 @@ h6 {
     font-weight: bold;
 }
 
-.cabinet-item__list :nth-child(2) {
+.cabinet-item__list:nth-child(2) {
     margin: 20px 0;
+}
+
+.cabinet-item__list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cabinet-item__list img:nth-child(2) {
+    display: none;
+}
+
+.cabinet-item__list.active img {
+    display: block;
 }
 
 .cabinet-item__link {
@@ -2838,6 +2872,8 @@ h6 {
 .cabinet-form {
     max-width: 812px;
     padding: 23px 55px 40px;
+    margin-left: 61px;
+    margin-bottom: 37px;
     background-color: #F7F9FC;
     border-radius: 4px;
     -webkit-box-shadow: 5px 7px 10px -9px rgba(0, 0, 0, 0.59);
@@ -2947,10 +2983,6 @@ h6 {
     color: #221F39;
 }
 
-.content-table {
-    margin-top: 10px;
-}
-
 .content__title {
     margin-top: 5px;
 }
@@ -2982,6 +3014,24 @@ h6 {
 
 .table-red {
     color: #C12929;
+}
+
+.content-table {
+    margin-top: 10px;
+    margin-left: 100px;
+    display: none;
+}
+
+.content-table.active {
+    display: block;
+}
+
+.cabinet-form {
+    display: none;
+}
+
+.cabinet-form.active {
+    display: block;
 }
 
 .list-img {

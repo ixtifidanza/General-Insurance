@@ -144,39 +144,45 @@
                     </div>
                     <ul class="menu-list">
                         <div class="menu__name">Компания</div>
-                        <li class="menu__item"> <a class="menu__link" href="director.html">Приветствие Генерального
-                                Директора</a></li>
-                        <li class="menu__item"> <a class="menu__link" href="about.html">О нас</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="about.html">О компании</a></li>
                         <li class="menu__item"> <a class="menu__link" href="manual.html">Руководство</a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#">Лицензия (сертификат)</a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#">Документы (нужные от заказчика)</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="#">Документы</a></li>
                     </ul>
 
                     <ul class="menu-list">
-                        <div class="menu__name">Продукты для Юр. Лиц</div>
-                        <li class="menu__item"> <a class="menu__link" href="product-2.html">Товары</a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#">Товары <span>с возможностью
-                                    покупки</span></a></li>
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="product.html">Продукты для Юр. Лиц</a>
+                        </div>
                     </ul>
                     <ul class="menu-list">
-                        <div class="menu__name">Продукты для Физ. Лиц</div>
-                        <li class="menu__item"> <a class="menu__link" href="product.html">Товары</a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#">Товары <span>с возможностью
-                                    покупки</span></a></li>
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="product-2.html">Продукты для Физ. Лиц</a>
+                        </div>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="reporting.html">Cравнение продуктов</a>
+                        </div>
                     </ul>
                     <ul class="menu-list">
                         <div class="menu__name">Обращение</div>
                         <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
                         <li class="menu__item"><a class="menu__link" href="director-3.html">Обращение по страховому случаю</a></li>
-                        <li class="menu__item"><a class="menu__link" href="director-2.html">Обращение по общим вопросам</a></li>
                     </ul>
                     <ul class="menu-list">
-                        <div class="menu__name">Калькулятор</div>
                         <div class="menu__name">Информационная служба</div>
                         <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Объявления</a></li>
 
                     </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="office.html">Контакты</a>
+                        </div>
 
+                    </ul>
+                    <br>
                 </div>
             </div>
         </div>
@@ -312,6 +318,24 @@
 
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        var mySiema = new Siema({
+            selector: '.siema',
+            duration: 800,
+            easing: 'ease',
+            perPage: 1,
+            startIndex: 1,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: true,
+        });
+
+        setInterval(function() {
+            mySiema.next()
+        }, 5000);
+    </script>
 </body>
 
 </html>

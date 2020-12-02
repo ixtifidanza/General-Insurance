@@ -7,7 +7,7 @@
         padding-bottom: 60px;
         padding-left: 20px;
         padding-right: 20px;
-        
+
         &__item {
             background-image: url(../img/product-img-1.jpg);
             background-size: cover;
@@ -18,18 +18,19 @@
 
             position: relative;
         }
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        font-size: 30px;
-        padding: 81px 0;
-        a {
-            color: #fff;
-            text-decoration: none;
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 30px;
+            padding: 81px 0;
         }
     }
 }
-}
 
+.modalBtn {
+    color: #fff;
+    text-decoration: none;
+}

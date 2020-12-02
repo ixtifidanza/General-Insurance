@@ -187,11 +187,13 @@ var modalPay = $('#modalPay');
 var payBtn = $('#payBtn');
 
 payBtn.on('click', function(e) {
+  
   e.preventDefault();
   modalPay.css('z-index', '9');
   modalPay.css('opacity', '1');
   backgroundColor.css('opacity', '1');
   backgroundColor.css('z-index', '9');
+  body.css('overflow', 'hidden');
 });
 
 modalClose.on('click', function(e) {
@@ -227,22 +229,8 @@ $('#cardNumber').on('keyup', function(e){
 });
 
 
-// siema Slider
-  var mySiema = new Siema({
-    selector: '.siema',
-    duration: 800,
-    easing: 'ease',
-    perPage: 1,
-    startIndex: 1,
-    draggable: true,
-    multipleDrag: true,
-    threshold: 20,
-    loop: true,
-  });
 
-  setInterval(function() {
-    mySiema.next()
-  }, 5000);
+ 
 
   var prev = $('#prev');
   var next = $('#next');
@@ -256,13 +244,25 @@ $('#cardNumber').on('keyup', function(e){
 
 
 
-  $('#upload').imageUploader({
-    extensions: ['.jpg','.jpeg','.png','.gif','.svg'],
-      mimes: ['image/jpeg','image/png','image/gif','image/svg+xml'],
-      maxSize: undefined,
-      maxFiles: undefined,
+  // $('#upload').imageUploader({
+  //   extensions: ['.jpg','.jpeg','.png','.gif','.svg'],
+  //     mimes: ['image/jpeg','image/png','image/gif','image/svg+xml'],
+  //     maxSize: undefined,
+  //     maxFiles: undefined,
     
-  });
+  // });
+
+  $(".cabinet-item__list").on("click", function () {
+    $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active")
+        .closest(".cabinet-block")
+        .find(".tab_wrapper")
+        .removeClass("active")
+        .eq($(this).index())
+        .addClass("active");
+});
 
 
 

@@ -64,10 +64,17 @@
         margin-left: 15px;
     }
     &__name {
+        text-decoration: none;
         color:#fff;
         font-size: 22px;
         font-weight: bold;
         margin-top: 27px;
+    }
+    &-link {
+        &__product {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 

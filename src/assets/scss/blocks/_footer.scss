@@ -35,6 +35,10 @@
             font-size: 18px;
             line-height: 1.8;
             margin: 42px 0 31px;
+            a {
+                color: #000;
+                text-decoration: none;
+            }
         }
         &__copyright {
             display: flex;

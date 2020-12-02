@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<div class="page" id="page">
     <nav class="nav">
         <div class="nav-container">
             <div class="nav__block">
@@ -30,6 +30,96 @@
             </div>
         </div>
     </nav>
+
+    <div class="overlay" id="overlay">
+        <div class="menu menu--white">
+            <div id="menu-block" class="menu__block">
+
+                <div id="menu__close" class="menu__close">
+                    <a href="#"><img src="assets/img/close-icon.svg" alt=""></a>
+                </div>
+
+                <div class="menu__title">
+                    <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="menu__name">Компания</div>
+                    <li class="menu__item"> <a class="menu__link" href="about.html">О компании</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="manual.html">Руководство</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="#">Документы</a></li>
+                </ul>
+
+                <ul class="menu-list">
+                    <div class="menu__name">
+                        <a class="menu-link__product" href="product-2.html">Продукты для Юр. Лиц</a>
+                    </div>
+                </ul>
+                <ul class="menu-list">
+                    <div class="menu__name">
+                        <a class="menu-link__product" href="product.html">Продукты для Физ. Лиц</a>
+                    </div>
+                </ul>
+                <ul class="menu-list">
+                    <div class="menu__name">
+                        <a class="menu-link__product" href="reporting.html">Cравнение продуктов</a>
+                    </div>
+                </ul>
+
+                <ul class="menu-list">
+                    <div class="menu__name">Обращение</div>
+                    <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
+                    <li class="menu__item"><a class="menu__link" href="director-3.html">Обращение по страховому случаю</a></li>
+                </ul>
+                <ul class="menu-list">
+                    <div class="menu__name">Информационная служба</div>
+                    <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="announ.html">Объявления</a></li>
+                </ul>
+
+                 <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="office.html">Контакты</a>
+                        </div>
+                    </ul>
+                    <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="login login--white" id="login">
+        <div class="login-box">
+            <div class="login-main">
+                <a href="#" id="prev" class="login-arrow">
+                    <img src="assets/img/login-arrow.svg" alt="">
+                </a>
+                <h4 class="login-title">
+                    Личный кабинет
+                </h4>
+            </div>
+            <div class="login-form">
+                <div class="login-form__group">
+                    <label class="login-form__label">
+                        <span class="login-form__text">Логин</span>
+                        <input class="login-form__input" type="email">
+                    </label>
+                </div>
+
+                <div class="login-form__group">
+                    <label class="login-form__label">
+                        <span class="login-form__text">Пароль</span>
+                        <input class="login-form__input" type="password">
+                        <img class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
+                    </label>
+                </div>
+            </div>
+
+            <div class="login-form__link">
+                <a class="login-form__btn" href="cabinet.html">Войти</a>
+                <a class="login-form__btn login-form__btn--reg" href="#" id="registerBtn">Регистрация</a>
+            </div>
+        </div>
+    </div>
 
     <h4 class="list-title title">Список сравнения</h4>
     
@@ -117,7 +207,6 @@
     </section>
 
 
-
     <footer class="footer">
         <div class="container">
             <div class="footer__block">
@@ -131,7 +220,7 @@
                     <div class="footer-item__content">
                         <p class="footer-item__text">
                             Копирование информации, размещенной <br>
-                            на сайте general.uz (цитирование в СМИ <br>
+                            на сайте <a href="mailto:info@ddgi.uz"><strong>info@ddgi.uz</strong></a> (цитирование в СМИ <br>
                             той или иной информации или <br>
                             сообщений), разрешается только при <br>
                             указании источника этой информации.</p>
@@ -149,7 +238,7 @@
                             </div>
                             <p class="footer-item__adress">
                                 Тошкент шаҳар, <br>
-                                Амир Темур шоҳ кўчаси, 16A
+                                Ташкент улица Навоий дом 27
                             </p>
                             
                         </li>
@@ -157,13 +246,13 @@
                             <div class="footer-item__img">
                                 <img src="assets/img/footer-phone-icon.svg" alt="">
                             </div>
-                            <a href="tel:+998712070066" class="footer-item__link">+99871 207-00-66</a>
+                            <a href="tel:+998712312002" class="footer-item__link">+99871 231-20-02</a>
                         </li>
                         <li class="footer-list__item">
                             <div class="footer-item__img">
                                 <img src="assets/img/footer-mail-icon.svg" alt="">
                             </div>
-                            <a href="mailto:info@general.uz" class="footer-item__link">info@general.uz</a>
+                            <a href="mailto:info@ddgi.uz" class="footer-item__link">info@ddgi.uz</a>
                         </li>
                     </ul>
     
@@ -204,18 +293,106 @@
             
             <div class="footer-item__copyright">
                 <span class="footer-item__copy">© Copyright - 2020 by
-                    <a class="footer-item__link" href="#">QWERTY.UZ</a>
+                    <a class="footer-item__link" href="https://qwerty.uz//">QWERTY.UZ</a>
                 </span>
                     <a class="footer-item__link" href="#">Все услуги лицензированы </a>
-            </div>
-            
-            
-            
-            
-    
+            </div> 
         </div>
     </footer>
 
+    <div class="register" id="register">
+        <div class="container">
+            <div class="register-block">
+                <div class="register-item">
+                    <a href="index.html"><img src="assets/img/Logo.png" alt=""></a>
+                </div>
+                <div class="register-item">
+                    <h4 class="register-item__title">
+                        Регистрирация в системе
+                    </h4>
+                    <p class="register-item__subtitle">
+                        Немного информации для вашей <br>
+                        учетной записи и вы можете начать!
+                    </p>
+                    <div class="register-item__group">
+                        <label class="register-item__list">Адрес электронной почты<input type="email"></label>
+                        <label class="register-item__list">Пароль
+                            <div class="register-item__password">
+                                <input type="password">
+                                <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                            </div>
+                        </label>
+                        <label class="register-item__list">Повторите пароль
+                            <div class="register-item__password">
+                                <input type="password">
+                                <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                            </div>
+                        </label>
+                        <label class="register-item__list">Имя<input type="text"></label>
+                        <label class="register-item__list">Фамилия<input type="text"></label>
+                    </div>
+                    <div class="register-item__btn">
+                        <a href="#" id="registerNext">Далее</a>
+                    </div>
+                    <div class="register-item__sign">
+                        <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+                    </div>
+                </div>
+                <div class="register-item">
+                    <div class="register-item__close">
+                        <a href="#" id="registerClose">
+                            <img src="assets/img/registr-close-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="verify" id="register2">
+        <div class="container">
+
+            <div class="verify-block">
+                <div class="verify-item">
+                    <a href="index.html">
+                        <img src="assets/img/Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="verify-item">
+                    <a href="#" id="registerClose2">
+                        <img src="assets/img/registr-close-icon.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+            <h4 class="verify__title">Регистрирация в системе</h4>
+            <p class="verify__text">
+                Введите код который мы вам <br>
+                отправили по электронной почте, <br>
+                для авторизации вашего аккаунта.</p>
+
+            <div class="verify-group">
+                <label class="verify-code">
+                    <span>Код авторизации</span>
+                    <div class="verify-input">
+                        <input type="text" maxlength="4">
+                        <a class="verify-code__link" href="#">Прислать код заного</a>
+                    </div>
+                </label>
+            </div>
+            <div class="verify-link">
+                <a class="verify-link__btn" href="cabinet.html">Зарегистрироваться</a>
+            </div>
+
+            <div class="register-item__sign">
+                <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
