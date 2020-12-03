@@ -1,6 +1,6 @@
 .menu {
-    background: rgba(17, 18, 15, .4);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
  
     position: absolute;
     top: 0;
@@ -108,8 +108,8 @@
     justify-content: center;
     margin-right: -30px;
 
-    background: rgba(17, 18, 15, .4);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
     
     transition: all .8s ease-in;
     opacity: 0;

@@ -39,15 +39,15 @@ var mySwiper = new Swiper('.swiper-container', {
     // centeredSlides: true,
   });
 
-
   $('.names').on('click', function () {
     const officeBlock = $(this).parent().next();
+    const officeIcon = $(this).children();
     if(officeBlock.is(':hidden')) {
     officeBlock.slideDown('slow');
-      $('.office-icon').css('transform', 'rotate(180deg)');
+      officeIcon.css('transform', 'rotate(180deg)');
     } else {
       officeBlock.hide('slow');
-      $('.office-icon').css('transform', '');
+      officeIcon.css('transform', '');
     }
   })
 
@@ -126,7 +126,7 @@ var mySwiper = new Swiper('.swiper-container', {
   
   var login = $('#login');
   var cabinet = $('#cabinet');
-  var prevBtn = $('#prev');
+  var prevBtn = $('#prevarrow');
 
   cabinet.on('click', function() {
     login.css('opacity', '1');
@@ -252,16 +252,16 @@ $('#cardNumber').on('keyup', function(e){
     
   // });
 
-  $(".cabinet-item__list").on("click", function () {
-    $(this)
-        .addClass("active")
-        .siblings()
-        .removeClass("active")
-        .closest(".cabinet-block")
-        .find(".tab_wrapper")
-        .removeClass("active")
-        .eq($(this).index())
-        .addClass("active");
+$(".cabinet-item__list").on("click", function () {
+  $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active")
+      .closest(".cabinet-block")
+      .find(".tab_wrapper")
+      .removeClass("active")
+      .eq($(this).index())
+      .addClass("active");
 });
 
 
