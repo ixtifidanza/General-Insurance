@@ -7,16 +7,29 @@
         padding-bottom: 60px;
         padding-left: 20px;
         padding-right: 20px;
-
+        
         &__item {
-            background-image: url(../img/product-img-1.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            position: relative;
             height: 200px;
             width: 530px;
             margin-top: 41px;
-
-            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+    
+            &-img {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                height: 100%;
+                background-image: url(../img/product-img-1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: all .5s linear;
+            }
         }
 
         &__link {
@@ -26,6 +39,16 @@
             font-weight: bold;
             font-size: 30px;
             padding: 81px 0;
+        }
+    }
+    &__box{
+        &:hover {
+            .product-block__item{
+                overflow: visible;
+            }
+            .product-block__item-img{
+                transform: scale(1.1);
+            }
         }
     }
 }

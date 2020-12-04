@@ -107,16 +107,14 @@ var mySwiper = new Swiper('.swiper-container', {
     menu.css('transform', 'translateX(0)');
     body .css('overflow', 'hidden');
     announPage.css('position', 'static');
-    backgroundColor.css('opacity', '1');
-    backgroundColor.css('z-index', '9');
+    backgroundColor.addClass('open');
 
     announ.css('z-index', '-1')
   });
   
   close.on('click', function() {
     menu.css('transform', 'translateX(100%)');
-    backgroundColor.css('opacity', '');
-    backgroundColor.css('z-index', '-1');
+    backgroundColor.removeClass('open');
     announPage.css('position', '');
     body .css('overflow', '')
     announ.css('z-index', '9');
@@ -160,23 +158,21 @@ var mySwiper = new Swiper('.swiper-container', {
 var modalBtn = $('.modalBtn');
 var modalClose = $('.modal-close__icon');
 
-modalBtn.on('click', function(e) {
-    e.preventDefault();
+$('.product__box').on('click', function(e) {
+  e.preventDefault();
   var modal = $(this).next();
-  modal.css('z-index', '9');
-  modal.css('opacity', '1');
-  backgroundColor.css('opacity', '1');
-  backgroundColor.css('z-index', '9');
-  body.css('overflow', 'hidden');
+  modal.addClass('open');
+  backgroundColor.addClass('open');
+  $('.product-block__item').css('overflow', 'visible')
 });
 
 modalClose.on('click', function(e) {
-    e.preventDefault();
+  e.preventDefault();
   var modal = $(this).parent();
-  modal.css('z-index', '-1');
-  modal.css('opacity', '');
-  backgroundColor.css('opacity', '');
-  backgroundColor.css('z-index', '-1');
+  modal.removeClass('open');
+  console.log(modal);
+  backgroundColor.removeClass('open');
+  $('.product-block__item').css('overflow', 'hidden')
   body.css('overflow', '');
 });
 
@@ -191,8 +187,7 @@ payBtn.on('click', function(e) {
   e.preventDefault();
   modalPay.css('z-index', '9');
   modalPay.css('opacity', '1');
-  backgroundColor.css('opacity', '1');
-  backgroundColor.css('z-index', '9');
+  backgroundColor.addClass('open');
   body.css('overflow', 'hidden');
 });
 
@@ -200,20 +195,8 @@ modalClose.on('click', function(e) {
   e.preventDefault(); 
   modalPay.css('z-index', '-1');
   modalPay.css('opacity', '');
-
-  backgroundColor.css('opacity', '');
-  backgroundColor.css('z-index', '-1');
+  backgroundColor.removeClass('open');
 });
-
-// backgroundColor.on("click", function(e){
-//   e.preventDefault();
-//   modalPay.css('z-index', '-1');
-//   modalPay.css('opacity', '');
-
-//   backgroundColor.css('opacity', '');
-//   backgroundColor.css('z-index', '-1');
-// })
-
 
 
 
