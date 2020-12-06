@@ -1,6 +1,6 @@
 .nav {
     box-shadow: 0 0 10px rgba(0,0,0, .35);
-    padding: 5px 0;
+    padding: 0;
     &--about {
         box-shadow: none;
     }
@@ -96,11 +96,11 @@
             }
         }
         &--lang {
-            margin: 0 34px;
+            margin: 0 10px;
         }
     }
     &__logo a img{
-        width: 170px;
+        width: 150px;
         @media (max-width: 768px) {
             height: 50px;
             margin-right: 40px;

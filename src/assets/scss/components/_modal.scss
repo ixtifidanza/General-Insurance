@@ -1,6 +1,6 @@
 .modal {
     width: 496px;
-    height: 359px;
+    // height: 359px;
 
     background-color: #fff; 
 
@@ -14,6 +14,19 @@
     opacity: 0;
     transform: translateZ(100px);
     transition: all .5s linear;
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        // padding: 0;
+    }
+    &__title {
+        @media (max-width: 768px) {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 25px;
+        }
+    }
   
     &.open{
         opacity: 1;
@@ -26,6 +39,9 @@
             right: 0;
             bottom: -50px;
             z-index: 9;
+            @media (max-width: 768px) {
+                    display: none;    
+            }
         }
     }
     &--calmodal2 {
@@ -41,6 +57,12 @@
 
     &__group {
         padding-left: 79px;
+        @media (max-width: 768px) {
+            padding-left: 0;
+            padding-bottom: 35px;
+            padding-top: 15px;
+            font-size: 15px;
+        }
     
     }
 

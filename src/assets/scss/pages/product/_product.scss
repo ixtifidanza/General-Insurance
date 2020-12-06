@@ -1,4 +1,9 @@
 .product {
+    &__title {
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
     &-block {
         display: flex;
         justify-content: space-between;
@@ -8,6 +13,7 @@
         padding-left: 20px;
         padding-right: 20px;
         
+        
         &__item {
             position: relative;
             height: 200px;
@@ -15,7 +21,7 @@
             margin-top: 41px;
             overflow: hidden;
             cursor: pointer;
-    
+            
             &-img {
                 width: 100%;
                 position: absolute;
@@ -29,6 +35,10 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 transition: all .5s linear;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    flex-direction: column;
+                }
             }
         }
 
@@ -39,6 +49,10 @@
             font-weight: bold;
             font-size: 30px;
             padding: 81px 0;
+            @media (max-width: 768px) {
+                font-size: 25px;
+                text-align: center;
+            }
         }
     }
     &__box{

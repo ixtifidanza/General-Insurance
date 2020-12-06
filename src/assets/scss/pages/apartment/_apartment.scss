@@ -15,6 +15,10 @@
             padding-top: 100px;
             margin: 0 auto;
             margin-bottom: 15px;
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
             h2{
                 margin-bottom: 0;
             }   
@@ -41,9 +45,20 @@
     }
     &-block {
         background-color: #f5f5f5;
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
         &__item {
             display: flex;
             justify-content: center;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
         }
         &__btn {
             background: none;
@@ -55,8 +70,16 @@
             text-align: center;
             width: 477px;
             box-shadow: none;
+            @media (max-width: 768px) {
+                width: 100%;
+                margin: 15px 0;
+                font-size: 17px;
+            }
             &:first-child {
                 margin-right: 32px;
+              
+
+
             }
             &:hover {
                 background-color: #0ABE3D;
@@ -70,16 +93,36 @@
         padding-left: 35px;
         font-size: 18px;
         margin: 0;
+      
+
     }
     
         &-content {
             margin: 0 34px;
+            @media (max-width: 768px) {
+                width: 100%;
+                margin: 15px 0;
+            }
+
             &__title {
                 font-size: 20px;
                 margin-top: 0;
+                @media (max-width: 768px) {
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+
             }
             p {
                 font-size: 18px;
+                @media (max-width: 768px) {
+                    text-align: center;
+
+                    line-height: 1.5;
+                    font-size: 20px;
+
+                }
             }
     
         }
@@ -87,8 +130,20 @@
         &-download {
             text-align: center;
             padding: 50px 0 50px;
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                :last-child {
+                    margin-top: 25px;
+                }
+            }
             &__btn {
                 text-decoration: none;
+                @media (max-width: 768px) {
+                    margin: 0;
+                }
+
                 &--list {
                     background-color: #fff;
                     border: 1px solid #000;
@@ -104,6 +159,12 @@
                         box-shadow: 9px 14px 19px 0px rgba(120,255,44,0.26);
                     }
                 }
+            }
+        }
+
+        &-passport {
+            @media (max-width: 768px) {
+                margin-top: 20px;
             }
         }
 }
