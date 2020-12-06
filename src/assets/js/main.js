@@ -210,11 +210,6 @@ $('#cardNumber').on('keyup', function(e){
   }
   $(this).val(newval);
 });
-
-
-
- 
-
   var prev = $('#prev');
   var next = $('#next');
 
@@ -245,6 +240,15 @@ $(".cabinet-item__list").on("click", function () {
       .removeClass("active")
       .eq($(this).index())
       .addClass("active");
+});
+
+// menu Toggle 
+var menuToggle = $('.menu__name');
+var menuList = $('.menu__item');
+
+menuToggle.on('click', function () {
+menuList.slideToggle('slow');
+
 });
 
 

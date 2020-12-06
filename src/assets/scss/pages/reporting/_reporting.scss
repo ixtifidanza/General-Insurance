@@ -12,10 +12,11 @@
     &-block {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         justify-content: center;
+        margin-top: 50px;
         @media (max-width: 768px) {
             width: 100%;
+            flex-direction: column;
         }
     }
     &-item {
