@@ -1720,6 +1720,10 @@ h6 {
     transition: all .5s linear;
 }
 
+.modal__title {
+    margin-bottom: 40px;
+}
+
 .modal.open {
     opacity: 1;
     z-index: 9;
@@ -1746,8 +1750,13 @@ h6 {
     opacity: 0;
 }
 
+.modal-title {
+    margin: 40px 0 10px;
+}
+
 .modal__group {
     padding-left: 79px;
+    padding-bottom: 45px;
 }
 
 .modal-link {
@@ -1807,6 +1816,7 @@ h6 {
     display: block;
     font-size: 18px;
     padding-bottom: 3px;
+    margin-left: 0;
 }
 
 .modal__card input {
@@ -1888,7 +1898,7 @@ label > span {
 }
 
 .range {
-    width: 50vw;
+    width: 100vw;
     min-width: 200px;
 }
 
@@ -3857,6 +3867,10 @@ input[type="checkbox"]:checked + label:after {
     padding-bottom: 30px;
 }
 
+.policyholder-form__group.padding-0 {
+    padding-top: 0;
+}
+
 .policyholder-form__group--price {
     padding-bottom: 0 !important;
 }
@@ -4190,6 +4204,10 @@ input[type="checkbox"]:checked + label:after {
         padding-bottom: 35px;
         padding-top: 15px;
         font-size: 15px;
+    }
+
+    .range {
+        width: 100%;
     }
 
     .register {
@@ -4676,15 +4694,17 @@ input[type="checkbox"]:checked + label:after {
 
     .calculator-step {
         width: 100%;
+        height: 100px;
     }
 
     .calculator-step img {
-        width: 90%;
+        width: 88%;
     }
 
     .calculator-step__text {
         width: 100%;
-        font-size: 15px;
+        font-size: 13px;
+        text-align: center;
     }
 
     .calculator-item__title {
@@ -4699,14 +4719,12 @@ input[type="checkbox"]:checked + label:after {
     .calculator-item__text {
         margin-left: 0;
         text-align: center;
+        margin-top: 10px;
     }
 
     .calculator-item__step {
-        width: 100%;
-    }
-
-    .range {
-        width: 100%;
+        width: 92%;
+        height: 100px;
     }
 
     .decor {
@@ -4729,6 +4747,14 @@ input[type="checkbox"]:checked + label:after {
         margin-bottom: 0;
     }
 
+    .policyholder {
+        width: 100%;
+        padding: 0;
+        padding-top: 28px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+
     .policyholder--cal {
         width: 100%;
     }
@@ -4736,6 +4762,13 @@ input[type="checkbox"]:checked + label:after {
     .policyholder-form__group.padding-0 {
         padding-top: 0px !important;
         width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .policyholder-form__text {
@@ -4750,8 +4783,24 @@ input[type="checkbox"]:checked + label:after {
         margin-left: 0;
     }
 
+    .policyholder-form__btn {
+        margin-left: 0;
+    }
+
     .policyholder-form__block {
         display: block;
         width: 100%;
+    }
+
+    .policyholder-input input {
+        margin-top: 25px;
+    }
+
+    .policyholder-input--long input {
+        width: 100%;
+    }
+
+    .policyholder-input__checkbox input {
+        width: 50px;
     }
 }

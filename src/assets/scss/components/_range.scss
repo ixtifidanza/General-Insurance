@@ -29,8 +29,11 @@ label {
 }
 
 .range {
-    width: 50vw;
+    width: 100vw;
     min-width: 200px;
+    @media (max-width: 769px) {
+        width: 100%;
+    }
 }
 
 ////////////////////////
