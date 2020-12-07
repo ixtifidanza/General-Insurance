@@ -2,7 +2,7 @@
 
 let fs = require('fs');
 
-const {src, dest} = require("gulp");
+const { src, dest } = require("gulp");
 const gulp = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
 const cssbeautify = require("gulp-cssbeautify");
@@ -68,112 +68,112 @@ function browserSyncReload(done) {
 
 function html() {
     return src(path.src.html, { base: "src/" })
-        .pipe( plumber() )
-        .pipe( dest(path.build.html) )
-        .pipe( browsersync.stream() );
+        .pipe(plumber())
+        .pipe(dest(path.build.html))
+        .pipe(browsersync.stream());
 }
 
 function css() {
     return src(path.src.css, { base: "src/assets/scss/" })
-        .pipe( plumber() )
-        .pipe( sass() )
-        .pipe( group_media() )
-        .pipe( autoprefixer({
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(group_media())
+        .pipe(autoprefixer({
             overrideBrowserslist: ['last 8 versions'],
             cascade: true
         }))
-        .pipe( cssbeautify() )
-        .pipe( dest(path.build.css) )
-        .pipe( cssnano({
+        .pipe(cssbeautify())
+        .pipe(dest(path.build.css))
+        .pipe(cssnano({
             zindex: false,
             discardComments: {
                 removeAll: true
             }
         }))
-        .pipe( removeComments() )
-        .pipe( rename({
+        .pipe(removeComments())
+        .pipe(rename({
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe( dest(path.build.css) )
-        .pipe( browsersync.stream() );
+        .pipe(dest(path.build.css))
+        .pipe(browsersync.stream());
 }
 
 function libsCss() {
     return gulp.src([ //указываем, где брать исходники
-        'node_modules/normalize.css/normalize.css',
-        'node_modules/swiper/swiper-bundle.min.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css',
-        // 'node_modules/blueimp-file-upload/css/jquery.fileupload.css',
-        // 'node_modules/flexboxgrid2/flexboxgrid2.css',
-        // 'node_modules/pagepiling.js/dist/jquery.pagepiling.css',
-        // 'node_modules/bootstrap/dist/css/bootstrap.min.css',
-        // 'node_modules/font-awesome/css/font-awesome.css',
-        // 'node_modules/wowjs/css/libs/animate.css',
-        // 'node_modules/animate.css/animate.css',
-        // 'node_modules/slick-carousel/slick/slick.css',
-        // 'node_modules/slick-carousel/slick/slick-theme.css'
-    ])
-    .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
-    .pipe(
-        cssnano({
-        zindex: false,
-        discardComments: {
-            removeAll: true
-        }
-    })
-    )
-    .pipe(removeComments())
-    .pipe(gulp.dest(path.build.css))
+            'node_modules/normalize.css/normalize.css',
+            'node_modules/swiper/swiper-bundle.min.css',
+            'node_modules/magnific-popup/dist/magnific-popup.css',
+            // 'node_modules/blueimp-file-upload/css/jquery.fileupload.css',
+            // 'node_modules/flexboxgrid2/flexboxgrid2.css',
+            // 'node_modules/pagepiling.js/dist/jquery.pagepiling.css',
+            // 'node_modules/bootstrap/dist/css/bootstrap.min.css',
+            // 'node_modules/font-awesome/css/font-awesome.css',
+            // 'node_modules/wowjs/css/libs/animate.css',
+            // 'node_modules/animate.css/animate.css',
+            // 'node_modules/slick-carousel/slick/slick.css',
+            // 'node_modules/slick-carousel/slick/slick-theme.css'
+        ])
+        .pipe(concat('libs.min.css')) //склеиваем их в один файл с указанным именем
+        .pipe(
+            cssnano({
+                zindex: false,
+                discardComments: {
+                    removeAll: true
+                }
+            })
+        )
+        .pipe(removeComments())
+        .pipe(gulp.dest(path.build.css))
 }
 
 function js() {
     return src(path.src.js, { base: "./src/assets/js/" })
-        .pipe( plumber() )
-        .pipe( include() )
-        .pipe( gulp.dest(path.build.js) )
-        .pipe( uglify() )
-        .pipe( rename({
+        .pipe(plumber())
+        .pipe(include())
+        .pipe(gulp.dest(path.build.js))
+        .pipe(uglify())
+        .pipe(rename({
             suffix: ".min",
             extname: ".js"
         }))
-        .pipe( dest(path.build.js) )
-        .pipe( browsersync.stream() );
+        .pipe(dest(path.build.js))
+        .pipe(browsersync.stream());
 }
 
 function libsJs() {
     return gulp.src([ //тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/swiper/swiper-bundle.min.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-        'node_modules/siema/dist/siema.min.js',
-        'src/assets/js/components/image-uploader.min.js',
-        'node_modules/jrange/release/jrange.min.js',
-        // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-        // 'node_modules/selectric/public/jquery.selectric.js',
-        // 'node_modules/slick-carousel/slick/slick.js',
-        // 'node_modules/bootstrap/dist/js/bootstrap.min.js',
-        // 'src/js/pageScrollToId.js'
-        // 'src/js/jquery.resizeOnApproach.1.0.min.js',
-        // 'node_modules/isotope-layout/dist/isotope.pkgd.js',
-        // 'node_modules/onepage-scroll-jquery/jquery.onepage-scroll.js',
-    ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(path.build.js))
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/swiper/swiper-bundle.min.js',
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+            'node_modules/siema/dist/siema.min.js',
+            'src/assets/js/components/image-uploader.min.js',
+            'src/assets/js/components/range.js',
+            // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+            // 'node_modules/selectric/public/jquery.selectric.js',
+            // 'node_modules/slick-carousel/slick/slick.js',
+            // 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+            // 'src/js/pageScrollToId.js'
+            // 'src/js/jquery.resizeOnApproach.1.0.min.js',
+            // 'node_modules/isotope-layout/dist/isotope.pkgd.js',
+            // 'node_modules/onepage-scroll-jquery/jquery.onepage-scroll.js',
+        ])
+        .pipe(concat('libs.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(path.build.js))
 }
 
 function images() {
     return src(path.src.images)
-        .pipe( imagemin({
+        .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{
                 removeViewBox: false
             }],
             interlaced: true,
             optimizationLevel: 3 // 0 to 7
-        }) )
-        .pipe( dest(path.build.images) );
+        }))
+        .pipe(dest(path.build.images));
 }
 
 function clean() {
@@ -193,7 +193,7 @@ function fontsStyle(params) {
     let file_content = fs.readFileSync('src/assets/scss/fonts.scss');
     if (file_content == '') {
         fs.writeFile('src/assets/scss/fonts.scss', '', cb);
-        return fs.readdir(path.build.fonts, function (err, items) {
+        return fs.readdir(path.build.fonts, function(err, items) {
             if (items) {
                 let c_fontname;
                 for (var i = 0; i < items.length; i++) {
@@ -221,7 +221,7 @@ function watchFiles() {
     gulp.watch([path.watch.images], images);
 }
 
-const build = gulp.series( clean, gulp.parallel(html, css, js, images, libsCss, libsJs, fonts), fontsStyle );
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, libsCss, libsJs, fonts), fontsStyle);
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 

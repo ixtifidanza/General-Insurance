@@ -13,11 +13,9 @@
         font-size: 22px;
         color: #221F39;
     }
-
     &-subtitle {
         font-size: 16px;
     }
-
     &-block {
         &__item {
             display: flex;
@@ -25,13 +23,12 @@
             align-items: center;
         }
     }
-
     &-form {
         &__group {
             display: flex;
             position: relative;
             justify-content: space-between;
-            padding-top: 50px;
+            padding-top: 100px;
             padding-bottom: 30px;
             &--price {
                 padding-bottom: 0 !important;
@@ -57,21 +54,18 @@
             text-align: center;
             width: 203px;
             margin: 0;
-            text-decoration: none ;
+            text-decoration: none;
             margin-left: 50px;
         }
-
         &__block {
             display: flex;
             justify-content: space-between;
             width: 710px;
         }
-
         &__check {
             padding: 15px 0;
             font-size: 18px;
         }
-
         &__oferta {
             text-align: center;
             font-size: 12px;
@@ -80,10 +74,7 @@
                 color: #0ABE3D;
             }
         }
-
-        
     }
-
     &-input {
         input {
             padding-left: 5px;
@@ -93,10 +84,8 @@
             outline: none;
             border-bottom: 2px solid #000;
             transition: border .3s linear;
-
             &:focus {
                 border-bottom: 2px solid #0ABE3D;
-
             }
         }
         &--long {
@@ -117,6 +106,5 @@
                 margin-left: 10px;
             }
         }
-
     }
 }

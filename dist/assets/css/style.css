@@ -1850,6 +1850,280 @@ h6 {
     margin-left: 10px;
 }
 
+.controller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+    border-bottom: 1px solid #DDD;
+    padding: 2em 0;
+}
+
+.controller .range {
+    width: 100%;
+    min-width: 100px;
+}
+
+.controller label {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.controller label:not(:last-child) {
+    padding-right: 1em;
+}
+
+.controller label > span {
+    display: block;
+    margin-bottom: 1em;
+}
+
+label > xmp {
+    text-align: center;
+}
+
+label > span {
+    margin-left: 1em;
+}
+
+.range {
+    width: 50vw;
+    min-width: 200px;
+}
+
+.range {
+    --primaryColor: #0366D6;
+    --value-active-color: white;
+    --value-background: white;
+    --value-font: 700 18px/1;
+    --progress-color: #EEE;
+    --progress-shadow: 2px 2px 4px rgba(0, 0, 0, .1) inset;
+    --fill-color: var(--primaryColor);
+    --thumb-size: 16px;
+    --track-height: calc(var(--thumb-size)/2);
+    --thumb-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    --ticks-thickness: 1px;
+    --ticks-height: 5px;
+    --ticks-color: silver;
+    --step: 1;
+    --ticks-count: (var(--max) - var(--min)) / var(--step);
+    --maxTicksAllowed: 30;
+    --too-many-ticks: Min(1, Max(var(--ticks-count) - var(--maxTicksAllowed), 0));
+    --x-step: Max( var(--step), var(--too-many-ticks) * (var(--max) - var(--min)));
+    --tickInterval: 100/((var(--max) - var(--min)) / var(--step)) * var(--tickEvery, 1);
+    --tickIntervalPerc: calc((100% - var(--thumb-size))/( (var(--max) - var(--min)) / var(--x-step)) * var(--tickEvery, 1));
+    --completed: calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 100);
+    display: inline-block;
+    height: Max(var(--track-height), var(--thumb-size));
+    background: -o-linear-gradient(left, var(--ticks-color) var(--ticks-thickness), transparent 1px) repeat-x;
+    background: linear-gradient(to right, var(--ticks-color) var(--ticks-thickness), transparent 1px) repeat-x;
+    background-size: var(--tickIntervalPerc) var(--ticks-height);
+    background-position-x: calc(var(--thumb-size)/2);
+    background-position-y: var(--flip-y, bottom);
+    position: relative;
+    z-index: 1;
+    padding-bottom: var(--flip-y, var(--ticks-height));
+    padding-top: calc(var(--flip-y) * var(--ticks-height));
+}
+
+.range[data-ticks-position='top'] {
+    --flip-y: 1;
+}
+
+.range::before,
+.range::after {
+    --offset: calc(var(--thumb-size)/2);
+    content: counter(x);
+    display: var(--show-min-max, block);
+    font: 12px Arial;
+    position: absolute;
+    bottom: var(--flip-y, -2.5ch);
+    top: calc(-2.5ch * var(--flip-y));
+    opacity: var(--min-max-opacity, 0.5);
+    pointer-events: none;
+}
+
+.range::before {
+    counter-reset: x var(--min);
+    left: var(--offset);
+}
+
+[dir='rtl'] .range::before {
+    left: auto;
+    right: var(--offset);
+}
+
+.range::after {
+    counter-reset: x var(--max);
+    right: var(--offset);
+}
+
+.range__progress {
+    position: absolute;
+    left: 0;
+    top: calc(50% - var(--ticks-height)/2);
+    -webkit-transform: var(--flip-y, translateY(-50%) translateZ(0));
+    transform: var(--flip-y, translateY(-50%) translateZ(0));
+    width: 100%;
+    height: calc(var(--track-height));
+    pointer-events: none;
+    z-index: -1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.range__progress::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    background: #80F1B1;
+    -webkit-box-shadow: var(--progress-shadow);
+    box-shadow: var(--progress-shadow);
+    z-index: -1;
+}
+
+.range__progress::after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: -1px;
+    width: calc(100% - var(--completed) * 1% + (var(--completed)/100) * var(--thumb-size)/2);
+    height: 100%;
+    background: var(--progress-color, #EEE);
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+
+.range > input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: var(--thumb-size);
+    position: absolute;
+    top: calc(50% - var(--thumb-size)/2);
+    margin-top: var(--flip-y, calc(var(--ticks-height)/-2));
+    cursor: -webkit-grab;
+    cursor: grab;
+    outline: none;
+    background: none;
+}
+
+.range > input::-webkit-slider-thumb {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0px solid #fff;
+    height: 50px;
+    width: 40px;
+    background: url(../img/cal-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.range > input::-moz-slider-thumb {
+    box-shadow: none;
+    border: 0px solid #fff;
+    height: 50px;
+    width: 40px;
+    background: url(../img/cal-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.range > input::-ms-thumb {
+    box-shadow: none;
+    border: 0px solid #fff;
+    height: 50px;
+    width: 40px;
+    background: url(../img/cal-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.range > input:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    --inner-shadow: 0 0 0 calc(var(--thumb-size)/4) inset white;
+}
+
+.range > input:active + output {
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+}
+
+.range > output {
+    --pos: calc(((var(--value) - var(--min))/(var(--max) - var(--min))) * 80%);
+    pointer-events: none;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+    top: -10ch;
+    left: var(--pos);
+    -webkit-transition: all .12s ease-out, left 0s, top 0s;
+    -o-transition: all .12s ease-out, left 0s, top 0s;
+    transition: all .12s ease-out, left 0s, top 0s;
+    position: absolute;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    display: block;
+    width: 130px;
+    height: 49px;
+    background: transparent;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 20px;
+    left: attr(value);
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.range > output::after {
+    content: "$";
+    display: block;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+[dir='rtl'] .range > output {
+    left: auto;
+    right: var(--pos);
+}
+
+.range > output::before {
+    content: var(--text-value);
+    font: var(--value-font);
+}
+
 .register {
     position: absolute;
     top: 0;
@@ -3579,7 +3853,7 @@ input[type="checkbox"]:checked + label:after {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 30px;
 }
 
