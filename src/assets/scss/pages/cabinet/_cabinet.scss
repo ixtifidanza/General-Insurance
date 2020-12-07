@@ -4,7 +4,7 @@
         font-size: 30px;
         font-weight: bold;
         margin: 34px 0 40px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             font-size: 20px;
         }
     }
@@ -14,7 +14,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 29px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
                 display: block;
             }
     }
@@ -69,7 +69,7 @@
                 border: 1px solid #fff;
                 box-shadow: 5px 5px 8px 5px #CEEDDC;
             }
-                    @media (max-width: 768px) { 
+                    @media (max-width: 769px) { 
                        width: 100%;
                     }
         }
@@ -81,7 +81,7 @@
 
     &-sidebar {
         margin-left: 30px;
-        @media (max-width: 768px) { 
+        @media (max-width: 769px) { 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -98,7 +98,7 @@
         background-color: #F7F9FC;
         border-radius: 4px;
         box-shadow: 5px 7px 10px -9px rgba(0,0,0,0.59);
-        @media (max-width: 768px) { 
+        @media (max-width: 769px) { 
             width: 100%;
             padding: 25px 0;
             margin-left: 0;
@@ -113,7 +113,7 @@
             font-size: 22px;
             font-weight: 400;
             color: #221F39;
-            @media (max-width: 768px) { 
+            @media (max-width: 769px) { 
                 font-size: 18px;
             }
         }
@@ -125,7 +125,7 @@
         &__group {
             display: flex;
             justify-content: space-between;
-            @media (max-width: 768px) { 
+            @media (max-width: 769px) { 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -149,7 +149,7 @@
         &__medium-input {
             width: 330px;
             font-size: 16px;
-            @media (max-width: 768px) { 
+            @media (max-width: 769px) { 
                 width: 100%;
             }
         }
@@ -157,7 +157,7 @@
         &__full-input {
             width: 702px;
             font-size: 16px;
-            @media (max-width: 768px) { 
+            @media (max-width: 769px) { 
                 width: 100%;
             }
 
@@ -166,7 +166,7 @@
         &__bottom-input {
             width: 210px;
             font-size: 16px;
-            @media (max-width: 768px) { 
+            @media (max-width: 769px) { 
                 width: 100%;
             }
         }
@@ -214,7 +214,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 display: flex;
                 flex-direction: column;
                 align-items:   center;
@@ -270,7 +270,7 @@
     margin-top: 10px;
     margin-left: 100px;
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         overflow-x: scroll;
         margin-left: 0;
     }

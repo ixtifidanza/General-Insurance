@@ -1,6 +1,6 @@
 .manual {
     &__img img {
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
           width: 100%;
         }
     }
@@ -11,7 +11,7 @@
         &:first-child {
             padding: 0;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -19,7 +19,7 @@
     }
     &-content {
         margin-left: 50px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             margin-left: 0;
             width: 100%;
         }
@@ -45,7 +45,7 @@
         }
         &__day {
             font-size: 20px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             line-height: 1.5;
         }
             span {
@@ -60,7 +60,7 @@
             font-size: 20px;
             margin-top: 31px;
             width: 600px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             flex-wrap: wrap;
             width: 300px;
 
@@ -76,7 +76,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             margin: 15px 0;
         }
             &--tg {

@@ -148,7 +148,7 @@ function libsJs() {
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
             'node_modules/siema/dist/siema.min.js',
             'src/assets/js/components/image-uploader.min.js',
-            'src/assets/js/components/range.js',
+            // 'src/assets/js/components/range.js',
             // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
             // 'node_modules/selectric/public/jquery.selectric.js',
             // 'node_modules/slick-carousel/slick/slick.js',

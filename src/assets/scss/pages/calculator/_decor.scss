@@ -1,6 +1,10 @@
 .decor {
     position: relative;
     overflow: visible;
+    @media (max-width: 769px) {
+        display: block;
+        margin-bottom: 50px;
+    }
    
     display: flex;
     &-calculator {
@@ -18,10 +22,21 @@
         border-radius: 8px;
         margin-left: 30px;
         flex: 1;
+        @media (max-width: 769px) {
+            width: 100%;
+            margin-left: 0;
+            padding-top: 25px;
+        }
+
         &__title {
             margin-top: 29px;
             font-size: 30px;
             text-align: center;
+            @media (max-width: 769px) {
+                font-size: 25px;
+                margin-top: 19px;
+            }
+
         }
         &__block {
             font-size: 18px;
@@ -39,7 +54,6 @@
             }
         }
         &__line {
-
             border: 1px solid #C6C2C2; 
             width: 197px;
             margin: 0 auto;
@@ -60,6 +74,9 @@
             margin-bottom: 28px;
             text-decoration: none;
             width: 203px;
+            @media (max-width: 769px) {
+                margin-bottom: 0;
+            }
         }
     }
 }

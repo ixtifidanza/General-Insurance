@@ -1,7 +1,7 @@
 .list {
     &-block {
         margin-bottom: 50px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -20,7 +20,7 @@
         font-size: 30px;
         color: #221F39;
         margin: 190px 0 300px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             font-size: 15px;
             text-align: center;
             width: 100%;
@@ -34,7 +34,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             flex-direction: column;
            
         }
@@ -42,7 +42,7 @@
             display: flex;
             flex-direction: column;
             font-size: 15px;
-             @media (max-width: 768px) {
+             @media (max-width: 769px) {
                  align-items: center;
                  justify-content: center;
                  flex-wrap: wrap;
@@ -67,7 +67,7 @@
             font-size: 26px;
             font-weight: bold;
             color: #221F39;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 text-align: center;
                 margin-bottom: 15px;
                 font-size: 25px;
@@ -78,7 +78,7 @@
             width: 350px;
             line-height: 2;
             font-size: 14px;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 text-align: center;
                 width: 100%;
                 font-size: 16px;
@@ -89,7 +89,7 @@
             font-size: 40px;
             font-weight: bold;
             color: #221F39;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 text-align: center;
                 font-size: 30px;
                 margin-bottom: 15px;

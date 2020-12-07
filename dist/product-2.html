@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/libs.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>General Insuranse-Товары для юридических лиц</title>
+</head>
+
+<body>
+    <div class="page" id="page">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav__block">
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img src="assets/img/Logo dd.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="nav-search nav-search--white" id="input">
+                        <input type="text" placeholder="найти на сайте">
+                        <div>
+                            <img class="nav-search__icon" src="assets/img/black-icon-search.svg" alt="">
+                        </div>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a class="nav__link nav__link--search black" id="search"
+                                href="#">Поиск</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
+                        <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu black"
+                                href="#">Меню</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="overlay" id="overlay">
+            <div class="menu menu--white">
+                <div id="menu-block" class="menu__block">
+    
+                    <div id="menu__close" class="menu__close">
+                        <a href="#"><img src="assets/img/close-icon.svg" alt=""></a>
+                    </div>
+    
+                    <div class="menu__title">
+                        <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
+                    </div>
+                    <ul class="menu-list">
+                        <div class="menu__name">Компания</div>
+                        <li class="menu__item"> <a class="menu__link" href="about.html">О компании</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="manual.html">Руководство</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
+                      <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
+                    </ul>
+    
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="product-2.html">Продукты для Юр. Лиц</a>
+                        </div>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="product.html">Продукты для Физ. Лиц</a>
+                        </div>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                             <a class="menu-link__product" href="apartment-2.html">Cравнение продуктов</a>
+                        </div>
+                    </ul>
+    
+                    <ul class="menu-list">
+                        <div class="menu__name">Обращение</div>
+                        <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
+                        <li class="menu__item"><a class="menu__link" href="director-3.html">Обращение по страховому случаю</a></li>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">Информационная служба</div>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Объявления</a></li>
+                    </ul>
+    
+                     <ul class="menu-list">
+                            <div class="menu__name">
+                                <a class="menu-link__product" href="office.html">Контакты</a>
+                            </div>
+                        </ul>
+                        <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="login login--white" id="login">
+            <div class="login-box">
+                <div class="login-main">
+                    <a href="#" id="prevarrow" class="login-arrow">
+                        <img src="assets/img/login-arrow.svg" alt="">
+                    </a>
+                    <h4 class="login-title">
+                        Личный кабинет
+                    </h4>
+                </div>
+                <div class="login-form">
+                    <div class="login-form__group">
+                        <label class="login-form__label">
+                            <span class="login-form__text">Логин</span>
+                            <input class="login-form__input" type="email">
+                        </label>
+                    </div>
+
+                    <div class="login-form__group">
+                        <label class="login-form__label">
+                            <span class="login-form__text">Пароль</span>
+                            <input class="login-form__input" type="password">
+                            <img class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="login-form__link">
+                    <a class="login-form__btn" href="cabinet.html">Войти</a>
+                    <a class="login-form__btn login-form__btn--reg" href="#" id="registerBtn">Регистрация</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="product">
+            <div class="container">
+                <h4 class="product__title title">Товары для частных клиентов</h4>
+                <div class="product-block">
+                    <div class="product-block__item">
+                        <div class="product__box">
+                            <div class="product-block__item-img"></div>
+                            <div class="product-block__link">
+                                <a class="modalBtn" href="#">Транспортные средства</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal">
+                            <a href="#" class="modal-close__icon">
+                                <img src="assets/img/modal-close.svg" alt="">
+                            </a>
+                            <h4 class="modal__title title">
+                                Транспортные средства
+                            </h4>
+                            <ul class="modal__group">
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">ОСГОВТС</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">Автострахование</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Комплексное
+                                        автострахование</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">КАСКО</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Страхование
+                                        заложенных <br> транспортных средств
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-block__item" style="background: url(assets/img/product-image-2.jpg) ;">
+                        <div class="product__box">
+                            <div class="product-block__link">
+                                <a class="modalBtn" href="#">Недвижимое имущество</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal">
+                            <a href="#" class="modal-close__icon">
+                                <img src="assets/img/modal-close.svg" alt="">
+                            </a>
+                            <h4 class="modal__title title">
+                                Недвижимое имущество
+                            </h4>
+                            <ul class="modal__group">
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">ОСГОВТС</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">Автострахование</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Комплексное
+                                        автострахование</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">КАСКО</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Страхование
+                                        заложенных <br> транспортных средств
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-block__item" style="background: url(assets/img/product-image-3.jpg) ;">
+                        <div class="product__box">
+                            <div class="product-block__link">
+                                <a class="modalBtn" href="#">Здоровье</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal">
+                            <a href="#" class="modal-close__icon">
+                                <img src="assets/img/modal-close.svg" alt="">
+                            </a>
+                            <h4 class="modal__title title">
+                                Здоровье
+                            </h4>
+                            <ul class="modal__group">
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">ОСГОВТС</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">Автострахование</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Комплексное
+                                        автострахование</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">КАСКО</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Страхование
+                                        заложенных <br> транспортных средств
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-block__item" style="background: url(assets/img/product-image-4.jpg) ;">
+                        <div class="product__box">
+                            <div class="product-block__link">
+                                <a class="modalBtn" href="#">Путешествия</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal">
+                            <a href="#" class="modal-close__icon">
+                                <img src="assets/img/modal-close.svg" alt="">
+                            </a>
+                            <h4 class="modal__title title">
+                                Путешествия
+                            </h4>
+                            <ul class="modal__group">
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">ОСГОВТС</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">Автострахование</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Комплексное
+                                        автострахование</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">КАСКО</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Страхование
+                                        заложенных <br> транспортных средств
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-block__item" style="background: url(assets/img/product-image-5.jpg) ;">
+                        <div class="product__box">
+                            <div class="product-block__link">
+                                <a class="modalBtn" href="#">Финансы</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal">
+                            <a href="#" class="modal-close__icon">
+                                <img src="assets/img/modal-close.svg" alt="">
+                            </a>
+                            <h4 class="modal__title title">
+                                Финансы
+                            </h4>
+                            <ul class="modal__group">
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">ОСГОВТС</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">Автострахование</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Комплексное
+                                        автострахование</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">КАСКО</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Страхование
+                                        заложенных <br> транспортных средств
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-block__item" style="background: url(assets/img/product-image-6.jpg) ;">
+                        <div class="product__box">
+                            <div class="product-block__item-img"></div>
+                            <div class="product-block__link">
+                                <a class="modalBtn" href="#">Программа лояльности</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal">
+                            <a href="#" class="modal-close__icon">
+                                <img src="assets/img/modal-close.svg" alt="">
+                            </a>
+                            <h4 class="modal__title title">
+                                Программа лояльности
+                            </h4>
+                            <ul class="modal__group">
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">ОСГОВТС</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link"
+                                        href="calculator.html">Автострахование</a><span>online</span></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Комплексное
+                                        автострахование</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">КАСКО</a></li>
+                                <li class="modal__list"><a class="modal-link" href="calculator.html">Страхование
+                                        заложенных <br> транспортных средств
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__block">
+                    <div class="footer-item">
+        
+                        <div class="footer-item__logo">
+                            <a href="index.html">
+                                <img src="assets/img/Logo dd.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-item__content">
+                            <p class="footer-item__text">
+                                Копирование информации, размещенной <br>
+                                на сайте <a href="mailto:info@ddgi.uz"><strong>info@ddgi.uz</strong></a> (цитирование в СМИ <br>
+                                той или иной информации или <br>
+                                сообщений), разрешается только при <br>
+                                указании источника этой информации.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__title">
+                            <h4>Контакты</h4>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-location-icon.svg" alt="">
+                                </div>
+                                <p class="footer-item__adress">
+                                    Тошкент шаҳар, <br>
+                                    Ташкент улица Навоий дом 27
+                                </p>
+                                
+                            </li>
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-phone-icon.svg" alt="">
+                                </div>
+                                <a href="tel:+998712312002" class="footer-item__link">+99871 231-20-02</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-mail-icon.svg" alt="">
+                                </div>
+                                <a href="mailto:info@ddgi.uz" class="footer-item__link">info@ddgi.uz</a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__title">
+                            <h4>Соц. сети</h4>
+                        </div>
+                        <ul class="footer-list">
+                            
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-instagram-icon.svg" alt="">
+                                </div>
+                                <a class="footer-item__link" href="#">instagram</a>
+                            </li>
+        
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-facebook-icon.svg" alt="">
+                                </div>
+                                <a class="footer-item__link" href="#">facebook</a>
+                            </li>
+        
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    
+                                    <img src="assets/img/footer-telegram-icon.svg" alt="">
+                                </div>
+                                <a class="footer-item__link" href="#">telegram</a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+        
+                </div>
+                
+                <div class="footer-item__copyright">
+                    <span class="footer-item__copy">© Copyright - 2020 by
+                        <a class="footer-item__link" href="https://qwerty.uz//">QWERTY.UZ</a>
+                    </span>
+                        <a class="footer-item__link" href="#">Все услуги лицензированы </a>
+                </div> 
+            </div>
+        </footer>
+
+        <div class="register" id="register">
+            <div class="container">
+                <div class="register-block">
+                    <div class="register-item register-item--logo">
+                        <a href="index.html"><img src="assets/img/Logo dd.png" alt=""></a>
+                    </div>
+                    <div class="register-item">
+                        <h4 class="register-item__title">
+                            Регистрирация в системе
+                        </h4>
+                        <p class="register-item__subtitle">
+                            Немного информации для вашей <br>
+                            учетной записи и вы можете начать!
+                        </p>
+                        <div class="register-item__group">
+                            <label class="register-item__list">Адрес электронной почты<input type="email"></label>
+                            <label class="register-item__list">Пароль
+                                <div class="register-item__password">
+                                    <input type="password">
+                                    <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                                </div>
+                            </label>
+                            <label class="register-item__list">Повторите пароль
+                                <div class="register-item__password">
+                                    <input type="password">
+                                    <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                                </div>
+                            </label>
+                            <label class="register-item__list">Имя<input type="text"></label>
+                            <label class="register-item__list">Фамилия<input type="text"></label>
+                        </div>
+                        <div class="register-item__btn">
+                            <a href="#" id="registerNext">Далее</a>
+                        </div>
+                        <div class="register-item__sign">
+                            <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+                        </div>
+                    </div>
+                    <div class="register-item">
+                        <div class="register__close">
+                            <a href="#" id="registerClose">
+                                <img src="assets/img/registr-close-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="verify" id="register2">
+            <div class="container">
+
+                <div class="verify-block">
+                    <div class="verify-item verify-item--logo">
+                        <a href="index.html">
+                            <img src="assets/img/Logo dd.png" alt="">
+                        </a>
+                    </div>
+                    <div class="verify-item">
+                        <a href="#" id="registerClose2">
+                            <img src="assets/img/registr-close-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+
+                <h4 class="verify__title">Регистрирация в системе</h4>
+                <p class="verify__text">
+                    Введите код который мы вам <br>
+                    отправили по электронной почте, <br>
+                    для авторизации вашего аккаунта.</p>
+
+                <div class="verify-group">
+                    <label class="verify-code">
+                        <span>Код авторизации</span>
+                        <div class="verify-input">
+                            <input type="text" maxlength="4">
+                            <a class="verify-code__link" href="#">Прислать код заного</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="verify-link">
+                    <a class="verify-link__btn" href="cabinet.html">Зарегистрироваться</a>
+                </div>
+
+                <div class="register-item__sign">
+                    <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

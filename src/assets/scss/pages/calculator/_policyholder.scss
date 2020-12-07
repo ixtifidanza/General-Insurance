@@ -7,6 +7,9 @@
     &--cal {
         background-color: #fff;
         padding: 0;
+        @media (max-width: 769px) {
+            width: 100%;
+        }
     }
     &-title {
         margin-bottom: 27px;
@@ -25,6 +28,12 @@
     }
     &-form {
         &__group {
+            &.padding-0{
+                    @media (max-width: 769px) {
+                        padding-top: 0px !important;
+                        width: 100%;
+                    }
+                }
             display: flex;
             position: relative;
             justify-content: space-between;
@@ -38,16 +47,25 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            @media (max-width: 769px) {
+                margin-bottom: 50px;
+            }
         }
         &__price {
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: 22px;
+            @media (max-width: 769px) {
+                display: block;
+            }
             span {
                 margin-left: 25px;
                 font-size: 35px;
                 font-weight: bold;
+                @media (max-width: 769px) {
+                    margin-left: 0;
+                }
             }
         }
         &__btn {
@@ -61,6 +79,10 @@
             display: flex;
             justify-content: space-between;
             width: 710px;
+            @media (max-width: 769px) {
+                display: block;
+                width: 100%;
+            }
         }
         &__check {
             padding: 15px 0;

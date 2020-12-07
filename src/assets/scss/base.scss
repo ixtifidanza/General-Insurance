@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     overflow: visible;
     // padding: 0 15px;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         width: 100%;
         padding: 0 15px;
     }
@@ -43,7 +43,7 @@ body {
     width: 1270px;
     margin: 0 auto;
     padding: 10px 40px;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         width: 100%;
         padding: 10px 25px;
     }
@@ -58,7 +58,7 @@ body {
     font-weight: bold;
     color: #221F39;
     margin: 55px 0 60px;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         font-size: 25px;
     }
 

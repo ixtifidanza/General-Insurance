@@ -60,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             width: 100%;
             justify-content: space-between;
         }
@@ -71,7 +71,7 @@
         align-items: center;
         &-item {
             list-style-type: none;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 display: none;
                 &:last-child{
                     display: flex;
@@ -93,7 +93,7 @@
         &--menu {
             margin-left: 67px;
             padding: 8px 13px ;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 margin: 0;
             }
         }
@@ -103,7 +103,7 @@
     }
     &__logo a img{
         width: 150px;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             height: 50px;
             margin-right: 40px;
         }

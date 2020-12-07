@@ -16,7 +16,7 @@
             margin: 0 auto;
             margin-bottom: 15px;
 
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 font-size: 25px;
             }
             h2{
@@ -45,7 +45,7 @@
     }
     &-block {
         background-color: #f5f5f5;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -55,7 +55,7 @@
         &__item {
             display: flex;
             justify-content: center;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 flex-direction: column;
             }
 
@@ -70,7 +70,7 @@
             text-align: center;
             width: 477px;
             box-shadow: none;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 width: 100%;
                 margin: 15px 0;
                 font-size: 17px;
@@ -94,7 +94,7 @@
     
         &-content {
             margin: 0 34px;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 width: 100%;
                 margin: 15px 0;
             }
@@ -102,7 +102,7 @@
             &__title {
                 font-size: 20px;
                 margin-top: 0;
-                @media (max-width: 768px) {
+                @media (max-width: 769px) {
                     margin-bottom: 10px;
                     text-align: center;
                 }
@@ -111,7 +111,7 @@
             }
             p {
                 font-size: 18px;
-                @media (max-width: 768px) {
+                @media (max-width: 769px) {
                     text-align: center;
 
                     line-height: 1.5;
@@ -125,7 +125,7 @@
         &-download {
             text-align: center;
             padding: 50px 0 50px;
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -135,7 +135,7 @@
             }
             &__btn {
                 text-decoration: none;
-                @media (max-width: 768px) {
+                @media (max-width: 769px) {
                     margin: 0;
                 }
 
@@ -158,7 +158,7 @@
         }
 
         &-passport {
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 margin-top: 20px;
             }
         }

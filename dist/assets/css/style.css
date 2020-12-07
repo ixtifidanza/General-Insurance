@@ -3965,7 +3965,7 @@ input[type="checkbox"]:checked + label:after {
     margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .container {
         width: 100%;
         padding: 0 15px;
@@ -4668,5 +4668,90 @@ input[type="checkbox"]:checked + label:after {
     .director-btn {
         margin-top: 25px;
         margin-bottom: 50px;
+    }
+
+    .calculator-block {
+        width: 100%;
+    }
+
+    .calculator-step {
+        width: 100%;
+    }
+
+    .calculator-step img {
+        width: 90%;
+    }
+
+    .calculator-step__text {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .calculator-item__title {
+        font-size: 25px;
+    }
+
+    .calculator-item__subtitle {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .calculator-item__text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .calculator-item__step {
+        width: 100%;
+    }
+
+    .range {
+        width: 100%;
+    }
+
+    .decor {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .decor-aside {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 25px;
+    }
+
+    .decor-aside__title {
+        font-size: 25px;
+        margin-top: 19px;
+    }
+
+    .decor-aside__btn {
+        margin-bottom: 0;
+    }
+
+    .policyholder--cal {
+        width: 100%;
+    }
+
+    .policyholder-form__group.padding-0 {
+        padding-top: 0px !important;
+        width: 100%;
+    }
+
+    .policyholder-form__text {
+        margin-bottom: 50px;
+    }
+
+    .policyholder-form__price {
+        display: block;
+    }
+
+    .policyholder-form__price span {
+        margin-left: 0;
+    }
+
+    .policyholder-form__block {
+        display: block;
+        width: 100%;
     }
 }
