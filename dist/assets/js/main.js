@@ -120,6 +120,14 @@ var mySwiper = new Swiper('.swiper-container', {
     announ.css('z-index', '9');
   });
 
+  // menu Toggle 
+var menuToggle = $('.menu__name');
+var menuList = $('.menu__item');
+
+menuToggle.on('click', function () {
+$(this).siblings().slideToggle('slow');
+});
+
   // login
   
   var login = $('#login');
@@ -148,8 +156,6 @@ var mySwiper = new Swiper('.swiper-container', {
 
 
   search.on('click', function () {
-    search.css('opacity', '0');
-    search.hide();
     searchInput.css('opacity', '1');
     searchInput.show();
   });
@@ -242,14 +248,7 @@ $(".cabinet-item__list").on("click", function () {
       .addClass("active");
 });
 
-// menu Toggle 
-var menuToggle = $('.menu__name');
-var menuList = $('.menu__item');
 
-menuToggle.on('click', function () {
-menuList.slideToggle('slow');
-
-});
 
 
 

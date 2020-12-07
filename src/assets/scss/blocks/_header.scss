@@ -118,22 +118,19 @@
     &__title {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 87%;
         font-size: 90px;
-        font-weight: bold;
-        line-height: .8;
-        
-
+        font-weight: 900;
+        line-height: .9;
         color: #fff;
+        margin: 0 auto;
 
         &--first {
             display: block;
-            // margin-left: 10%;
         }
         &--second {
             display: block;
             text-align: right;
-            // margin-right: 50%;
         }
     }
 

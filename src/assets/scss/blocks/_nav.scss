@@ -22,7 +22,7 @@
         position: relative;
         input {
             width: 500px;
-            height: 41px;
+            height: 39px;
             
             padding-left: 50px;
             font-size: 20px;
@@ -33,6 +33,7 @@
             
             color: #fff;
             outline: none;
+
         }
 
         &__icon {
@@ -67,6 +68,7 @@
     
     &__list {
         display: flex;
+        align-items: center;
         &-item {
             list-style-type: none;
             @media (max-width: 768px) {
