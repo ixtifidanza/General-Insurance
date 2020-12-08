@@ -1729,10 +1729,16 @@ h6 {
     z-index: 9;
 }
 
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+}
+
 .modal-close__icon {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 35px;
     bottom: -50px;
     z-index: 9;
 }
@@ -1783,12 +1789,6 @@ h6 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.modal-close {
-    position: absolute;
-    top: 24px;
-    right: 20px;
 }
 
 .modal-form {
@@ -4196,7 +4196,29 @@ input[type="checkbox"]:checked + label:after {
     }
 
     .modal-close__icon {
-        display: none;
+        right: 16px;
+        top: 10px;
+    }
+
+    .modal-close__icon.payment {
+        width: 20px;
+        height: 20px;
+        right: 35px;
+    }
+
+    .modal--calmodal2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .modal__group {
@@ -4204,6 +4226,53 @@ input[type="checkbox"]:checked + label:after {
         padding-bottom: 35px;
         padding-top: 15px;
         font-size: 15px;
+    }
+
+    .modal-form {
+        margin: 15px 0;
+    }
+
+    .modal__card span {
+        font-size: 15px;
+        margin-bottom: 6px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .modal__card img {
+        margin-left: 5px;
+    }
+
+    .modal__card input {
+        width: 80%;
+    }
+
+    .modal__card--center input {
+        width: 60%;
+    }
+
+    .modal-price {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+
+    .modal-price__text {
+        margin-bottom: 25px;
+    }
+
+    .modal-price__text span {
+        margin-left: 0;
+        font-size: 30px;
     }
 
     .range {
@@ -4790,6 +4859,11 @@ input[type="checkbox"]:checked + label:after {
     .policyholder-form__block {
         display: block;
         width: 100%;
+    }
+
+    .policyholder-form__oferta {
+        font-size: 15px;
+        margin-top: 25px;
     }
 
     .policyholder-input input {
