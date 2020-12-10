@@ -228,6 +228,7 @@ li {
 .header__bottom {
     position: absolute;
     width: 100%;
+    padding: 0 20px;
     bottom: 35px;
     z-index: 9;
 }
@@ -368,14 +369,18 @@ li {
 .nav--about {
     -webkit-box-shadow: none;
     box-shadow: none;
+    position: absolute;
 }
 
 .nav--apartment {
     -webkit-box-shadow: none;
     box-shadow: none;
+    position: absolute;
 }
 
 .nav--index {
+    width: 100%;
+    padding: 0 20px;
     -webkit-box-shadow: none;
     box-shadow: none;
     position: absolute;
@@ -1648,7 +1653,7 @@ h6 {
 .swiper-container2 {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .swiper-container3 {
@@ -1667,13 +1672,10 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    color: #ccc;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-left: 20px;
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -1702,6 +1704,10 @@ h6 {
     background: rgba(0, 0, 0, 0.35);
     border: 2px solid #fff;
     color: #fff;
+}
+
+.swiper-slide-active {
+    color: #000;
 }
 
 .modal {
@@ -2851,14 +2857,23 @@ label > span {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .about-header__title {
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     color: #fff;
-    margin-top: 121px;
-    margin-bottom: 15px;
+    margin: auto;
 }
 
 .about-header__title h2 {
@@ -2951,19 +2966,23 @@ label > span {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .apartment-header__title {
     text-align: center;
     font-size: 50px;
     color: #fff;
-    padding-top: 100px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
-
-.apartment-header__title h2 {
-    margin-bottom: 0;
+    margin: auto;
 }
 
 .apartment-header__btn {
@@ -2976,6 +2995,7 @@ label > span {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .apartment-header__btn a {

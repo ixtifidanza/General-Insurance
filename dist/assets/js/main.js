@@ -25,10 +25,9 @@ var mySwiper = new Swiper('.swiper-container', {
 
   var swiper2 = new Swiper('.swiper-container2', {
     autoplay: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
+    centeredSlides: true,
+    slidesPerView: 1.5,
     loop: true,
-    // centeredSlides: true,
   });
 
   var swiper3 = new Swiper('.swiper-container3', {

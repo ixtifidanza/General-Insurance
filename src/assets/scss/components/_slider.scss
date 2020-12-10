@@ -11,12 +11,10 @@
         height: 100%;
         overflow: hidden;
     }
-
     &-container2 {
         width: 100%;
         height: 100%;
-        overflow: hidden;
-      
+        overflow: visible;
     }
 
     
@@ -36,9 +34,8 @@
     
     &-slide {
         display: flex;
-        align-items: center;
+        color: #ccc;
         justify-content: center;
-        margin-left: 20px;
         
         position: relative;
         text-align: center;
@@ -81,7 +78,9 @@
         }
     }
 }
-
+.swiper-slide-active {
+    color: #000;
+}
 
 
 
