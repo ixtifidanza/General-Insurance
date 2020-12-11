@@ -227,14 +227,6 @@ $('#cardNumber').on('keyup', function(e){
 
 
 
-  // $('#upload').imageUploader({
-  //   extensions: ['.jpg','.jpeg','.png','.gif','.svg'],
-  //     mimes: ['image/jpeg','image/png','image/gif','image/svg+xml'],
-  //     maxSize: undefined,
-  //     maxFiles: undefined,
-    
-  // });
-
 $(".cabinet-item__list").on("click", function () {
   $(this)
       .addClass("active")
@@ -248,9 +240,44 @@ $(".cabinet-item__list").on("click", function () {
 });
 
 
+var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
+var queue = {};
+var form = $('form#uploadImages');
+var imagesList = $('#uploadImagesList');
+var itemPreviewTemplate = imagesList.find('.popup__item.template');
+itemPreviewTemplate.removeClass('template').clone();
+imagesList.find('.popup__item.template').remove();
 
+$('#addImages').on('change', function(e) {
+    var files = this.files;
+    console.log(files)
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        if (!file.type.match(/image\/(jpeg|jpg|png|gif)/)) {
+            alert('Фотография должна быть в формате jpg, png или gif');
+            continue;
+        }
+        if (file.size > maxFileSize) {
+            alert('Размер фотографии не должен превышать 2 Мб');
+            continue;
+        }
+        preview(files[i]);
+    }
+    this.value = '';
+    $('#uploadImagesList').addClass('hide');
+});
 
-
-
-
+// Создание превью
+function preview(file) {
+  var reader = new FileReader();
+  reader.addEventListener('load', function(event) {
+      var img = document.createElement('img');
+      var itemPreview = itemPreviewTemplate.clone();
+      itemPreview.find('.popup__img-wrap img').attr('src', event.target.result);
+      itemPreview.data('id', file.name);
+      imagesList.append(itemPreview);
+      queue[file.name] = file;
+  });
+  reader.readAsDataURL(file);
+}
 

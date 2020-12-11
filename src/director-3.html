@@ -159,16 +159,21 @@
                     </label>
                 </div>
 
-                <label class="director-item" id="upload">
-                    <span>Фотографии</span>    
-                    <div class="director-item__img" >
-                        <img id="1" src="assets/img/direct-plus-img.png" alt="">
-                        <img id="2" src="assets/img/direct-plus-img.png" alt="">
-                        <img id="3" src="assets/img/direct-plus-img.png" alt="">
-                        <img id="4" src="assets/img/direct-plus-img.png" alt="">
-                    </div>
+                <form enctype="multipart/form-data" id="uploadImages">
+                    <label class="director-item">
+                        <span>Фотографии</span>    
+                        <div class="director-item__img"  id="uploadImagesList">
+                            <li class="popup__item template">
+                                <span class="popup__img-wrap">
+                                    <img class="file__img" src="assets/img/direct-plus-img.png" alt="Image">
+                                </span>
+                            </li>
+                        </div>
+                        <input type="file" id="addImages" multiple="">
+                        <input type="hidden" name="azaza" value="zazaza">
 
-                </label>
+                    </label>
+                </form>
 
                 <label class="director-item">
                     <span>Сообщение</span>    

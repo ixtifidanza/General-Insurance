@@ -3441,6 +3441,11 @@ label > span {
     display: block;
 }
 
+.file__img2 img {
+    height: 150px;
+    width: 150px;
+}
+
 .list-block {
     margin-bottom: 50px;
 }
@@ -3572,12 +3577,14 @@ label > span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .director-form__group {
@@ -3613,6 +3620,19 @@ label > span {
     margin-bottom: 4px;
 }
 
+.director .popup__item {
+    margin-right: 25px;
+}
+
+.director .popup__item:last-child {
+    margin: 0;
+}
+
+.director .file__img {
+    height: 150px;
+    width: 150px;
+}
+
 .director-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3635,6 +3655,10 @@ label > span {
     font-size: 18px;
     text-decoration: none;
     text-align: center;
+}
+
+#addImages {
+    display: none;
 }
 
 .calculator-block {

@@ -48,8 +48,9 @@
         }
         &__img {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
+            flex-wrap: wrap;
             @media (max-width: 769px) {
                 img{
                     width: 50%;
@@ -108,7 +109,16 @@
            
         }
     }
-
+    .popup__item{
+        margin-right: 25px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    .file__img{
+        height: 150px;
+        width: 150px;
+    }
     &-btn {
         display: flex;
         justify-content: center;
@@ -132,4 +142,8 @@
         }
     }
 
+}
+
+#addImages {
+    display: none;
 }
