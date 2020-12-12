@@ -154,10 +154,13 @@ $(this).siblings().slideToggle('slow');
   var searchInput = $('#input');
 
 
-  search.on('click', function () {
-    searchInput.css('opacity', '1');
-    searchInput.show();
-  });
+
+
+  $('#search').click(function(){
+    $(this).toggleClass('border')
+    $('#input').toggleClass('show');
+  })
+
 
 // modal
 var modalBtn = $('.modalBtn');
@@ -281,3 +284,98 @@ function preview(file) {
   reader.readAsDataURL(file);
 }
 
+
+// Calculator
+
+var range1 =$('#range-1');
+var range2 =$('#range-2');
+var range3 =$('#range-3');
+var range4 =$('#range-4');
+
+
+var price1 = $('#price-1');
+var price2 = $('#price-2');
+
+
+var val1 = $ ('#val-1');
+var val2 = $ ('#val-2');
+var val3 = $ ('#val-3');
+var val4 = $ ('#val-4');
+
+var calc = function(){
+  var value1 = range1.val();
+  var value2 = range2.val();
+  var value3 = range3.val();
+  var value4 = range4.val();
+  var price = +value1 + +value2 + +value3 + +value4;
+  console.log(price);
+  val1.html(val1);
+  val2.html(val2);
+  val3.html(val3);
+  val4.html(val4);
+  price1.html(price1);
+  price2.html(price1);
+}
+
+range1.on('click', function(){calc()})
+range2.on('click', function(){calc()})
+range3.on('click', function(){calc()})
+range4.on('click', function(){calc()})
+
+
+
+
+
+
+
+
+
+$("select").on("click" , function() {
+  
+  $(this).parent(".select-box").toggleClass("open");
+  
+});
+
+$(document).mouseup(function (e)
+{
+    var container = $(".select-box");
+
+    if (container.has(e.target).length === 0)
+    {
+        container.removeClass("open");
+    }
+});
+
+
+$("select").on("change" , function() {
+  
+  var selection = $(this).find("option:selected").text(),
+      labelFor = $(this).attr("id"),
+      label = $("[for='" + labelFor + "']");
+    
+  label.find(".label-desc").html(selection);
+    
+});
+
+$('.policyholder-input__checkbox input').on('change', function() {
+  console.log(this.checked);
+  if(this.checked) {
+    $('.form-drop').show()
+  }else{
+    $('.form-drop').hide()
+  }
+})
+
+
+// InputMAsk
+
+$.mask.definitions['9'] = false;
+$.mask.definitions['5'] = "[0-9]";
+
+$("#dateCard").mask("55/55");
+$("#date").mask("55/55/5555");
+$("#datePassport").mask("55/55/5555");
+$("#numberPhone").mask("+998 (55) 555-55-55");
+$("#cardNumber").mask("8600 5555 5555 5555");
+$('#indeksNumber').mask("555555");
+$('#indeksNumber2').mask("555555");

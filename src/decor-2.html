@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <ul class="nav__list">
-                    <div class="nav-search nav-search--white" id="input">
+                    <div class="nav-search nav-search--white black" id="input">
                         <input type="text" placeholder="найти на сайте">
                         <div>
                             <img class="nav-search__icon" src="assets/img/black-icon-search.svg" alt="">
@@ -170,7 +170,7 @@
                             <input type="text" placeholder="Фамилия">
                         </div>
                         <div class="policyholder-input">
-                            <input type="text" placeholder="Дата рождения">
+                            <input type="text" placeholder="Дата рождения" id="date">
                         </div>
                     </div>
                     <div class="policyholder-form__group padding-0">
@@ -178,7 +178,7 @@
                             <input type="text" placeholder="Email">
                         </div>
                         <div class="policyholder-input">
-                            <input type="text" placeholder="Номер телефона">
+                            <input type="text" placeholder="Номер телефона" id="numberPhone">
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,9 @@
                             <input type="text" placeholder="Серия и номер паспорта">
                         </div>
                         <div class="policyholder-input">
-                            <input type="text" placeholder="Дата выдачи">
+                            <input type="text" placeholder="Дата выдачи"
+                            id="datePassport"
+                            >
                         </div>
                     </div>
                     <div class="policyholder-form__group padding-0">
@@ -208,7 +210,9 @@
                     </h4>
                     <div class="policyholder-form__group padding-0">
                         <div class="policyholder-input">
-                            <input type="text" placeholder="Индекс">
+                            <input type="text" placeholder="Индекс"
+                            id="indeksNumber"
+                            >
                         </div>
                         <div class="policyholder-input">
                             <input type="text" placeholder="Область/Город">
@@ -229,6 +233,43 @@
                         <div class="policyholder-input">
                             <input type="text" placeholder="Номер квартиры">
                         </div>
+                    </div>
+                </div>
+                <div class="policyholder">
+                    <h4 class="policyholder-title">
+                        Вводные поля
+                    </h4>
+                    <div class="policyholder-form__group padding-0">
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Номер кадастра"
+                            id="indeksNumber"
+                            >
+                        </div>
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Общ. площадь">
+                        </div>
+                    </div>
+                    <div class="policyholder-form__group padding-0">
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Город имущество">
+                        </div>
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Улица/Квартал">
+                        </div>
+                    </div>
+                    <div class="policyholder-form__group padding-0">
+                        
+
+                        <form class="form-drop2">
+                            <div class="select-box4">
+                                <label for="select-box1" class="label select-box1"><span class="label-desc">Вид имущество </span> </label>
+                                <select id="select-box1" class="select">
+                                    <option value="Choice 1">Дом</option>
+                                    <option value="Choice 2">Квартира</option>
+                                </select>
+                            </div>
+                        </form>
+                        
                     </div>
                 </div>
 
@@ -255,6 +296,8 @@
                             <a id="payBtn" class="policyholder-form__btn btn" href="#">Оплатить полюс</a>
                         </div>
                     </div>
+                </div>
+
             </section>
 
             <aside class="decor-aside">
@@ -323,7 +366,7 @@
                                 Номер карты
                                 <img src="assets/img/uzkard.svg" alt="">
                             </span>
-                            <input id="cardNumber" type="text" maxlength="19" placeholder="8600 6006 1221 3333">
+                            <input id="cardNumber" type="text" id="cardNumber" placeholder="8600 6006 1221 3333">
                         </label>
                     </div>
     
@@ -332,15 +375,15 @@
                             <span>
                                 MM/YY
                             </span>
-                            <input type="text" placeholder="07/24" maxlength="4">
+                            <input type="text" placeholder="07/24" id="dateCard">
                         </label>
     
-                        <label class="modal__card modal__card--center">
+                        <!-- <label class="modal__card modal__card--center">
                             <span>
                                 CVC/CVV
                             </span>
-                            <input type="password" maxlength="4">
-                        </label>
+                            <input type="password" maxlength="3">
+                        </label> -->
                     </div>
     
                     <div class="modal-input__group">
@@ -362,12 +405,11 @@
                         <div class="modal-btn">
                             <a class="policyholder-form__btn btn"  href="cabinet.html">Оплатить полюс</a>
                         </div>
-
                     </div>
-                                <p class="policyholder-form__oferta">
-                                    Нажимая на кнопку "Оплатить полюсь", вы соглашаетесь <br>
-                                    с <span>распоряжением</span> и <span>публичной офертой</span> 
-                                </p>
+                <p class="policyholder-form__oferta">
+                    Нажимая на кнопку "Оплатить полюсь", вы соглашаетесь <br>
+                    с <span>распоряжением</span> и <span>публичной офертой</span> 
+                </p>
     </div>
 
     <footer class="footer">

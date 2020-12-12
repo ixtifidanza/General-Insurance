@@ -146,6 +146,7 @@ function libsJs() {
             'node_modules/swiper/swiper-bundle.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
             'node_modules/siema/dist/siema.min.js',
+            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
             // 'src/assets/js/components/range.js',
             // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
             // 'node_modules/selectric/public/jquery.selectric.js',

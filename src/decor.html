@@ -3,520 +3,588 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>General Insuranse-Калькулятор</title>
+    <title>General Insuranse-Страхование Транспортного средства</title>
 </head>
 
 <body>
-<div class="page" id="page">
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav__block">
-                <div class="nav__logo">
-                    <a href="index.html">
-                        <img src="assets/img/Logo dd.png" alt="Logo">
-                    </a>
-                </div>
-                <ul class="nav__list">
-                    <div class="nav-search nav-search--white" id="input">
-                        <input type="text" placeholder="найти на сайте">
-                        <div>
-                            <img class="nav-search__icon" src="assets/img/black-icon-search.svg" alt="">
+    <div class="page" id="page">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav__block">
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img src="assets/img/Logo dd.png" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="nav__list">
+                        <div class="nav-search nav-search--white black" id="input">
+                            <input type="text" placeholder="найти на сайте">
+                            <div>
+                                <img class="nav-search__icon" src="assets/img/black-icon-search.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <li class="nav__list-item"><a class="nav__link nav__link--search black" id="search" href="#">Поиск</a></li>
-                    <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
-                    <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
-                    <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
-                    <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu black" href="#">Меню</a></li>
-                </ul>
+                        <li class="nav__list-item"><a class="nav__link nav__link--search black" id="search"
+                                href="#">Поиск</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
+                        <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
+                        <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu black"
+                                href="#">Меню</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="overlay" id="overlay">
-        <div class="menu menu--white">
-            <div id="menu-block" class="menu__block">
+        <div class="overlay" id="overlay">
+            <div class="menu menu--white">
+                <div id="menu-block" class="menu__block">
 
-                <div id="menu__close" class="menu__close">
-                    <a href="#"><img src="assets/img/close-icon.svg" alt=""></a>
-                </div>
-
-                <div class="menu__title">
-                    <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
-                </div>
-                <ul class="menu-list">
-                    <div class="menu__name">Компания</div>
-                    <li class="menu__item"> <a class="menu__link" href="about.html">О компании</a></li>
-                    <li class="menu__item"> <a class="menu__link" href="manual.html">Руководство</a></li>
-                    <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
-                    <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
-                </ul>
-
-                <ul class="menu-list">
-                    <div class="menu__name">
-                        <a class="menu-link__product" href="product-2.html">Продукты для Юр. Лиц</a>
+                    <div id="menu__close" class="menu__close">
+                        <a href="#"><img src="assets/img/close-icon.svg" alt=""></a>
                     </div>
-                </ul>
-                <ul class="menu-list">
-                    <div class="menu__name">
-                        <a class="menu-link__product" href="product.html">Продукты для Физ. Лиц</a>
-                    </div>
-                </ul>
-                <ul class="menu-list">
-                    <div class="menu__name">
-                        <a class="menu-link__product" href="apartment-2.html">Cравнение продуктов</a>
-                    </div>
-                </ul>
 
-                <ul class="menu-list">
-                    <div class="menu__name">Обращение</div>
-                    <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
-                    <li class="menu__item"><a class="menu__link" href="director-3.html">Обращение по страховому случаю</a></li>
-                </ul>
-                <ul class="menu-list">
-                    <div class="menu__name">Информационная служба</div>
-                    <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
-                    <li class="menu__item"><a class="menu__link" href="announ.html">Объявления</a></li>
-                </ul>
+                    <div class="menu__title">
+                        <a class="menu__title menu__title--link" href="#" id="cabinet"> Личный кабинет</a>
+                    </div>
+                    <ul class="menu-list">
+                        <div class="menu__name">Компания</div>
+                        <li class="menu__item"> <a class="menu__link" href="about.html">О компании</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="manual.html">Руководство</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
+                    </ul>
 
-                <ul class="menu-list">
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="product-2.html">Продукты для Юр. Лиц</a>
+                        </div>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="product.html">Продукты для Физ. Лиц</a>
+                        </div>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">
+                            <a class="menu-link__product" href="apartment-2.html">Cравнение продуктов</a>
+                        </div>
+                    </ul>
+
+                    <ul class="menu-list">
+                        <div class="menu__name">Обращение</div>
+                        <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
+                        <li class="menu__item"><a class="menu__link" href="director-3.html">Обращение по страховому
+                                случаю</a></li>
+                    </ul>
+                    <ul class="menu-list">
+                        <div class="menu__name">Информационная служба</div>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Объявления</a></li>
+                    </ul>
+
+                    <ul class="menu-list">
                         <div class="menu__name">
                             <a class="menu-link__product" href="office.html">Контакты</a>
                         </div>
                     </ul>
                     <br>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="login login--white" id="login">
-        <div class="login-box">
-            <div class="login-main">
-                <a href="#" id="prevarrow" class="login-arrow">
-                    <img src="assets/img/login-arrow.svg" alt="">
-                </a>
-                <h4 class="login-title">
-                    Личный кабинет
-                </h4>
-            </div>
-            <div class="login-form">
-                <div class="login-form__group">
-                    <label class="login-form__label">
-                        <span class="login-form__text">Логин</span>
-                        <input class="login-form__input" type="email">
-                    </label>
-                </div>
-
-                <div class="login-form__group">
-                    <label class="login-form__label">
-                        <span class="login-form__text">Пароль</span>
-                        <input class="login-form__input" type="password">
-                        <img class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
-                    </label>
-                </div>
-            </div>
-
-            <div class="login-form__link">
-                <a class="login-form__btn" href="cabinet.html">Войти</a>
-                <a class="login-form__btn login-form__btn--reg" href="#" id="registerBtn">Регистрация</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="decor">
-            <section class="decor-calculator">
-
-                <div class="calculator-block">
-
-                    <div class="calculator-item">
-                        <h4 class="calculator-item__title">
-                            Страховой продукт "Квартира"
-                        </h4>
-                        <div class="calculator-item__step">
-                            <div class="calculator-step">
-                                <img src="assets/img/step-2.png" alt="">
-
-                                <div class="calculator-step__text">
-                                    <span>Расчет стоимости</span>
-                                    <span>Оформление полюса</span>
-                                    <span>Оплата и получение</span>
-                                </div>
-                            </div>
-
-                            <div class="calculator-item__subtitle">
-                                <span>Срок действия полюса</span>
-                            </div>
-
-                            <p class="calculator-item__text">Полис действителен 12 месяцев начиная с
-                                <span>19.11.2020</span>
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="policyholder">
-                    <h4 class="policyholder-title">
-                        Страхователь
+        <div class="login login--white" id="login">
+            <div class="login-box">
+                <div class="login-main">
+                    <a href="#" id="prevarrow" class="login-arrow">
+                        <img src="assets/img/login-arrow.svg" alt="">
+                    </a>
+                    <h4 class="login-title">
+                        Личный кабинет
                     </h4>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Имя">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Отчество">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Фамилия">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Дата рождения">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Номер телефона">
-                        </div>
-                    </div>
                 </div>
-
-                <div class="policyholder">
-                    <h4 class="policyholder-title">
-                        Паспортные данные
-                    </h4>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Серия и номер паспорта">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Дата выдачи">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input policyholder-input--long">
-                            <input type="text" placeholder="Кем выдан">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="policyholder">
-                    <h4 class="policyholder-title">
-                        Адрес постоянной регистрации 
-                    </h4>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Индекс">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Область/Город">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Район">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Улица/Квартал">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Номер дома">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Номер квартиры">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="policyholder">
-                    <h4 class="policyholder-title">
-                        Квартира
-                    </h4>
-                        <label class="policyholder-input__checkbox">
-                                            
-                        <input type="checkbox" id="c3" name="cb">
-                        <label for="c3"></label>
-
-                    <p class="policyholder-subtitle">Cовпадает с адресом постоянной регистрации</p>
-                    
+                <div class="login-form">
+                    <div class="login-form__group">
+                        <label class="login-form__label">
+                            <span class="login-form__text">Логин</span>
+                            <input class="login-form__input" type="email">
                         </label>
+                    </div>
 
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Индекс">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Область/Город">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Район">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Улица/Квартал">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__group padding-0">
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Номер дома">
-                        </div>
-                        <div class="policyholder-input">
-                            <input type="text" placeholder="Номер квартиры">
-                        </div>
-                    </div>
-                    <div class="policyholder-form__price">
-                        <div class="policyholder-form__text">
-                            <p>Цена к оплате:
-                                <span>300$</span>
-                            </p>
-                        </div>
-                        <a class="policyholder-form__btn btn" href="decor-2.html">Оплатить полюс</a>
+                    <div class="login-form__group">
+                        <label class="login-form__label">
+                            <span class="login-form__text">Пароль</span>
+                            <input class="login-form__input" type="password">
+                            <img class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
+                        </label>
                     </div>
                 </div>
 
-
-            </section>
-
-            <aside class="decor-aside">
-                <h4 class="decor-aside__title">Страховой продукт <br>
-                    "Квартира"</h4>
-                <div class="decor-aside__line"></div>
-                <ul class="decor-aside__block">
-                    <li class="decor-aside__list">
-                        <p>
-                            Конструктивные элементы:
-                        </p>
-                        <span>3340 $</span>
-                    </li>
-                    <li class="decor-aside__list">
-                        <p>
-                            Отделка и оборудование:
-                        </p>
-                        <span>2000 $</span>
-                    </li>
-                    <li class="decor-aside__list">
-                        <p>
-                            Домашнее имущество:
-                        </p>
-                        <span>1000 $</span>
-                    </li>
-                    <li class="decor-aside__list">
-                        <p>
-                            Ответственность <br>
-                            перед соседями:
-                        </p>
-                        <span>650 $</span>
-                    </li>
-                    <div class="decor-aside__line"></div>
-                    <li class="decor-aside__list">
-                        Полис действует <br>
-                        12 месяцев
-                    </li>
-                    <div class="decor-aside__line"></div>
-                </ul>
-                <div class="decor-aside__price">
-                    <span>300$</span>
+                <div class="login-form__link">
+                    <a class="login-form__btn" href="cabinet.html">Войти</a>
+                    <a class="login-form__btn login-form__btn--reg" href="#" id="registerBtn">Регистрация</a>
                 </div>
-                <a class="decor-aside__btn btn" href="decor-2.html">Оформить полюс</a>
-            </aside> 
+            </div>
         </div>
-    </div>
 
-    <footer class="footer">
         <div class="container">
-            <div class="footer__block">
-                <div class="footer-item">
-    
-                    <div class="footer-item__logo">
+            <div class="decor">
+                <section class="decor-calculator">
+
+                    <div class="calculator-block">
+
+                        <div class="calculator-item">
+                            <h4 class="calculator-item__title">
+                                Страхование Транспортного средства
+                            </h4>
+                            <div class="calculator-item__step">
+                                <div class="calculator-step">
+                                    <img src="assets/img/step-2.png" alt="">
+
+                                    <div class="calculator-step__text">
+                                        <span>Расчет стоимости</span>
+                                        <span>Оформление полюса</span>
+                                        <span>Оплата и получение</span>
+                                    </div>
+                                </div>
+
+                                <div class="calculator-item__subtitle">
+                                    <span>Срок действия полюса</span>
+                                </div>
+
+                                <p class="calculator-item__text">Полис действителен 12 месяцев начиная с
+                                    <span>19.11.2020</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Страхователь
+                        </h4>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Отчество">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Фамилия">
+                            </div>
+                            <div class="policyholder-input">
+                                <input  type="text" placeholder="Дата рождения" 
+                                    id="date"
+                                >
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер телефона" id="numberPhone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Паспортные данные
+                        </h4>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Серия и номер паспорта">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Дата выдачи" id="datePassport">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input policyholder-input--long">
+                                <input type="text" placeholder="Кем выдан">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Адрес постоянной регистрации
+                        </h4>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Индекс" id="indeksNumber">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Область/Город">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Район">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Улица/Квартал">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер дома">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер квартиры">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Водительская удостоверение
+                        </h4>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Серия">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Тех. Паспорт
+                        </h4>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Серия">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Мониторинг машины
+                        </h4>
+                        <form enctype="multipart/form-data" id="uploadImages">
+                            <label class="director-item">
+                                <span>Фотографии</span>
+                                <div class="director-item__img dec" id="uploadImagesList">
+                                    <li class="popup__item template">
+                                        <span class="popup__img-wrap">
+                                            <img class="file__img" src="assets/img/direct-plus-img.png" alt="Image">
+                                        </span>
+                                    </li>
+                                </div>
+                                <input type="file" id="addImages" multiple="">
+                                <input type="hidden" name="azaza" value="zazaza">
+
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="policyholder">
+                        <h4 class="policyholder-title">
+                            Квартира
+                        </h4>
+                        <label class="policyholder-input__checkbox">
+
+                            <input type="checkbox" id="c3" name="cb">
+                            <label for="c3"></label>
+
+                            <p class="policyholder-subtitle">Cовпадает с адресом постоянной регистрации</p>
+                            
+                        </label>
+                        <form class="form-drop">
+                            <div class="select-box">
+                                <label for="select-box1" class="label select-box1"><span class="label-desc">Выбор периода</span> </label>
+                                <select id="select-box1" class="select">
+                                    <option value="Choice 1">6 месяц</option>
+                                    <option value="Choice 2">12 месяц</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Индекс" id="indeksNumber2">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Область/Город">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Район">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Улица/Квартал">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__group padding-0">
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер дома">
+                            </div>
+                            <div class="policyholder-input">
+                                <input type="text" placeholder="Номер квартиры">
+                            </div>
+                        </div>
+                        <div class="policyholder-form__price">
+                            <div class="policyholder-form__text">
+                                <p>Цена к оплате:
+                                    <span>300$</span>
+                                </p>
+                            </div>
+
+                            <a class="policyholder-form__btn btn" href="decor-2.html">Оплатить полюс</a>
+                        </div>
+                    </div>
+
+
+
+
+                </section>
+
+                <aside class="decor-aside">
+                    <h4 class="decor-aside__title">Страховой продукт <br>
+                        "Транспорт"</h4>
+                    <div class="decor-aside__line"></div>
+                    <ul class="decor-aside__block">
+                        <li class="decor-aside__list">
+                            <p>
+                                Конструктивные элементы:
+                            </p>
+                            <span>3340 $</span>
+                        </li>
+                        <li class="decor-aside__list">
+                            <p>
+                                Отделка и оборудование:
+                            </p>
+                            <span>2000 $</span>
+                        </li>
+                        <li class="decor-aside__list">
+                            <p>
+                                Домашнее имущество:
+                            </p>
+                            <span>1000 $</span>
+                        </li>
+                        <li class="decor-aside__list">
+                            <p>
+                                Ответственность <br>
+                                перед соседями:
+                            </p>
+                            <span>650 $</span>
+                        </li>
+                        <div class="decor-aside__line"></div>
+                        <li class="decor-aside__list">
+                            Полис действует <br>
+                            12 месяцев
+                        </li>
+                        <div class="decor-aside__line"></div>
+                    </ul>
+                    <div class="decor-aside__price">
+                        <span>300$</span>
+                    </div>
+                    <a class="decor-aside__btn btn" href="decor-2.html">Оформить полюс</a>
+                </aside>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__block">
+                    <div class="footer-item">
+
+                        <div class="footer-item__logo">
+                            <a href="index.html">
+                                <img src="assets/img/Logo dd.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-item__content">
+                            <p class="footer-item__text">
+                                Копирование информации, размещенной <br>
+                                на сайте <a href="mailto:info@ddgi.uz"><strong>info@ddgi.uz</strong></a> (цитирование в
+                                СМИ <br>
+                                той или иной информации или <br>
+                                сообщений), разрешается только при <br>
+                                указании источника этой информации.</p>
+                        </div>
+
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__title">
+                            <h4>Контакты</h4>
+                        </div>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-location-icon.svg" alt="">
+                                </div>
+                                <p class="footer-item__adress">
+                                    Тошкент шаҳар, <br>
+                                    Ташкент улица Навоий дом 27
+                                </p>
+
+                            </li>
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-phone-icon.svg" alt="">
+                                </div>
+                                <a href="tel:+998712312002" class="footer-item__link">+99871 231-20-02</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-mail-icon.svg" alt="">
+                                </div>
+                                <a href="mailto:info@ddgi.uz" class="footer-item__link">info@ddgi.uz</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__title">
+                            <h4>Соц. сети</h4>
+                        </div>
+                        <ul class="footer-list">
+
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-instagram-icon.svg" alt="">
+                                </div>
+                                <a class="footer-item__link" href="#">instagram</a>
+                            </li>
+
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+                                    <img src="assets/img/footer-facebook-icon.svg" alt="">
+                                </div>
+                                <a class="footer-item__link" href="#">facebook</a>
+                            </li>
+
+                            <li class="footer-list__item">
+                                <div class="footer-item__img">
+
+                                    <img src="assets/img/footer-telegram-icon.svg" alt="">
+                                </div>
+                                <a class="footer-item__link" href="#">telegram</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-item__copyright">
+                    <span class="footer-item__copy">© Copyright - 2020 by
+                        <a class="footer-item__link" href="https://qwerty.uz//">QWERTY.UZ</a>
+                    </span>
+                    <a class="footer-item__link" href="#">Все услуги лицензированы </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="register" id="register">
+            <div class="container">
+                <div class="register-block">
+                    <div class="register-item register-item--logo ">
+                        <a href="index.html"><img src="assets/img/Logo dd.png" alt=""></a>
+                    </div>
+                    <div class="register-item">
+                        <h4 class="register-item__title">
+                            Регистрирация в системе
+                        </h4>
+                        <p class="register-item__subtitle">
+                            Немного информации для вашей <br>
+                            учетной записи и вы можете начать!
+                        </p>
+                        <div class="register-item__group">
+                            <label class="register-item__list">Адрес электронной почты<input type="email"></label>
+                            <label class="register-item__list">Пароль
+                                <div class="register-item__password">
+                                    <input type="password">
+                                    <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                                </div>
+                            </label>
+                            <label class="register-item__list">Повторите пароль
+                                <div class="register-item__password">
+                                    <input type="password">
+                                    <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
+                                </div>
+                            </label>
+                            <label class="register-item__list">Имя<input type="text"></label>
+                            <label class="register-item__list">Фамилия<input type="text"></label>
+                        </div>
+                        <div class="register-item__btn">
+                            <a href="#" id="registerNext">Далее</a>
+                        </div>
+                        <div class="register-item__sign">
+                            <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
+                        </div>
+                    </div>
+                    <div class="register-item">
+                        <div class="register-item__close">
+                            <a href="#" id="registerClose">
+                                <img src="assets/img/registr-close-icon.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="verify" id="register2">
+            <div class="container">
+
+                <div class="verify-block">
+                    <div class="verify-item verify-item--logo">
                         <a href="index.html">
                             <img src="assets/img/Logo dd.png" alt="">
                         </a>
                     </div>
-                    <div class="footer-item__content">
-                        <p class="footer-item__text">
-                            Копирование информации, размещенной <br>
-                            на сайте <a href="mailto:info@ddgi.uz"><strong>info@ddgi.uz</strong></a> (цитирование в СМИ <br>
-                            той или иной информации или <br>
-                            сообщений), разрешается только при <br>
-                            указании источника этой информации.</p>
-                    </div>
-                    
-                </div>
-                <div class="footer-item">
-                    <div class="footer-item__title">
-                        <h4>Контакты</h4>
-                    </div>
-                    <ul class="footer-list">
-                        <li class="footer-list__item">
-                            <div class="footer-item__img">
-                                <img src="assets/img/footer-location-icon.svg" alt="">
-                            </div>
-                            <p class="footer-item__adress">
-                                Тошкент шаҳар, <br>
-                                Ташкент улица Навоий дом 27
-                            </p>
-                            
-                        </li>
-                        <li class="footer-list__item">
-                            <div class="footer-item__img">
-                                <img src="assets/img/footer-phone-icon.svg" alt="">
-                            </div>
-                            <a href="tel:+998712312002" class="footer-item__link">+99871 231-20-02</a>
-                        </li>
-                        <li class="footer-list__item">
-                            <div class="footer-item__img">
-                                <img src="assets/img/footer-mail-icon.svg" alt="">
-                            </div>
-                            <a href="mailto:info@ddgi.uz" class="footer-item__link">info@ddgi.uz</a>
-                        </li>
-                    </ul>
-    
-                </div>
-                <div class="footer-item">
-                    <div class="footer-item__title">
-                        <h4>Соц. сети</h4>
-                    </div>
-                    <ul class="footer-list">
-                        
-                        <li class="footer-list__item">
-                            <div class="footer-item__img">
-                                <img src="assets/img/footer-instagram-icon.svg" alt="">
-                            </div>
-                            <a class="footer-item__link" href="#">instagram</a>
-                        </li>
-    
-                        <li class="footer-list__item">
-                            <div class="footer-item__img">
-                                <img src="assets/img/footer-facebook-icon.svg" alt="">
-                            </div>
-                            <a class="footer-item__link" href="#">facebook</a>
-                        </li>
-    
-                        <li class="footer-list__item">
-                            <div class="footer-item__img">
-                                
-                                <img src="assets/img/footer-telegram-icon.svg" alt="">
-                            </div>
-                            <a class="footer-item__link" href="#">telegram</a>
-                        </li>
-                        
-                    </ul>
-                    
-                </div>
-    
-            </div>
-            
-            <div class="footer-item__copyright">
-                <span class="footer-item__copy">© Copyright - 2020 by
-                    <a class="footer-item__link" href="https://qwerty.uz//">QWERTY.UZ</a>
-                </span>
-                    <a class="footer-item__link" href="#">Все услуги лицензированы </a>
-            </div> 
-        </div>
-    </footer>
-
-    <div class="register" id="register">
-        <div class="container">
-            <div class="register-block">
-                <div class="register-item register-item--logo ">
-                        <a href="index.html"><img src="assets/img/Logo dd.png" alt=""></a>
-                    </div>
-                <div class="register-item">
-                    <h4 class="register-item__title">
-                        Регистрирация в системе
-                    </h4>
-                    <p class="register-item__subtitle">
-                        Немного информации для вашей <br>
-                        учетной записи и вы можете начать!
-                    </p>
-                    <div class="register-item__group">
-                        <label class="register-item__list">Адрес электронной почты<input type="email"></label>
-                        <label class="register-item__list">Пароль
-                            <div class="register-item__password">
-                                <input type="password">
-                                <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
-                            </div>
-                        </label>
-                        <label class="register-item__list">Повторите пароль
-                            <div class="register-item__password">
-                                <input type="password">
-                                <img class="register-item__eye" src="assets/img/register-input-eye.svg" alt="">
-                            </div>
-                        </label>
-                        <label class="register-item__list">Имя<input type="text"></label>
-                        <label class="register-item__list">Фамилия<input type="text"></label>
-                    </div>
-                    <div class="register-item__btn">
-                        <a href="#" id="registerNext">Далее</a>
-                    </div>
-                    <div class="register-item__sign">
-                        <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
-                    </div>
-                </div>
-                <div class="register-item">
-                    <div class="register-item__close">
-                        <a href="#" id="registerClose">
+                    <div class="verify-item">
+                        <a href="#" id="registerClose2">
                             <img src="assets/img/registr-close-icon.svg" alt="">
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="verify" id="register2">
-        <div class="container">
 
-            <div class="verify-block">
-                <div class="verify-item verify-item--logo">
-                        <a href="index.html">
-                            <img src="assets/img/Logo dd.png" alt="">
-                        </a>
-                    </div>
-                <div class="verify-item">
-                    <a href="#" id="registerClose2">
-                        <img src="assets/img/registr-close-icon.svg" alt="">
-                    </a>
+                <h4 class="verify__title">Регистрирация в системе</h4>
+                <p class="verify__text">
+                    Введите код который мы вам <br>
+                    отправили по электронной почте, <br>
+                    для авторизации вашего аккаунта.</p>
+
+                <div class="verify-group">
+                    <label class="verify-code">
+                        <span>Код авторизации</span>
+                        <div class="verify-input">
+                            <input type="text" maxlength="4">
+                            <a class="verify-code__link" href="#">Прислать код заного</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="verify-link">
+                    <a class="verify-link__btn" href="cabinet.html">Зарегистрироваться</a>
+                </div>
+
+                <div class="register-item__sign">
+                    <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
                 </div>
             </div>
 
-
-            <h4 class="verify__title">Регистрирация в системе</h4>
-            <p class="verify__text">
-                Введите код который мы вам <br>
-                отправили по электронной почте, <br>
-                для авторизации вашего аккаунта.</p>
-
-            <div class="verify-group">
-                <label class="verify-code">
-                    <span>Код авторизации</span>
-                    <div class="verify-input">
-                        <input type="text" maxlength="4">
-                        <a class="verify-code__link" href="#">Прислать код заного</a>
-                    </div>
-                </label>
-            </div>
-            <div class="verify-link">
-                <a class="verify-link__btn" href="cabinet.html">Зарегистрироваться</a>
-            </div>
-
-            <div class="register-item__sign">
-                <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
-            </div>
         </div>
 
     </div>
-
-</div>
 
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>

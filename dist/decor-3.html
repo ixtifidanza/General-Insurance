@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>General Insuranse-Обращение к директору</title>
+    <title>General Insuranse-Калькулятор</title>
 </head>
 
 <body>
@@ -26,11 +23,11 @@
                             <img class="nav-search__icon" src="assets/img/black-icon-search.svg" alt="">
                         </div>
                     </div>
-                    <li class="nav__list-item"><a class="nav__link nav__link--search black" id="search" href="#">Поиск</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--search black"  id="search" href="#">Поиск</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
                     <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
-                    <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu black" href="#">Меню</a></li>
+                    <li class="nav__list-item"><a class="nav__link nav__link--menu black" id="menu-btn" href="#">Меню</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +49,7 @@
                     <li class="menu__item"> <a class="menu__link" href="about.html">О компании</a></li>
                     <li class="menu__item"> <a class="menu__link" href="manual.html">Руководство</a></li>
                     <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
-                  <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
                 </ul>
 
                 <ul class="menu-list">
@@ -67,7 +64,7 @@
                 </ul>
                 <ul class="menu-list">
                     <div class="menu__name">
-                         <a class="menu-link__product" href="apartment-2.html">Cравнение продуктов</a>
+                        <a class="menu-link__product" href="apartment-2.html">Cравнение продуктов</a>
                     </div>
                 </ul>
 
@@ -82,7 +79,7 @@
                     <li class="menu__item"><a class="menu__link" href="announ.html">Объявления</a></li>
                 </ul>
 
-                 <ul class="menu-list">
+                <ul class="menu-list">
                         <div class="menu__name">
                             <a class="menu-link__product" href="office.html">Контакты</a>
                         </div>
@@ -125,42 +122,245 @@
             </div>
         </div>
     </div>
-    
-    <h4 class="director-title title">Обращение к директору</h4>
-    <p class="director__subtitle">Ваше обращение будет отправлено на почту директора компании </p>
 
-    <section class="director">
-        <div class="container">
-            <div class="director-block">
-                <label class="director-item">
-                    <span>Ф.И.О</span>    
-                    <input type="text" placeholder="Каримов Шамсиддин Шавкатович ">
-                </label>
-                
-                <div class="director-form__group">
-                    <label class="director-form__item">
-                    <span>Email</span> 
-                        <input type="text" placeholder="General@mail.ru">
-                    </label>
-                    <label class="director-form__item">
-                        <span>Телефон</span>
-                        <input type="phone" placeholder="+998933 333 33 33">
-                    </label>
+    <div class="container">
+        <div class="decor">
+            <section class="decor-calculator">
+
+                <div class="calculator-block">
+
+                    <div class="calculator-item">
+                        <h4 class="calculator-item__title">
+                            Страховой продукт "Квартира"
+                        </h4>
+                        <div class="calculator-item__step">
+                            <div class="calculator-step">
+                                <img src="assets/img/step-2.png" alt="">
+                                <div class="calculator-step__text">
+                                    <span>Расчет стоимости</span>
+                                    <span>Оформление полюса</span>
+                                    <span>Оплата и получение</span>
+                                </div>
+                            </div>
+                            <div class="calculator-item__subtitle">
+                                <span>Срок действия полюса</span>
+                            </div>
+
+                            <p class="calculator-item__text">Полис действителен 12 месяцев начиная с
+                                <span>19.11.2020</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+ 
+
+                <div class="policyholder">
+                    <h4 class="policyholder-title">
+                        Паспортные данные
+                    </h4>
+                    <div class="policyholder-form__group padding-0">
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Серия и номер паспорта">
+                        </div>
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Дата выдачи">
+                        </div>
+                    </div>
+                    <div class="policyholder-form__group padding-0">
+                        <div class="policyholder-input policyholder-input--long">
+                            <input type="text" placeholder="Кем выдан">
+                        </div>
+                    </div>
                 </div>
 
-                <label class="director-item">
-                    <span>Тема</span>    
-                    <input type="text" placeholder="Хочу попросить вас добавить услугу юридической поддержи">
-                </label>
+                <div class="policyholder">
+                    <h4 class="policyholder-title">
+                        Водительская удостоверение 
+                    </h4>
+                    <div class="policyholder-form__group padding-0">
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Серия">
+                        </div>
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Номер">
+                        </div>
+                    </div>
+                </div>
 
-                <label class="director-item">
-                    <span>Сообщение</span>    
-                    <textarea class="director-item__area" placeholder="Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании "></textarea>
-                </label>
+                <div class="policyholder">
+                    <h4 class="policyholder-title">
+                        Тех. Паспорт 
+                    </h4>
+                    <div class="policyholder-form__group padding-0">
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Серия">
+                        </div>
+                        <div class="policyholder-input">
+                            <input type="text" placeholder="Номер">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="policyholder">
+                    <h4 class="policyholder-title">
+                        Мониторинг машины 
+                    </h4>
+                    <form enctype="multipart/form-data" id="uploadImages">
+                        <label class="director-item">
+                            <span>Фотографии</span>    
+                            <div class="director-item__img dec"  id="uploadImagesList">
+                                <li class="popup__item template">
+                                    <span class="popup__img-wrap">
+                                        <img class="file__img" src="assets/img/direct-plus-img.png" alt="Image">
+                                    </span>
+                                </li>
+                            </div>
+                            <input type="file" id="addImages" multiple="">
+                            <input type="hidden" name="azaza" value="zazaza">
+    
+                        </label>
+                    </form>
+                </div>
+
+            <div class="policyholder">
+                    <h4 class="policyholder-title">
+                        Квартира
+                    </h4>
+                    <label class="policyholder-input__checkbox">
+
+                        <input type="checkbox" id="c3" name="cb">
+                        <label for="c3"></label>
+
+                        <p class="policyholder-subtitle">Cовпадает с адресом постоянной регистрации</p> 
+
+                    </label>
+
+                    <div class="policyholder-form__group padding-0 policyholder-form__group--price">
+                        <div class="policyholder-form__price">
+                            <div class="policyholder-form__text">
+                                <p>Цена к оплате:
+                                    <span>300$</span>
+                                </p>
+                            </div>
+                            <a id="payBtn" class="policyholder-form__btn btn" href="#">Оплатить полюс</a>
+                        </div>
+                    </div>
             </div>
-                <a class="director-btn" href="#">Отправить</a>
+
+            </section>
+
+            <aside class="decor-aside">
+                <h4 class="decor-aside__title">Страховой продукт <br>
+                    "Квартира"</h4>
+                <div class="decor-aside__line"></div>
+                <ul class="decor-aside__block">
+                    <li class="decor-aside__list">
+                        <p>
+                            Конструктивные элементы:
+                        </p>
+                        <span>3340 $</span>
+                    </li>
+                    <li class="decor-aside__list">
+                        <p>
+                            Отделка и оборудование:
+                        </p>
+                        <span>2000 $</span>
+                    </li>
+                    <li class="decor-aside__list">
+                        <p>
+                            Домашнее имущество:
+                        </p>
+                        <span>1000 $</span>
+                    </li>
+                    <li class="decor-aside__list">
+                        <p>
+                            Ответственность <br>
+                            перед соседями:
+                        </p>
+                        <span>650 $</span>
+                    </li>
+                    <div class="decor-aside__line"></div>
+                    <li class="decor-aside__list">
+                        Полис действует <br>
+                        12 месяцев
+                    </li>
+                    <div class="decor-aside__line"></div>
+                </ul>
+
+                <div class="decor-aside__price">
+                    <span>300$</span>
+                </div>
+                <a class="decor-aside__btn btn" href="#">Оформить полюс</a>
+            </aside>
+
         </div>
-    </section>
+    </div>
+
+    <div id="modalPay" class="modal modal--calmodal2">
+
+        <div class="modal-main">
+            <h4 class="modal-title title">
+                Оплата
+            </h4>
+        </div>
+                <div class="modal-close__icon payment">
+                    <a href="#">
+                        <img src="assets/img/modal-close.svg" alt="">
+                    </a>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-input__group">
+                        <label class="modal__card">
+                            <span>
+                                Номер карты
+                                <img src="assets/img/uzkard.svg" alt="">
+                            </span>
+                            <input id="cardNumber" type="text" maxlength="19" placeholder="8600 6006 1221 3333">
+                        </label>
+                    </div>
+    
+                    <div class="modal-input__group modal-input__group--center">
+                        <label class="modal__card modal__card--center">
+                            <span>
+                                MM/YY
+                            </span>
+                            <input type="text" placeholder="07/24" maxlength="4">
+                        </label>
+    
+                        <label class="modal__card modal__card--center">
+                            <span>
+                                CVC/CVV
+                            </span>
+                            <input type="password" maxlength="4">
+                        </label>
+                    </div>
+    
+                    <div class="modal-input__group">
+                        <label class="modal__card">
+                            <span>
+                                Email для квитанции
+                            </span>
+                            <input type="text" placeholder="General@mail.ru">
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-price">
+                        <div class="modal-price__text">
+                            <p>Цена к оплате:
+                            </p>
+                            <span>300$</span>
+                        </div>
+    
+                        <div class="modal-btn">
+                            <a class="policyholder-form__btn btn"  href="cabinet.html">Оплатить полюс</a>
+                        </div>
+
+                    </div>
+                                <p class="policyholder-form__oferta">
+                                    Нажимая на кнопку "Оплатить полюсь", вы соглашаетесь <br>
+                                    с <span>распоряжением</span> и <span>публичной офертой</span> 
+                                </p>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -255,11 +455,10 @@
         </div>
     </footer>
 
-    
     <div class="register" id="register">
         <div class="container">
             <div class="register-block">
-               <div class="register-item register-item--logo ">
+                <div class="register-item register-item--logo ">
                         <a href="index.html"><img src="assets/img/Logo dd.png" alt=""></a>
                     </div>
                 <div class="register-item">
@@ -309,7 +508,7 @@
         <div class="container">
 
             <div class="verify-block">
-                 <div class="verify-item verify-item--logo">
+                <div class="verify-item verify-item--logo">
                         <a href="index.html">
                             <img src="assets/img/Logo dd.png" alt="">
                         </a>
@@ -353,4 +552,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 
-</html>
+</html> -->
