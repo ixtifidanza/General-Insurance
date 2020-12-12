@@ -89,6 +89,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 50px 74px;
+        img {
+            width: 265px;
+            height: 375px;
+        }
         @media (max-width: 769px) {
             padding: 0 15px 45px;
             a {
