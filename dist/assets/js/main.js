@@ -379,3 +379,8 @@ $("#numberPhone").mask("+998 (55) 555-55-55");
 $("#cardNumber").mask("8600 5555 5555 5555");
 $('#indeksNumber').mask("555555");
 $('#indeksNumber2').mask("555555");
+
+$('#indeksCabinet').mask("555555");
+$('#numerCabinet').mask("+998 (55) 555-55-55");
+$("#passportCabinet").mask("55/55/5555");
+$("#passportCabinet2").mask("55/55/5555");
