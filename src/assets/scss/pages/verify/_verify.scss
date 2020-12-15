@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 55px;
         @media (max-width: 769px) {
             :nth-child(2) {
                 margin-left: auto;
@@ -31,10 +32,11 @@
                 display: none;
             }
         }
-        &--close {
-            position: absolute;
-            right: 65px;
-        }
+            @media (max-width: 1024px) {
+                position: absolute;
+                right: 55px;
+            }
+
     }
     &__title {
         text-align: center;

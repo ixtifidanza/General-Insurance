@@ -4,6 +4,10 @@
     &--about {
         box-shadow: none;
         position: absolute;
+        @media (max-width: 1024px) {
+            width: 100%;
+            justify-content: space-between;
+        }
         @media (max-width: 769px) {
             width: 100%;
             justify-content: space-between;

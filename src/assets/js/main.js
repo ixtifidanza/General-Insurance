@@ -409,3 +409,15 @@ $('#numerCabinet').mask("+998 (55) 555-55-55");
 $("#passportCabinet").mask("55/55/5555");
 $("#passportCabinet2").mask("55/55/5555");
 
+
+
+$(".login-form__eye").click(function() {
+
+  $(this).toggleClass("toggle-password");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
