@@ -118,21 +118,13 @@ input[type="checkbox"]:checked + label:after {
     font-weight: bold;
 }
 
-// decor-2 drop
 
-.form-drop2 {
-    width: 100%;   
-}
-.select-box4 {
-    // justify-content: center;
-}
 
 // decor drop
 
 .select-box {
     cursor: pointer;
     position : relative;
-    max-width:  20em;
     width: 100%;
     margin-bottom: 25px;
     margin-left: 18px;
@@ -151,12 +143,11 @@ input[type="checkbox"]:checked + label:after {
     padding: 5px 0;
     height: 40px;
     opacity: 0;
-    // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     background: none transparent;
     border: 0 none;
 }
 .select-box1 {
-    background: #ececec;
+    background: #fff;
 }
 
 .label {
@@ -182,4 +173,9 @@ input[type="checkbox"]:checked + label:after {
 }
 
 
+// decor-2 drop
+
+.form-drop2 {
+    width: 100%;   
+}
 

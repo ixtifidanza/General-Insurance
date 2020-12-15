@@ -3912,14 +3912,9 @@ input[type="checkbox"]:checked + label:after {
     font-weight: bold;
 }
 
-.form-drop2 {
-    width: 100%;
-}
-
 .select-box {
     cursor: pointer;
     position: relative;
-    max-width: 20em;
     width: 100%;
     margin-bottom: 25px;
     margin-left: 18px;
@@ -3944,7 +3939,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .select-box1 {
-    background: #ececec;
+    background: #fff;
 }
 
 .label {
@@ -3969,6 +3964,10 @@ input[type="checkbox"]:checked + label:after {
 
 .form-drop {
     display: none;
+}
+
+.form-drop2 {
+    width: 100%;
 }
 
 .policyholder {
