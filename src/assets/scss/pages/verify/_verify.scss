@@ -21,13 +21,19 @@
                 margin-left: auto;
             }
         }
-       
     }
     &-item {
         &--logo {
-          @media (max-width: 769px) {
-              display: none;
-          }
+            @media (max-width: 1024px) {
+                display: none;
+            }
+            @media (max-width: 769px) {
+                display: none;
+            }
+        }
+        &--close {
+            position: absolute;
+            right: 65px;
         }
     }
     &__title {

@@ -7,12 +7,24 @@
         .header {
             &__title {
                 &--first {
-                    font-size: 30px;
+                    font-size: 70px;
                 }
                 &--second {
-                    font-size: 30px;
+                    font-size: 70px;
                 }
                 width: 100%;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .header {
+            &__title {
+                &--first {
+                    font-size: 70px;
+                }
+                &--second {
+                    font-size: 70px;
+                }
             }
         }
     }
@@ -72,7 +84,7 @@
     }
 
     &-pagination {
-        @media (max-width: 769px) {
+        @media (max-width: 568px) {
             display: none;
         }
         &__btn {
@@ -125,7 +137,7 @@
         font-weight: 900;
         line-height: .9;
         color: #fff;
-        margin: 0 auto;
+        // margin: 0 auto;
 
         &--first {
             display: block;

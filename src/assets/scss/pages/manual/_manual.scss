@@ -1,7 +1,7 @@
 .manual {
-    &__img img {
-        @media (max-width: 568px) {
-          width: 100%;
+    &__img {
+        @media (max-width: 768px) {
+          margin: 0 auto;
         }
     }
 
@@ -20,6 +20,7 @@
     &-content {
         margin-left: 50px;
         @media (max-width: 769px) {
+            text-align: center;
             margin-left: 0;
             width: 100%;
         }
@@ -62,7 +63,7 @@
             width: 600px;
         @media (max-width: 769px) {
             flex-wrap: wrap;
-            width: 300px;
+            margin: 0 auto;
 
         }
 

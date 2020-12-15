@@ -11,7 +11,9 @@
         justify-content: center;
         margin: 0 auto;
         max-width: 700px;
-       
+        @media (max-width: 769px) {
+            margin-left: 18px;
+        }
     }
 
     &-item {
@@ -59,9 +61,6 @@
                         display: block;
                     }
                 }
-                // :nth-child(2) {
-                //     display: none;
-                // }
             }
 
             
@@ -74,11 +73,10 @@
             display: flex;
             justify-content: space-between;
             @media (max-width: 769px) {
-                // flex-wrap: wrap;
                 width: 100%;
                 flex-direction: column;
                 :last-child {
-                    margin-top: 10px;
+                    margin-top: 11px;
                 }
             }
 
@@ -105,8 +103,11 @@
                 display: block;
                 font-size: 18px;
                 margin-bottom: 4px;
+                @media (max-width: 769px) {
+                    margin-top: 2px;
+                    
+                }
             }
-           
         }
     }
     .popup__item{

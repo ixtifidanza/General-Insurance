@@ -297,25 +297,49 @@ var price1 = $('#price-1');
 var price2 = $('#price-2');
 
 
-var val1 = $ ('#val-1');
-var val2 = $ ('#val-2');
-var val3 = $ ('#val-3');
-var val4 = $ ('#val-4');
+var val1 = $('#val-1');
+var val2 = $('#val-2');
+var val3 = $('#val-3');
+var val4 = $('#val-4');
+
+var selectOpt = $('#select-box1');
+// alert(selectOpt);
 
 var calc = function(){
   var value1 = range1.val();
   var value2 = range2.val();
   var value3 = range3.val();
   var value4 = range4.val();
-  var price = +value1 + +value2 + +value3 + +value4;
-  console.log(price);
-  val1.html(val1);
-  val2.html(val2);
-  val3.html(val3);
-  val4.html(val4);
-  price1.html(price1);
-  price2.html(price1);
+  val1.text(+value1 + "$");
+  val2.text(+value2 + "$");
+  val3.text(+value3 + "$");
+  val4.text(+value4 + "$");
+  price1.text(+value1 + +value2 + +value3 + +value4 + "$");
+  price2.text(+value1 + +value2 + +value3 + +value4 + "$");
 }
+
+selectOpt.on('change', function(){
+  var selectVal = $(selectOpt).val();
+  console.log(selectVal);
+  switch(selectVal){
+    case 1:
+      price1.text((value1 + value2 + value3 + value4) * 1 + "$");
+      console.log('1');
+      break;
+    case 0.75:
+      price1.text((value1 + value2 + value3 + value4) * 0.75 + "$");
+      console.log('2');
+      break;
+    case 0.5:
+      price1.text((value1 + value2 + value3 + value4) * 0.5 + "$");
+      console.log('3');
+      break;
+    case 0.25:
+      price1.text((value1 + value2 + value3 + value4) * 0.25 + "$");
+      console.log('4');
+      break;
+  }
+});
 
 range1.on('click', function(){calc()})
 range2.on('click', function(){calc()})

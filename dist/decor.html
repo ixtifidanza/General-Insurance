@@ -53,7 +53,6 @@
                         <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
                         <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
                     </ul>
-
                     <ul class="menu-list">
                         <div class="menu__name">
                             <a class="menu-link__product" href="product-2.html">Продукты для Юр. Лиц</a>
@@ -64,8 +63,6 @@
                             <a class="menu-link__product" href="product.html">Продукты для Физ. Лиц</a>
                         </div>
                     </ul>
-                 
-
                     <ul class="menu-list">
                         <div class="menu__name">Обращение</div>
                         <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
@@ -102,7 +99,7 @@
                     <div class="login-form__group">
                         <label class="login-form__label">
                             <span class="login-form__text">Логин</span>
-                           <input class="login-form__input" type="email">
+                            <input class="login-form__input" type="email">
                         </label>
                     </div>
 
@@ -304,8 +301,10 @@
                             <div class="select-box">
                                 <label for="select-box1" class="label select-box1"><span class="label-desc">Выбор периода</span> </label>
                                 <select id="select-box1" class="select">
-                                    <option value="Choice 1">6 месяц</option>
-                                    <option value="Choice 2">12 месяц</option>
+                                    <option value="0.25">3 месяца</option>
+                                    <option value="0.5">6 месяц</option>
+                                    <option value="0.75">9 месяцев</option>
+                                    <option selected value="1">12 месяцев</option>
                                 </select>
                             </div>
                         </form>
@@ -336,7 +335,7 @@
                         <div class="policyholder-form__price">
                             <div class="policyholder-form__text">
                                 <p>Цена к оплате:
-                                    <span>300$</span>
+                                    <span id="price-1">300$</span>
                                 </p>
                             </div>
 

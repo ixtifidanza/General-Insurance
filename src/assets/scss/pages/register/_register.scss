@@ -26,16 +26,27 @@
         }
     }
     &-item {
+        &__close {
+            @media (max-width: 1024px) {
+                position: absolute;
+                right: 65px;
+            }
+        }
         &--logo {
+            @media (max-width: 1024px) {
+                display: none;
+            }
             @media (max-width: 769px) {
                 display: none;
             }
-
         }
         width: 33.3%;
         &:nth-child(2) {
             margin-top: 15px;
             width: 40%;
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
             @media (max-width: 769px) {
                 width: 100%;
             }
@@ -79,8 +90,12 @@
             align-items: center;
             max-width: 430px;
             padding-bottom: 50px;
+            @media (max-width: 1024px) {
+                margin: 0 auto;
+            }
             @media (max-width: 769px) {
                 width: 100%;
+                margin: 0 auto;
             }
             input {
                 display: block;

@@ -10,6 +10,10 @@
         max-width: 701px;
         flex: 2;
         margin-bottom: 95px;
+        @media (max-width: 769px) {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &-aside {
@@ -22,9 +26,8 @@
         margin-left: 30px;
         flex: 1;
         @media (max-width: 769px) {
-            width: 100%;
-            margin-left: 0;
             padding-top: 25px;
+            margin: 0 auto;
         }
 
         &__title {
@@ -128,6 +131,9 @@ input[type="checkbox"]:checked + label:after {
     width: 100%;
     margin-bottom: 25px;
     margin-left: 18px;
+    @media (max-width: 769px) {
+        width: 95%;
+    }
 }
 .select,
 .label {

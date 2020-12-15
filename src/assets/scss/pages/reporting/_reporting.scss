@@ -16,7 +16,7 @@
         margin-top: 50px;
         @media (max-width: 769px) {
             width: 100%;
-            flex-direction: column;
+            justify-content: center;
         }
     }
     &-item {
@@ -27,9 +27,6 @@
 
         &--center {
             justify-content: center;
-        @media (max-width: 769px) {
-           width: 100%;
-        }
         }
 
         p {
@@ -37,13 +34,7 @@
             font-size: 20px;
         }
     }
-    // &__list {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-content: center;
-    // }
+   
     &-list {
         padding-bottom: 88px;
         &__item {

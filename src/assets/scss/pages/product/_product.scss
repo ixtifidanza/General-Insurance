@@ -1,7 +1,7 @@
 .product {
     &__title {
         @media (max-width: 769px) {
-            margin-bottom: 0;
+            margin-bottom: 15px;
         }
     }
     &-block {
@@ -21,6 +21,10 @@
             margin-top: 41px;
             overflow: hidden;
             cursor: pointer;
+            @media (max-width: 769px) {
+                margin: auto;
+                margin-top: 20px;
+            }
             &-img {
                 width: 100%;
                 position: absolute;
