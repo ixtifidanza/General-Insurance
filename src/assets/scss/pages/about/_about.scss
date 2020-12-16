@@ -60,6 +60,9 @@
     &-item {
         &__img {
             margin-right: 49px;
+            @media (max-width: 568px) {
+                margin-right: 0;
+            }
         }
         &__title {
             text-align: start;

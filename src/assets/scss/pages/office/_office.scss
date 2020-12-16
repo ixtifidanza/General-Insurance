@@ -29,6 +29,9 @@
             font-size: 35px;
             color: #221F39;
             margin: 0;
+            @media (max-width: 568px) {
+                font-size: 30px;
+            }
         }
     }
     &-item {
@@ -40,6 +43,9 @@
             font-size: 30px;
             font-family: "Roboto";
             font-weight: 600;
+            @media (max-width: 568px) {
+                font-size: 18px;
+            }
             h4 {
                 margin: 0;
                 font-family: "Roboto" sans-serif;
@@ -53,7 +59,6 @@
             display: flex;
             align-items: center;
             margin: 27px 0 24px;
-           
         }
         &__img {
             margin-right: 25px;

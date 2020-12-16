@@ -35,7 +35,17 @@ var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    // centeredSlides: true,
+
+    breakpoints: {
+      568: {
+          slidesPerView: 2,
+          spaceBetweenSlides: 30
+      },
+      320: {
+          slidesPerView: 1,
+          spaceBetweenSlides: 20
+      }
+  }
   });
 
   $('.names').on('click', function () {
@@ -421,3 +431,4 @@ $(".login-form__eye").click(function() {
     input.attr("type", "password");
   }
 });
+

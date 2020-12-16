@@ -2049,6 +2049,7 @@ label > span {
 .range > input {
     -webkit-appearance: none;
     width: 100%;
+    left: 0;
     height: var(--thumb-size);
     position: absolute;
     top: calc(50% - var(--thumb-size)/2);
@@ -2704,6 +2705,11 @@ label > span {
 
 .news__link img {
     margin-right: 20px;
+}
+
+.manual__img img {
+    width: 351px;
+    height: 490px;
 }
 
 .manual-item {
@@ -4345,9 +4351,9 @@ input[type="checkbox"]:checked + label:after {
         justify-content: center;
     }
 
-    .footer__block :nth-child(3) {
-        margin-right: 95px;
-        margin-top: 15px;
+    .footer-item {
+        width: 100%;
+        margin: 0;
     }
 
     .footer-item__copyright {
@@ -4566,6 +4572,10 @@ input[type="checkbox"]:checked + label:after {
         flex-direction: column;
     }
 
+    .register-item__close {
+        right: 0;
+    }
+
     .register-item--logo {
         display: none;
     }
@@ -4617,7 +4627,7 @@ input[type="checkbox"]:checked + label:after {
     }
 
     .verify-block :nth-child(2) {
-        margin-left: auto;
+        right: 25px;
     }
 
     .verify-item--logo {
@@ -4651,6 +4661,10 @@ input[type="checkbox"]:checked + label:after {
     .news__link {
         padding: 10px 20px;
         font-size: 16px;
+    }
+
+    .manual__img {
+        margin: 0 auto;
     }
 
     .manual-item {
@@ -5192,14 +5206,140 @@ input[type="checkbox"]:checked + label:after {
     }
 }
 
-@media (max-width: 768px) {
-    .manual__img {
-        margin: 0 auto;
-    }
-}
-
 @media (max-width: 568px) {
+    .header .header__title {
+        width: 100%;
+    }
+
+    .header .header__title--first {
+        font-size: 30px;
+    }
+
+    .header .header__title--second {
+        font-size: 30px;
+    }
+
     .header-pagination {
         display: none;
+    }
+
+    .swiper-slide {
+        font-size: 12px;
+    }
+
+    .modal__card input {
+        margin-top: -3px;
+    }
+
+    .office-list__title {
+        font-size: 30px;
+    }
+
+    .office-item__title {
+        font-size: 18px;
+    }
+
+    .manual__img img {
+        width: 100%;
+    }
+
+    .manual-item {
+        padding-bottom: 10px;
+    }
+
+    .manual-content__social {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .reporting-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .reporting-item {
+        width: 100%;
+    }
+
+    .reporting-item--center {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+
+    .about-item__img {
+        margin-right: 0;
+    }
+
+    .apartment__subtitle {
+        font-size: 18px;
+    }
+
+    .cabinet-form__group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .director-block {
+        margin-left: 0;
+    }
+
+    .director-item__area {
+        margin-bottom: 5px;
+    }
+
+    #uploadImages {
+        margin-top: 17px;
+    }
+
+    .decor-aside {
+        width: 100%;
+    }
+
+    .decor .file__img {
+        height: 100px;
+        width: 95px;
+    }
+
+    .select-box {
+        width: 88%;
+    }
+
+    .policyholder-form__group.padding-0 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .policyholder-form__block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .policyholder-input__checkbox p {
+        margin: 0;
     }
 }

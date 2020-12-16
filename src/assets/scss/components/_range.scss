@@ -145,6 +145,7 @@ label {
     &>input {
         -webkit-appearance: none;
         width: 100%;
+        left: 0;
         height: var(--thumb-size);
         position: absolute;
         top: calc(50% - var(--thumb-size)/2);

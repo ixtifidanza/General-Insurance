@@ -18,10 +18,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            :nth-child(3) {
-                margin-right: 95px;
-                margin-top: 15px;
-            }
         }
     }   
     
@@ -40,6 +36,10 @@
     &-item {
         @media (max-width: 1024px) {
             margin-left: 65px;
+        }
+        @media (max-width: 769px) {
+            width: 100%;
+            margin: 0;
         }
 
         &__title {
