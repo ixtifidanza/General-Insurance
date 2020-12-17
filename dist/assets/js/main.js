@@ -432,3 +432,15 @@ $(".login-form__eye").click(function() {
   }
 });
 
+$(".register-item__eye").click(function() {
+
+  $(this).toggleClass("toggle-password");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+
