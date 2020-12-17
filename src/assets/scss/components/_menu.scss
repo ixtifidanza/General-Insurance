@@ -76,6 +76,9 @@
         font-size: 18px;
         font-weight: 600;
         margin-left: 15px;
+        @media (max-width: 769px) {
+            margin-left: 0;
+        }
     }
     &__name {
         text-decoration: none;

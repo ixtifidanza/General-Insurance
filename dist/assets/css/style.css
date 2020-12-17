@@ -2864,6 +2864,7 @@ label > span {
 .reporting-list__btn {
     margin: 0;
     padding: 15px 50px;
+    text-decoration: none;
 }
 
 .reporting-list__text {
@@ -2891,9 +2892,6 @@ label > span {
 }
 
 .about-header {
-    background-image: url(../img/about-bg-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -4386,6 +4384,10 @@ input[type="checkbox"]:checked + label:after {
         margin-top: 25px;
     }
 
+    .menu__link {
+        margin-left: 0;
+    }
+
     .login {
         width: 100%;
         margin-right: 0;
@@ -4647,6 +4649,13 @@ input[type="checkbox"]:checked + label:after {
 
     .verify-link__btn {
         font-size: 16px;
+    }
+
+    .office-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .announ-item {

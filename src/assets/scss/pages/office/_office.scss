@@ -15,6 +15,9 @@
         display: flex;
         justify-content: space-between;
         margin-top: 32px;
+        @media (max-width: 769px) {
+            flex-direction: column;
+        }
         &--item2 {
             &-item {
                 width: 50%;
