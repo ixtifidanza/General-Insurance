@@ -85,7 +85,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-       
     }
     
     &__list {
@@ -111,6 +110,9 @@
         &--search {
             margin-right: 67px;
             padding: 8px 13px;
+            @media (max-width: 769px) {
+                display: none;
+            }
 
             &.border{
                 border-radius: 0;
@@ -128,6 +130,9 @@
         }
         &--lang {
             margin: 0 10px;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
     &__logo a img{

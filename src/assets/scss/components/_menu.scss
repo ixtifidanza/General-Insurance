@@ -58,7 +58,7 @@
         margin: 65px 0 52px;
         text-align: center;
         @media (max-width: 769px) {
-            margin-top: 25px;
+            // margin-top: 50px;
         }
     }
     &__item {
@@ -264,6 +264,27 @@
                 right: 40px;
                 top: 48%;
             }
+        }
+    }
+}
+.menu-lang {
+    @media (max-width: 769px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+.lang__link {
+    display: none;
+    @media (max-width: 769px) {
+        display: block;
+        background: none;
+        text-decoration: none;
+        padding: 6px;
+
+        &--center {
+            margin: 0 15px;
         }
     }
 }
