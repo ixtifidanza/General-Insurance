@@ -13,7 +13,8 @@
     }
     &-block {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        flex-wrap: wrap;
         margin-top: 32px;
         @media (max-width: 769px) {
             flex-direction: column;
@@ -38,8 +39,21 @@
         }
     }
     &-item {
-        width: 317px;
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
         margin-top: 43px;
+            @media (max-width: 769px) {
+                width: 100%;
+            }
+            
+        &__btn {
+            padding: 15px;
+            width: 50%;
+            @media (max-width: 568px) {
+                width: 100%;
+            }
+        }
         &__title {
             width: 396px;
             color: #221F39;
@@ -55,7 +69,6 @@
             }
         }
         &__list {
-            margin: 0 auto;
             padding: 0;
         }
         &__location {
