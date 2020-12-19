@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     overflow: visible;
 }
@@ -1737,13 +1737,22 @@ h6 {
     color: #fff;
 }
 
+.swiper-img img {
+    width: 435px;
+    height: 300px;
+}
+
+.swiper-img p {
+    font-size: 15px;
+}
+
 .swiper-slide-active {
     color: #000;
 }
 
 .swiper-slide .swiper-slide-active {
-    -webkit-box-shadow: #000;
-    box-shadow: #000;
+    -webkit-box-shadow: 5px 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px 5px #ccc;
 }
 
 .modal {
@@ -2558,6 +2567,7 @@ label > span {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    margin-bottom: 25px;
 }
 
 .announ-item {
@@ -2653,7 +2663,7 @@ label > span {
     align-items: center;
     font-size: 25px;
     font-weight: bold;
-    margin: 20px 0 30px;
+    margin-bottom: 30px;
 }
 
 .announ-pagination__next {
@@ -2663,6 +2673,14 @@ label > span {
 .announ-pagination__link {
     color: #221F39;
     text-decoration: none;
+}
+
+.announ-pagination__link--center {
+    margin: 0 7px;
+}
+
+.current {
+    color: #80F1B1;
 }
 
 .page {
@@ -2973,6 +2991,9 @@ label > span {
 
 .about-item__img {
     margin-right: 49px;
+}
+
+.about-item__img img {
     width: 240px;
     height: 240px;
 }
@@ -3088,6 +3109,8 @@ label > span {
 
 .apartment-block {
     background-color: #f5f5f5;
+    -webkit-box-shadow: 4px 4px 10px 2px #E0E0E0;
+    box-shadow: 4px 4px 10px 2px #E0E0E0;
 }
 
 .apartment-block__item {
@@ -3125,6 +3148,7 @@ label > span {
 }
 
 .apartment-text {
+    display: none;
     padding-bottom: 30px;
     padding-left: 35px;
     font-size: 18px;
@@ -3132,7 +3156,13 @@ label > span {
 }
 
 .apartment-content {
+    display: none;
     margin: 0 34px;
+}
+
+.apartment-content__text {
+    margin-top: 25px;
+    line-height: 2.5;
 }
 
 .apartment-content__title {
@@ -3172,6 +3202,22 @@ label > span {
     border: 1px solid #fff;
     -webkit-box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
     box-shadow: 9px 14px 19px 0px rgba(120, 255, 44, 0.26);
+}
+
+.apartment-passport {
+    margin-top: 37px;
+}
+
+.active {
+    display: block;
+}
+
+.apartment-content {
+    display: none;
+}
+
+.apartment-content.active {
+    display: block;
 }
 
 .product-block {
@@ -4248,10 +4294,6 @@ input[type="checkbox"]:checked + label:after {
         display: flex;
     }
 
-    .about__license {
-        width: 90%;
-    }
-
     .cabinet-sidebar {
         margin-left: 15px;
         width: 150px;
@@ -4263,6 +4305,13 @@ input[type="checkbox"]:checked + label:after {
 
     .content-table {
         overflow-x: scroll;
+    }
+}
+
+@media (max-width: 992px) {
+    .about__item {
+        -ms-flex-preferred-size: 49.3%;
+        flex-basis: 49.3%;
     }
 }
 
@@ -4814,17 +4863,13 @@ input[type="checkbox"]:checked + label:after {
         text-align: center;
     }
 
-    .about__license {
-        padding: 0 15px 45px;
-    }
-
-    .about__license a {
-        margin-top: 15px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+    .about__item {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    }
+
+    .about__license {
+        padding: 0 15px 45px;
     }
 
     .apartment-header__title {
@@ -5274,17 +5319,25 @@ input[type="checkbox"]:checked + label:after {
     }
 }
 
+@media (max-width: 600px) {
+    .about__item {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
 @media (max-width: 568px) {
     .header .header__title {
+        text-align: center;
         width: 100%;
     }
 
     .header .header__title--first {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .header .header__title--second {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .header-pagination {
@@ -5292,6 +5345,16 @@ input[type="checkbox"]:checked + label:after {
     }
 
     .swiper-slide {
+        font-size: 12px;
+    }
+
+    .modal__title {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .modal__group {
         font-size: 12px;
     }
 

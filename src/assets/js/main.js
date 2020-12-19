@@ -32,8 +32,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
   var swiper3 = new Swiper('.swiper-container3', {
     autoplay: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 4,
     loop: true,
 
     breakpoints: {
@@ -443,4 +442,18 @@ $(".register-item__eye").click(function() {
   }
 });
 
+// apartment Tabs
+
+$(".apartment-block__btn").on("click", function (e) {
+  e.preventDefault(); 
+  $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active")
+      .closest(".apartment-block")
+      .find(".tab_wrapper")
+      .removeClass("active")
+      .eq($(this).index())
+      .addClass("active");
+});
 
