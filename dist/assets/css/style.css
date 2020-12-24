@@ -249,11 +249,12 @@ li {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 87%;
+    width: 100%;
     font-size: 90px;
     font-weight: 900;
     line-height: .9;
     color: #fff;
+    text-align: center;
 }
 
 .header__title--first {
@@ -262,7 +263,6 @@ li {
 
 .header__title--second {
     display: block;
-    text-align: right;
 }
 
 .header__btn {
@@ -3735,8 +3735,33 @@ label > span {
     margin-bottom: 4px;
 }
 
+.director .director-item__img {
+    z-index: -1;
+}
+
 .director .popup__item {
     margin-right: 25px;
+    position: relative;
+}
+
+.director .popup__item .exit {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: red;
+    font-size: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 100;
 }
 
 .director .popup__item:last-child {
@@ -3744,7 +3769,7 @@ label > span {
 }
 
 .director .file__img {
-    height: 150px;
+    height: auto;
     width: 150px;
 }
 
@@ -3778,6 +3803,40 @@ label > span {
 
 #addImages {
     display: none;
+}
+
+.custom-file-container {
+    padding-top: 30px;
+}
+
+.custom-file-container__image-labelClear {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.custom-file-container__image-preview {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.custom-file-container__image-clear {
+    color: #000;
+}
+
+.custom-file-container__custom-file__custom-file-control {
+    margin-left: 0;
+}
+
+.custom-file-container__image-multi-preview__single-image-clear__icon {
+    margin: 0;
 }
 
 .calculator-block {

@@ -285,14 +285,13 @@ function preview(file) {
   reader.addEventListener('load', function(event) {
       var img = document.createElement('img');
       var itemPreview = itemPreviewTemplate.clone();
-      itemPreview.find('.popup__img-wrap img').attr('src', event.target.result);
+      itemPreview.find('.popup__img-wrap img').attr('src', event.target.result).addClass('fuck');
       itemPreview.data('id', file.name);
       imagesList.append(itemPreview);
       queue[file.name] = file;
   });
   reader.readAsDataURL(file);
 }
-
 
 // Calculator
 
@@ -457,3 +456,11 @@ $(".apartment-block__btn").on("click", function (e) {
       .addClass("active");
 });
 
+// delete gallery button
+
+var upload = new FileUploadWithPreview("myUniqueUploadId", {
+  text: {
+      chooseFile: "Выбирите файлы",
+      browse: "Загрузить",
+  },
+});

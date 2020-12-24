@@ -21,8 +21,6 @@ const ttf2woff = require('gulp-ttf2woff'); // ttf to woff
 const ttf2woff2 = require('gulp-ttf2woff2'); // ttf to woff2
 const fonter = require('gulp-fonter'); // otf to ttf
 const browsersync = require("browser-sync").create();
-
-
 // Path
 
 var path = {
@@ -104,6 +102,7 @@ function libsCss() {
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/swiper-bundle.min.css',
             'node_modules/magnific-popup/dist/magnific-popup.css',
+            'node_modules/file-upload-with-preview/dist/file-upload-with-preview.min.css'
             // 'node_modules/flexboxgrid2/flexboxgrid2.css',
             // 'node_modules/pagepiling.js/dist/jquery.pagepiling.css',
             // 'node_modules/bootstrap/dist/css/bootstrap.min.css',
@@ -146,7 +145,8 @@ function libsJs() {
             'node_modules/swiper/swiper-bundle.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
             'node_modules/siema/dist/siema.min.js',
-            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
+            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+            'node_modules/file-upload-with-preview/dist/file-upload-with-preview.min.js'
             // 'src/assets/js/components/range.js',
             // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
             // 'node_modules/selectric/public/jquery.selectric.js',

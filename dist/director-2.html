@@ -83,7 +83,7 @@
                     </ul>
                     <ul class="menu-list">
                         <div class="menu__name">Информационная служба</div>
-  <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
                         <li class="menu__item"><a class="menu__link" href="announ-2.html">Объявления</a></li>
 
                     </ul>
@@ -165,21 +165,31 @@
                         </label>
                     </div>
 
-                    <form enctype="multipart/form-data" id="uploadImages">
-                        <label class="director-item">
-                            <span>Фотографии</span>
-                            <div class="director-item__img" id="uploadImagesList">
-                                <li class="popup__item template">
-                                    <span class="popup__img-wrap">
-                                        <img class="file__img" src="assets/img/direct-plus-img.png" alt="Image">
-                                    </span>
-                                </li>
-                            </div>
-                            <input type="file" id="addImages" multiple="">
-                            <input type="hidden" name="azaza" value="zazaza">
-
+                    <div class="custom-file-container" data-upload-id="myUniqueUploadId">
+                        <label class="custom-file-container__image-labelClear"
+                            ><span>Загрузить фотографии</span>
+                            <a
+                                href="javascript:void(0)"
+                                class="custom-file-container__image-clear"
+                                title="Clear Image"
+                                >&times;</a
+                            ></label
+                        >
+                        <label class="custom-file-container__custom-file">
+                            <input
+                                type="file"
+                                class="custom-file-container__custom-file__custom-file-input"
+                                accept="*"
+                                multiple
+                                aria-label="Выберите файлы"
+                            />
+                            <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                            <span
+                                class="custom-file-container__custom-file__custom-file-control"
+                            ></span>
                         </label>
-                    </form>
+                        <div class="custom-file-container__image-preview"></div>
+                    </div>
 
                     <label class="director-item">
                         <span>Сообщение</span>
