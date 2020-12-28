@@ -80,8 +80,8 @@
     }
     &-img {
         img {
-            width: 435px;
-            height: 300px;
+            width: 100%;
+            height: auto;
         }
         p {
             font-size: 15px;
@@ -96,6 +96,7 @@
 .swiper-slide .swiper-slide-active {
     box-shadow: 5px 5px 5px 5px #ccc;
 }
+
 
 
 

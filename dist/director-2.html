@@ -120,7 +120,8 @@
                         <label class="login-form__label">
                             <span class="login-form__text">Пароль</span>
                             <input id="password-field" class="login-form__input" type="password" value="">
-                            <img toggle="#password-field" class="login-form__eye" src="assets/img/login-eye-icon.svg" alt="">
+                            <img toggle="#password-field" class="login-form__eye" src="assets/img/login-eye-icon.svg"
+                                alt="">
                         </label>
                     </div>
                 </div>
@@ -140,61 +141,47 @@
                 <div class="director-block">
                     <label class="director-item">
                         <span>Ф.И.О</span>
-                        <input type="text" placeholder="Каримов Шамсиддин Шавкатович ">
+                        <input type="text" placeholder="Ваш имя">
                     </label>
 
                     <div class="director-form__group">
                         <label class="director-form__item">
                             <span>Email</span>
-                            <input type="text" placeholder="General@mail.ru">
+                            <input type="text" placeholder="Ваш email">
                         </label>
                         <label class="director-form__item">
                             <span>Телефон</span>
-                            <input type="phone" placeholder="+998933 333 33 33">
+                            <input id="numerDirector" type="phone" placeholder="Ваш номер">
                         </label>
                     </div>
 
                     <div class="director-form__group director-form__group--second">
                         <label class="director-form__item">
                             <span>Серия и номер полюса</span>
-                            <input type="text" placeholder="General@mail.ru">
+                            <input type="text">
                         </label>
                         <label class="director-form__item">
                             <span>Срок полюса</span>
-                            <input type="phone" placeholder="+998933 333 33 33">
+                            <input type="phone">
                         </label>
                     </div>
 
                     <div class="custom-file-container" data-upload-id="myUniqueUploadId">
-                        <label class="custom-file-container__image-labelClear"
-                            ><span>Загрузить фотографии</span>
-                            <a
-                                href="javascript:void(0)"
-                                class="custom-file-container__image-clear"
-                                title="Clear Image"
-                                >&times;</a
-                            ></label
-                        >
+                        <label class="custom-file-container__image-labelClear"><span>Загрузить фотографии</span>
+                            <a href="javascript:void(0)" class="custom-file-container__image-clear"
+                                title="Clear Image">&times;</a></label>
                         <label class="custom-file-container__custom-file">
-                            <input
-                                type="file"
-                                class="custom-file-container__custom-file__custom-file-input"
-                                accept="*"
-                                multiple
-                                aria-label="Выберите файлы"
-                            />
+                            <input type="file" class="custom-file-container__custom-file__custom-file-input" accept="*"
+                                multiple aria-label="Выберите файлы" />
                             <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
-                            <span
-                                class="custom-file-container__custom-file__custom-file-control"
-                            ></span>
+                            <span class="custom-file-container__custom-file__custom-file-control"></span>
                         </label>
                         <div class="custom-file-container__image-preview"></div>
                     </div>
 
                     <label class="director-item">
                         <span>Сообщение</span>
-                        <textarea class="director-item__area"
-                            placeholder="Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании Ваше обращение будет отправлено на почту директора компании "></textarea>
+                        <textarea class="director-item__area"></textarea>
                     </label>
                 </div>
                 <a class="director-btn" href="#">Отправить</a>
@@ -391,6 +378,15 @@
 
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        var upload = new FileUploadWithPreview("myUniqueUploadId", {
+            text: {
+                chooseFile: "Выбирите файлы",
+                browse: "Загрузить",
+            },
+        });
+    </script>
 </body>
 
 </html>

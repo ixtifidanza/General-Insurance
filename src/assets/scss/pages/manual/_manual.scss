@@ -1,9 +1,10 @@
 .manual {
     &__img {
         img {
+            max-width: 100%;
             width: 351px;
-            height: 490px;
-            object-fit: cover;
+            height: 400px;
+            object-fit: center;
         @media (max-width: 568px) {
             width: 100%;
         }
@@ -41,7 +42,7 @@
             font-weight: bold;
             color: #221F39;
             margin-bottom: 5px;
-            margin-top: 20px;
+            // margin-top: 20px;
 
         }
         &__subtitle {

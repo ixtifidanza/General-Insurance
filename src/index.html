@@ -171,8 +171,7 @@
                             </a>
                         </div>
                     </div>
-
-                    <a class="header__chat" href="#">Онлайн чат</a>
+                    <a class="header__chat modalBtn" href="#">Онлайн чат</a>
                 </div>
             </div>
                 <div id="pagination"></div>
@@ -364,6 +363,41 @@
             </div>
         </div>
 
+    </div>
+
+    
+    <div class="modal" id="indexModal">
+        <a href="#" class="modal-close__icon">
+            <img src="assets/img/modal-close-black.svg" alt="">
+        </a>
+        <ul class="chat__group">
+            <li class="chat__list">
+                <label class="chat-label">
+                    Ф.И.О
+                    <input type="text" placeholder="Фа.Имя.Отч">
+                </label>
+            </li>
+            <li class="chat__list">
+                <label class="chat-label">
+                    Телефон
+                    <input id="numberChat" type="tel" placeholder="Номер">
+                </label>
+            </li>
+            <li class="chat__list">
+                <label class="chat-label">
+                    Тема
+                    <input type="text">
+                </label>
+            </li>
+            <li class="chat__list">
+                <label class="chat-label">
+                    Текст сообщение
+                    <textarea class="chat__area">
+                    </textarea>
+                </label>
+            </li>
+        
+        </ul>
     </div>
 
     <script src="assets/js/libs.min.js"></script>

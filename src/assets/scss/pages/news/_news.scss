@@ -19,6 +19,9 @@
             border: solid 1px transfarom #fff;
             color: #fff;
         }
+        @media (max-width: 598px) {
+            flex-direction: column;
+        }
     }
     &__link {
         display: flex;
@@ -36,6 +39,16 @@
         }
         img {
             margin-right: 20px;
+        }
+    }
+    &-download {
+        margin-left: 25px;
+        @media (max-width: 598px) {
+            margin-top: 40px;
+        }
+        &__btn {
+            text-decoration: none;
+            padding: 17px 23px;
         }
     }
 }
