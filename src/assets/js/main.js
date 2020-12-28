@@ -37,7 +37,6 @@ var swiper3 = new Swiper('.swiper-container3', {
   effect: 'coverflow',
   slidesOffsetBefore: 205,
   coverflowEffect: {
-    autoplay: true,
     rotate: 50,
     stretch: 0,
     depth: 100,
