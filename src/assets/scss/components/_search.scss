@@ -1,0 +1,46 @@
+.search {
+    max-width: 920px;
+    margin: 0 auto;
+    &-content {
+        margin: 25px 0;
+        h3 {
+            text-align: center;
+        }
+    }
+    &-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-item {
+        margin-top: 20px;
+    }
+    &-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: green;
+        transition: linear .3s;
+        &:hover {
+            color: red;
+        }
+    }
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 25px 0;
+        &__next {
+            margin: 0 25px;
+        }
+
+        &__link {
+            color: #221F39;
+            text-decoration: none;
+            &--center {
+                margin: 0 7px;
+            }
+        }
+    }
+}

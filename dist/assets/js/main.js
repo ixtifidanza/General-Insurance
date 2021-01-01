@@ -169,14 +169,28 @@ prevBtn.on('click', function () {
 
 var search = $('#search');
 var searchInput = $('#input');
-
-
-
+var searchClose = $('#searchClose');
+var searchButton = $('button');
 
 $('#search').click(function () {
   $(this).toggleClass('border')
   $('#input').toggleClass('show');
 })
+
+search.on('click', function(){
+  search.css('display', 'none');
+  searchButton.css('display', 'block');
+  searchInput.addClass('show');
+  searchButton.toggleClass('border')
+});
+
+searchClose.on('click', function() {
+  searchInput.removeClass('show');
+  search.css('display', 'block');
+  searchButton.css('display', 'none');
+  search.removeClass('border');
+});
+
 
 
 // modal

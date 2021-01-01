@@ -59,12 +59,18 @@
             }
         }
 
+        &__close {
+            display: block;
+            position: absolute;
+            top: 11px;
+            right: 10px;
+        }
+
         &__icon {
             display: block;
             position: absolute;
             top: 9px;
             left: 10px;
-
         }
         &--white {
             border-top-left-radius: 4px;
@@ -145,7 +151,8 @@
 }
 
 #search {
-    opacity: 1;
+    display: block;
+    // opacity: 1;
     transition: opacity .3s linear;
 }
 
@@ -157,4 +164,10 @@
 #input.show{
     opacity: 1;
     transition: opacity .3s linear;
+}
+
+#button {
+    display: none;
+    transition: opacity .3s linear;
+    outline: none;
 }
