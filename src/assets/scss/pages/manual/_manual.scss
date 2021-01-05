@@ -16,6 +16,7 @@
 
     &-item {
         display: flex;
+        align-items: center;
         margin-bottom: 100px;
         @media (max-width: 769px) {
             display: flex;

@@ -39,6 +39,9 @@
         text-align: center;
         font-size: 22px;
         margin: 93px 0 83px;
+        p {
+            margin-top: 15px;
+        }
         @media (max-width: 568px) {
             font-size: 18px;
         }

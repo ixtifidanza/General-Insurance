@@ -170,7 +170,7 @@ prevBtn.on('click', function () {
 var search = $('#search');
 var searchInput = $('#input');
 var searchClose = $('#searchClose');
-var searchButton = $('button');
+var searchButton = $('#button');
 
 $('#search').click(function () {
   $(this).toggleClass('border')
@@ -479,12 +479,12 @@ $(".apartment-block__btn").on("click", function (e) {
     .addClass("active");
 });
 
-// delete gallery button
 
 
 
+// indexModalCal
 
-var indexModal = $('.modal')
+var indexModal = $('#indexModal')
 
 $('.modalBtn').click(function () {
   indexModal.addClass('open');
