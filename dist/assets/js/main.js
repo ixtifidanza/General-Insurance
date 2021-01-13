@@ -107,6 +107,7 @@ registerNext.on('click', function () {
 registerBtn.on('click', function () {
   register.css('opacity', '1');
   register.css('z-index', '999');
+  register.css('overflow', 'hidden');
 });
 
 registerClose.on('click', function () {
@@ -121,10 +122,8 @@ registerClose2.on('click', function () {
 
 menuBtn.on('click', function () {
   menu.css('transform', 'translateX(0)');
-  body.css('overflow', 'hidden');
   announPage.css('position', 'static');
   backgroundColor.addClass('open');
-
   announ.css('z-index', '-1')
 });
 
@@ -497,4 +496,24 @@ modalClose.on('click', function (e) {
   indexModal.removeClass('open');
   backgroundColor.removeClass('open');
 });
+
+
+//registerDone
+
+var registerDone = $('#registerDone');
+var modalRegister = $('#modalRegister');
+
+registerDone.on('click', function() {
+  modalRegister.css('opacity', '0');
+  modalRegister.css('z-index', '-1');
+  register.css('overflow', 'auto');
+  $('.overlay').hide()
+});
+
+
+
+
+
+
+
 
