@@ -69,7 +69,7 @@
                         <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
                         <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
                         <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
-                        <li class="nav__list-item"><a class="nav__link nav__link--menu black" id="menu-btn"
+                        <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu black"
                                 href="#">Меню</a></li>
                     </ul>
                 </div>
@@ -112,6 +112,7 @@
                         </div>
                     </ul>
 
+
                     <ul class="menu-list">
                         <div class="menu__name">Обращение</div>
                         <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
@@ -120,7 +121,7 @@
                     </ul>
                     <ul class="menu-list">
                         <div class="menu__name">Информационная служба</div>
-  <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
                         <li class="menu__item"><a class="menu__link" href="announ-2.html">Объявления</a></li>
 
                     </ul>
@@ -173,6 +174,7 @@
         <div class="container">
             <div class="decor">
                 <section class="decor-calculator">
+
                     <div class="calculator-block">
 
                         <div class="calculator-item">
@@ -181,243 +183,146 @@
                             </h4>
                             <div class="calculator-item__step">
                                 <div class="calculator-step">
-                                    <img src="assets/img/step-2.png" alt="">
+                                    <img src="assets/img/step.png" alt="">
+
                                     <div class="calculator-step__text">
                                         <span>Расчет стоимости</span>
                                         <span>Оформление полюса</span>
                                         <span>Оплата и получение</span>
                                     </div>
                                 </div>
-                                <div class="calculator-item__subtitle">
-                                    <span>Срок действия полюса</span>
-                                </div>
-
-                                <p class="calculator-item__text">Полис действителен 12 месяцев начиная с
-                                    <span>19.11.2020</span>
-                                </p>
                             </div>
+
                         </div>
                     </div>
 
-                    <div class="policyholder">
-                        <h4 class="policyholder-title">
-                            Страхователь
+                    <div class="policyholder policyholder--cal">
+                        <h4 class="policyholder-title text-center">
+                            Сумма покрытия
                         </h4>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Имя">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Отчество">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Фамилия">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Дата рождения" id="date">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Номер телефона" id="numberPhone">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="policyholder">
-                        <h4 class="policyholder-title">
-                            Паспортные данные
-                        </h4>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Серия и номер паспорта">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Дата выдачи" id="datePassport">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input policyholder-input--long">
-                                <input type="text" placeholder="Кем выдан">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="policyholder">
-                        <h4 class="policyholder-title">
-                            Адрес постоянной регистрации
-                        </h4>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Индекс" id="indeksNumber">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Область/Город">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Район">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Улица/Квартал">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Номер дома">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Номер квартиры">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="policyholder">
-                        <h4 class="policyholder-title">
-                            Вводные поля
-                        </h4>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Номер кадастра" id="indeksNumber">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Общ. площадь">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Город имущество">
-                            </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Улица/Квартал">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
+                        
+                        <div class="policyholder-form__group padding-0"style="margin-top: 15px;">
                             <form class="form-drop2">
                                 <div class="select-box4">
-                                    <label for="select-box1" class="label select-box1"><span class="label-desc">Вид
-                                            имущество </span> </label>
+                                    <label for="select-box1" class="label select-box2"><span class="label-desc">Выбор тарифа</span> </label>
                                     <select id="select-box1" class="select">
-                                        <option value="Choice 1">Дом</option>
-                                        <option value="Choice 2">Квартира</option>
+                                        <option value="Choice 1">Тариф 1</option>
+                                        <option value="Choice 1">Тариф 2</option>
+                                        <option value="Choice 1">Тариф 3</option>
+                                        <option value="Choice 1">Тариф 4</option>
+                                        
                                     </select>
                                 </div>
                             </form> 
 
                         </div>
-                    </div>
+                        <!-- <span class="policyholder-subtitle">Конструктивные элементы</span>
 
-                    <div class="policyholder">
-                        <h4 class="policyholder-title">
-                            Квартира
-                        </h4>
-                        <label class="policyholder-input__checkbox">
-
-                            <input type="checkbox" id="c3" name="cb">
-                            <label for="c3"></label>
-
-                            <p class="policyholder-subtitle">Cовпадает с адресом постоянной регистрации</p>
-
-                        </label>
-
-                        <div class="policyholder-form__group padding-0 policyholder-form__group--price">
-                            <div class="policyholder-form__price">
-                                <div class="policyholder-form__text">
-                                    <p>Цена к оплате:
-                                        <span>300$</span>
-                                    </p>
-                                </div>
-                                <a id="payBtn" class="policyholder-form__btn btn" href="#">Оплатить полюс</a>
+                        <div class="policyholder-form__group ">
+                            <div class="range"
+                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
+                                <input id="range-1" type="range" min="0" max="1000" value="0"
+                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                <output></output>
+                                <div class='range__progress'></div>
                             </div>
+                            
+                        </div> -->
+    
+
+                          <span class="policyholder-subtitle">Отделка и оборудование</span> 
+
+                         <div class="policyholder-form__group">
+                            <div class="range"
+                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
+                                <input id="range-2" type="range" min="0" max="1000" value="0"
+                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                <output></output>
+                                <div class='range__progress'></div>
+                            </div>
+                        </div> 
+
+                         <!-- <span class="policyholder-subtitle">Домашнее имущество</span>
+
+                        <div class="policyholder-form__group ">
+                            <div class="range"
+                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
+                                <input id="range-3" type="range" min="0" max="1000" value="0"
+                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                <output></output>
+                                <div class='range__progress'></div>
+                            </div>
+                        </div>  -->
+<!-- 
+                         <span class="policyholder-subtitle">Ответственность перед соседями</span> 
+
+                        <div class="policyholder-form__group ">
+                            <div class="range"
+                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
+                                <input id="range-4" type="range" min="0" max="1000" value="0"
+                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                <output></output>
+                                <div class='range__progress'></div>
+                            </div>
+                        </div>   -->
+
+                        <div class="policyholder-form__price">
+                            <div class="policyholder-form__text">
+                                <p>Стоимость полюса:
+                                    <span id="price-1">300$</span>
+                                </p>
+                            </div>
+                            
+                            <a class="policyholder-form__btn btn" href="decor.html">Оформить полюс</a>
                         </div>
+
+
                     </div>
                 </section>
 
                 <aside class="decor-aside">
-                    <h4 class="decor-aside__title">Страховой продукт <br>
-                        "Квартира"</h4>
+                    <h4 class="decor-aside__title">Страховой продукт <br> "Квартира"
+                    </h4>
                     <div class="decor-aside__line"></div>
                     <ul class="decor-aside__block">
                         <li class="decor-aside__list">
                             <p>
                                 Конструктивные элементы:
                             </p>
-                            <span>3340 $</span>
+                            <span id="val-1">3340 $</span>
                         </li>
                         <li class="decor-aside__list">
                             <p>
                                 Отделка и оборудование:
                             </p>
-                            <span>2000 $</span>
+                            <span id="val-2">2000 $</span>
                         </li>
                         <li class="decor-aside__list">
                             <p>
                                 Домашнее имущество:
                             </p>
-                            <span>1000 $</span>
+                            <span id="val-3">1000 $</span>
                         </li>
                         <li class="decor-aside__list">
                             <p>
-                                Ответственность <br>
-                                перед соседями:
+                                Ответственность <br> перед соседями:
                             </p>
-                            <span>650 $</span>
+                            <span id="val-4">650 $</span>
                         </li>
                         <div class="decor-aside__line"></div>
                         <li class="decor-aside__list">
-                            Полис действует <br>
-                            12 месяцев
+                            Полис действует <br> 12 месяцев
                         </li>
                         <div class="decor-aside__line"></div>
                     </ul>
 
                     <div class="decor-aside__price">
-                        <span>300$</span>
+                        <span id="price-2">300$</spa>
                     </div>
-                    <a id="payBtn1" class="decor-aside__btn btn" href="#">Оформить полюс</a>
+                    <a class="decor-aside__btn btn" href="decor.html">Оформить полюс</a>
                 </aside>
 
             </div>
-        </div>
-
-        <div id="modalPay" class="modal modal--calmodal2">
-
-            <div class="modal-main">
-                <h4 class="modal-title title modal-title--register">
-                    ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
-                </h4>
-            </div>
-            <p style="padding: 30px 0; margin: 0 auto; max-width: 500px; overflow-y: scroll; max-height: 450px; line-height: 25px">
-                Политика конфиденциальности приложения OOO «DD General Insurance» на мобильных устройствах
-                Настоящая Политика конфиденциальности приложения OOO «DD General Insurance» (далее — Политика) действует в отношении всей информации, которую OOO «DD General Insurance» может получить о пользователе во время использования им данного приложения.
-                Использование приложения означает безоговорочное согласие пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации; в случае несогласия с этими условиями пользователь должен воздержаться от использования приложения. <br>
-                OOO «DD General Insurance» вправе в одностороннем порядке вносить изменения в настоящую политику конфиденциальности и информировать Пользователя путём информационных сообщений через все каналы связи.
-                Персональная информация пользователей, которую получает и обрабатывает OOO «DD General Insurance». <br>
-                В рамках настоящей Политики под «персональной информацией пользователя» понимаются: Персональная информация, которую пользователь предоставляет о себе самостоятельно при регистрации и создании учётной записи (номер телефона, ФИО, серия паспорта, год рождения, ИНН и информация о месте жительстве-прописка и др.) или в процессе приобретения услуг (реквизиты банковской карты, номер техпаспорта и талона, государственный регистрационный номер и марка транспортного средства, данные кадастра недвижимого имущества, ФИО, серия паспорт и номер телефона супруги/а и детей).
-                Информация об использовании страховых услуг ООО «DD General Insurance». При использовании страховых услуг ООО «DD General Insurance» (оплата на покупку или продления срока полиса) собираются данные о сумме, времени, и виде страхового продукта и иной информации, которая связана с данными операциями. Информация, полученная ООО «DD General Insurance» может быть использована лишь в исследовательских целях для усовершенствования сервисов компании. <br>
-                ООО «DD General Insurance» принимает необходимые и достаточные организационные и технические меры для защиты персональной информации пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.
-                В рамках настоящей политики конфиденциальности Пользователь соглашается, а ООО «DD General Insurance» гарантирует, что: <br>
-                ООО «DD General Insurance» не производит передачу третьим лицам персональной и/или личной информации Пользователя, за исключением случаев, предусмотренных действующим законодательством Республики Узбекистан;
-                пароль Пользователя хранится в зашифрованном виде;
-                персональная информация Пользователя хранится и обрабатывается в соответствие с условиями Политики конфиденциальности.
-                
-            </p>
-            <form>
-             
-                <input type="hidden" name="merchantId" value="a0b1fc5a50164f4ca69a522b0cc40c69dU1QOTZLUmxBblhlV1R5d0dKT1MzTVJPY1ZYaUIxS2RzSk9DOHRlVUtXZG0vNDFqd2ZmZkloNWcvZ29VbkJvZQ==">
-                <input type="hidden" name="amount" value="10000">
-                <input type="hidden" name="description" value="title">
-                <input type="hidden" name="callback" value="https://ddgi.uz">
-            
-                <input type="hidden" name="order_id" value="1">
-                <input  class="decor-aside__btn btn" style="width: 300px" type="submit" value="Оплатить полюсь">
-            </form>
-        
         </div>
 
         <footer class="footer">
@@ -432,12 +337,10 @@
                         </div>
                         <div class="footer-item__content">
                             <p class="footer-item__text">
-                                Копирование информации, размещенной <br>
-                                на сайте <a href="mailto:info@ddgi.uz"><strong>info@ddgi.uz</strong></a> (цитирование в
-                                СМИ <br>
-                                той или иной информации или <br>
-                                сообщений), разрешается только при <br>
-                                указании источника этой информации.</p>
+                                Копирование информации, размещенной <br> на сайте <a
+                                    href="mailto:info@ddgi.uz"><strong>info@ddgi.uz</strong></a> (цитирование в СМИ <br>
+                                той или иной информации или <br> сообщений), разрешается только при <br> указании
+                                источника этой информации.</p>
                         </div>
 
                     </div>
@@ -451,8 +354,7 @@
                                     <img src="assets/img/footer-location-icon.svg" alt="">
                                 </div>
                                 <p class="footer-item__adress">
-                                    Тошкент шаҳар, <br>
-                                    Ташкент улица Навоий дом 27
+                                    Тошкент шаҳар, <br> Ташкент улица Навоий дом 27
                                 </p>
 
                             </li>
@@ -525,8 +427,7 @@
                             Регистрирация в системе
                         </h4>
                         <p class="register-item__subtitle">
-                            Немного информации для вашей <br>
-                            учетной записи и вы можете начать!
+                            Немного информации для вашей <br> учетной записи и вы можете начать!
                         </p>
                         <div class="register-item__group">
                             <label class="register-item__list">Адрес электронной почты<input type="email"></label>
@@ -584,9 +485,8 @@
 
                 <h4 class="verify__title">Регистрирация в системе</h4>
                 <p class="verify__text">
-                    Введите код который мы вам <br>
-                    отправили по электронной почте, <br>
-                    для авторизации вашего аккаунта.</p>
+                    Введите код который мы вам <br> отправили по электронной почте, <br> для авторизации вашего
+                    аккаунта.</p>
 
                 <div class="verify-group">
                     <label class="verify-code">
@@ -605,12 +505,22 @@
                     <p>У вас уже есть учетная запись? Тогда <a href="#">войдите</a></p>
                 </div>
             </div>
-
         </div>
-    </div>
+        <div>
 
-    <script src="assets/js/libs.min.js"></script>
-    <script src="assets/js/main.js"></script>
+            <script src="assets/js/libs.min.js"></script>
+            <script src="assets/js/main.js"></script>
+
+            <script>
+
+            var calc = function () {
+                var value2 = +range2.val();
+                val2.text(+value2 + "$");
+                price1.text(+value2 + "$");
+                price2.text(+value2 + "$");
+
+            }
+            </script>
 </body>
 
 </html>

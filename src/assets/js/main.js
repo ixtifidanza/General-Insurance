@@ -32,7 +32,7 @@ var swiper2 = new Swiper('.swiper-container2', {
 
 var swiper3 = new Swiper('.swiper-container3', {
   autoplay: true,
-  slidesPerView: 4,
+  slidesPerView: 3,
   loop: true,
   effect: 'coverflow',
   slidesOffsetBefore: 205,
@@ -46,11 +46,19 @@ var swiper3 = new Swiper('.swiper-container3', {
   breakpoints: {
     568: {
       slidesPerView: 3,
-      spaceBetween: 50
+      slidesOffsetBefore: 205,
+   
     },
     320: {
       slidesPerView: 1,
-      spaceBetweenSlides: 20
+      slidesOffsetBefore: 0,
+      // coverflowEffect: {
+      //   rotate: 50,
+      //   stretch: 0,
+      //   depth: 100,
+      //   modifier: 1,
+      //   slideShadows: false,
+      // },
     }
   }
 });
@@ -219,8 +227,17 @@ modalClose.on('click', function (e) {
 
 var modalPay = $('#modalPay');
 var payBtn = $('#payBtn');
+var payBtn1 = $('#payBtn1');
 
 payBtn.on('click', function (e) {
+  e.preventDefault();
+  modalPay.css('z-index', '9');
+  modalPay.css('opacity', '1');
+  backgroundColor.addClass('open');
+  body.css('overflow', 'hidden');
+});
+
+payBtn1.on('click', function (e) {
 
   e.preventDefault();
   modalPay.css('z-index', '9');
@@ -334,41 +351,40 @@ var val4 = $('#val-4');
 var selectOpt = $('#select-box1');
 // alert(selectOpt);
 
-var calc = function () {
-  var value1 = range1.val();
-  var value2 = range2.val();
-  var value3 = range3.val();
-  var value4 = range4.val();
-  val1.text(+value1 + "$");
-  val2.text(+value2 + "$");
-  val3.text(+value3 + "$");
-  val4.text(+value4 + "$");
-  price1.text(+value1 + +value2 + +value3 + +value4 + "$");
-  price2.text(+value1 + +value2 + +value3 + +value4 + "$");
-}
 
-selectOpt.on('change', function () {
-  var selectVal = $(selectOpt).val();
-  console.log(selectVal);
-  switch (selectVal) {
-    case 1:
-      price1.text((value1 + value2 + value3 + value4) * 1 + "$");
-      console.log('1');
-      break;
-    case 0.75:
-      price1.text((value1 + value2 + value3 + value4) * 0.75 + "$");
-      console.log('2');
-      break;
-    case 0.5:
-      price1.text((value1 + value2 + value3 + value4) * 0.5 + "$");
-      console.log('3');
-      break;
-    case 0.25:
-      price1.text((value1 + value2 + value3 + value4) * 0.25 + "$");
-      console.log('4');
-      break;
-  }
-});
+// var calc = function () {
+//   var value2 = +range2.val();
+//   val2.text(+value2 + "$");
+//   price1.text(+value2 + "$");
+//   price2.text(+value2 + "$");
+
+// }
+
+
+
+
+// seelectOpt.on('change', function () {
+//   var selectVal = $(selectOpt).val();
+//   console.log(selectVal);
+//   switch (selectVal) {
+//     case 1:
+//       price1.text((value1 + value2 + value3 + value4) * 1 + "$");
+//       console.log('1');
+//       break;
+//     case 0.75:
+//       price1.text((value1 + value2 + value3 + value4) * 0.75 + "$");
+//       console.log('2');
+//       break;
+//     case 0.5:
+//       price1.text((value1 + value2 + value3 + value4) * 0.5 + "$");
+//       console.log('3');
+//       break;
+//     case 0.25:
+//       price1.text((value1 + value2 + value3 + value4) * 0.25 + "$");
+//       console.log('4');
+//       break;
+//   }
+// });
 
 range1.on('click', function () {
   calc()
