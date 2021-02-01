@@ -179,7 +179,7 @@
 
                         <div class="calculator-item">
                             <h4 class="calculator-item__title">
-                                Страховой продукт "Квартира"
+                                Страхование от инфекционных заболеваний
                             </h4>
                             <div class="calculator-item__step">
                                 <div class="calculator-step">
@@ -196,119 +196,60 @@
                         </div>
                     </div>
 
+                  
                     <div class="policyholder policyholder--cal">
                         <h4 class="policyholder-title text-center">
                             Сумма покрытия
                         </h4>
-                        
-                        <div class="policyholder-form__group padding-0"style="margin-top: 15px;">
-                            <form class="form-drop2">
-                                <div class="select-box4">
-                                    <label for="select-box1" class="label select-box2"><span class="label-desc">Выбор тарифа</span> </label>
-                                    <select id="select-box1" class="select">
-                                        <option value="Choice 1">Тариф 1</option>
-                                        <option value="Choice 1">Тариф 2</option>
-                                        <option value="Choice 1">Тариф 3</option>
-                                        <option value="Choice 1">Тариф 4</option>
-                                        
-                                    </select>
-                                </div>
-                            </form> 
 
+
+                        <form class="form-drop">
+                            <div class="select-box">
+                                <label for="select-box2" class="label select-box1" style="background-color: #e6e6e6;"><span class="label-desc">Выбор
+                                        периода</span> </label>
+                                <select id="select-box2" class="select">
+                                    <option value="0.50">6 месяц</option>
+                                    <option selected value="1">12 месяцев</option>
+                                </select>
+                            </div>
+                        </form>
+                        <span class="policyholder-subtitle">Конструктивные элементы</span>
+
+                        <div class="policyholder-form__group ">
+                            <div class="range"
+                                style='--min:500000; --max:1000000; --value:0; --text-value:"500000"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
+                                <input id="range-4" type="range" min="500000" max="1000000" value="0" step="1000"
+                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                <output></output>
+                                <div class='range__progress'></div>
+                            </div>
                         </div>
-                        <!-- <span class="policyholder-subtitle">Конструктивные элементы</span>
 
-                        <div class="policyholder-form__group ">
-                            <div class="range"
-                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
-                                <input id="range-1" type="range" min="0" max="1000" value="0"
-                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                <output></output>
-                                <div class='range__progress'></div>
-                            </div>
-                            
-                        </div> -->
-    
-
-                          <span class="policyholder-subtitle">Отделка и оборудование</span> 
-
-                         <div class="policyholder-form__group">
-                            <div class="range"
-                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
-                                <input id="range-2" type="range" min="0" max="1000" value="0"
-                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                <output></output>
-                                <div class='range__progress'></div>
-                            </div>
-                        </div> 
-
-                         <!-- <span class="policyholder-subtitle">Домашнее имущество</span>
-
-                        <div class="policyholder-form__group ">
-                            <div class="range"
-                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
-                                <input id="range-3" type="range" min="0" max="1000" value="0"
-                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                <output></output>
-                                <div class='range__progress'></div>
-                            </div>
-                        </div>  -->
-<!-- 
-                         <span class="policyholder-subtitle">Ответственность перед соседями</span> 
-
-                        <div class="policyholder-form__group ">
-                            <div class="range"
-                                style='--min:0; --max:1000; --value:0; --text-value:"0"; --thumb-size: 22px; --track-height: calc(var(--thumb-size)/3);'>
-                                <input id="range-4" type="range" min="0" max="1000" value="0"
-                                    oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                <output></output>
-                                <div class='range__progress'></div>
-                            </div>
-                        </div>   -->
+                       
 
                         <div class="policyholder-form__price">
                             <div class="policyholder-form__text">
                                 <p>Стоимость полюса:
-                                    <span id="price-1">300$</span>
+                                    <span id="price-1">500000 сум</span>
                                 </p>
                             </div>
-                            
                             <a class="policyholder-form__btn btn" href="decor.html">Оформить полюс</a>
                         </div>
 
-
                     </div>
                 </section>
-
+                
                 <aside class="decor-aside">
-                    <h4 class="decor-aside__title">Страховой продукт <br> "Квартира"
-                    </h4>
+                    <h4 class="decor-aside__title">Страхование от инфекционных <br> заболеваний</h4>
                     <div class="decor-aside__line"></div>
                     <ul class="decor-aside__block">
                         <li class="decor-aside__list">
                             <p>
                                 Конструктивные элементы:
                             </p>
-                            <span id="val-1">3340 $</span>
+                            <span id="val-4">500000 сум</span>
                         </li>
-                        <li class="decor-aside__list">
-                            <p>
-                                Отделка и оборудование:
-                            </p>
-                            <span id="val-2">2000 $</span>
-                        </li>
-                        <li class="decor-aside__list">
-                            <p>
-                                Домашнее имущество:
-                            </p>
-                            <span id="val-3">1000 $</span>
-                        </li>
-                        <li class="decor-aside__list">
-                            <p>
-                                Ответственность <br> перед соседями:
-                            </p>
-                            <span id="val-4">650 $</span>
-                        </li>
+                      
                         <div class="decor-aside__line"></div>
                         <li class="decor-aside__list">
                             Полис действует <br> 12 месяцев
@@ -317,7 +258,7 @@
                     </ul>
 
                     <div class="decor-aside__price">
-                        <span id="price-2">300$</spa>
+                        <span id="price-2">500000 сум</span>
                     </div>
                     <a class="decor-aside__btn btn" href="decor.html">Оформить полюс</a>
                 </aside>
@@ -513,14 +454,15 @@
 
             <script>
 
-            var calc = function () {
-                var value2 = +range2.val();
-                val2.text(+value2 + "$");
-                price1.text(+value2 + "$");
-                price2.text(+value2 + "$");
-
-            }
-            </script>
+                var calc = function () {
+                    var value4 = +range4.val();
+                    var valuePeriod2 = $('#select-box2').val();
+                    val4.text(+value4 * +  valuePeriod2  +  " сум");
+                    price1.text(+value4 * +  valuePeriod2  + " сум");
+                    price2.text(+value4 * +  valuePeriod2  +  " сум");
+    
+                }
+                </script>
 </body>
 
 </html>

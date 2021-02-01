@@ -47,7 +47,7 @@ var swiper3 = new Swiper('.swiper-container3', {
     568: {
       slidesPerView: 3,
       slidesOffsetBefore: 205,
-   
+
     },
     320: {
       slidesPerView: 1,
@@ -184,14 +184,14 @@ $('#search').click(function () {
   $('#input').toggleClass('show');
 })
 
-search.on('click', function(){
+search.on('click', function () {
   search.css('display', 'none');
   searchButton.css('display', 'block');
   searchInput.addClass('show');
   searchButton.toggleClass('border')
 });
 
-searchClose.on('click', function() {
+searchClose.on('click', function () {
   searchInput.removeClass('show');
   search.css('display', 'block');
   searchButton.css('display', 'none');
@@ -298,6 +298,8 @@ var itemPreviewTemplate = imagesList.find('.popup__item.template');
 itemPreviewTemplate.removeClass('template').clone();
 imagesList.find('.popup__item.template').remove();
 
+
+// addImg
 $('#addImages').on('change', function (e) {
   var files = this.files;
   console.log(files)
@@ -317,6 +319,29 @@ $('#addImages').on('change', function (e) {
   $('#uploadImagesList').addClass('hide');
 });
 
+
+// addImg-2
+$('#addImages1').on('change', function (e) {
+  var files = this.files;
+  console.log(files)
+  for (var i = 0; i < files.length; i++) {
+    var file = files[i];
+    if (!file.type.match(/image\/(jpeg|jpg|png|gif)/)) {
+      alert('Фотография должна быть в формате jpg, png или gif');
+      continue;
+    }
+    if (file.size > maxFileSize) {
+      alert('Размер фотографии не должен превышать 2 Мб');
+      continue;
+    }
+    cabinetPhoto(files[i]);
+  }
+  this.value = '';
+
+});
+
+
+
 // Создание превью
 function preview(file) {
   var reader = new FileReader();
@@ -330,6 +355,22 @@ function preview(file) {
   });
   reader.readAsDataURL(file);
 }
+// Создание превью -2
+// function cabinetPhoto(file) {
+//   var reader = new FileReader();
+  
+//   reader.addEventListener('load', function (event) {
+//     console.log(file);
+//     $('#idOfImage').attr('src', event.target.result)
+//     var itemPreview = itemPreviewTemplate.clone();
+//     itemPreview.find('.popup__img-wrap2 img').attr('src', event.target.result).addClass('fuck');
+//     itemPreview.data('id', file.name);
+//     imagesList.append(itemPreview);
+//     queue[file.name] = file;
+
+//   });
+//   reader.readAsDataURL(file);
+// }
 
 // Calculator
 
@@ -337,54 +378,23 @@ var range1 = $('#range-1');
 var range2 = $('#range-2');
 var range3 = $('#range-3');
 var range4 = $('#range-4');
+var range5 = $('#range-5');
 
 
 var price1 = $('#price-1');
 var price2 = $('#price-2');
+var price3 = $('#price-3');
+var price4 = $('#price-4');
 
 
 var val1 = $('#val-1');
 var val2 = $('#val-2');
 var val3 = $('#val-3');
 var val4 = $('#val-4');
+var val5 = $('#val-5');
 
-var selectOpt = $('#select-box1');
-// alert(selectOpt);
+// var selectOpt = $('#select-box1');
 
-
-// var calc = function () {
-//   var value2 = +range2.val();
-//   val2.text(+value2 + "$");
-//   price1.text(+value2 + "$");
-//   price2.text(+value2 + "$");
-
-// }
-
-
-
-
-// seelectOpt.on('change', function () {
-//   var selectVal = $(selectOpt).val();
-//   console.log(selectVal);
-//   switch (selectVal) {
-//     case 1:
-//       price1.text((value1 + value2 + value3 + value4) * 1 + "$");
-//       console.log('1');
-//       break;
-//     case 0.75:
-//       price1.text((value1 + value2 + value3 + value4) * 0.75 + "$");
-//       console.log('2');
-//       break;
-//     case 0.5:
-//       price1.text((value1 + value2 + value3 + value4) * 0.5 + "$");
-//       console.log('3');
-//       break;
-//     case 0.25:
-//       price1.text((value1 + value2 + value3 + value4) * 0.25 + "$");
-//       console.log('4');
-//       break;
-//   }
-// });
 
 range1.on('click', function () {
   calc()
@@ -398,12 +408,21 @@ range3.on('click', function () {
 range4.on('click', function () {
   calc()
 })
+range5.on('click', function () {
+  calc()
+})
 
 $("select").on("click", function () {
 
   $(this).parent(".select-box").toggleClass("open");
-
+  calc();
 });
+
+// $("select").on("click", function () {
+
+//   $(this).parent(".select-box").toggleClass("open");
+
+// });
 
 $(document).mouseup(function (e) {
   var container = $(".select-box");
@@ -419,10 +438,10 @@ $("select").on("change", function () {
   var selection = $(this).find("option:selected").text(),
     labelFor = $(this).attr("id"),
     label = $("[for='" + labelFor + "']");
-
-  label.find(".label-desc").html(selection);
-
+    label.find(".label-desc").html(selection);
 });
+
+
 
 $('.policyholder-input__checkbox input').on('change', function () {
   console.log(this.checked);
@@ -519,17 +538,12 @@ modalClose.on('click', function (e) {
 var registerDone = $('#registerDone');
 var modalRegister = $('#modalRegister');
 
-registerDone.on('click', function() {
+registerDone.on('click', function () {
   modalRegister.css('opacity', '0');
   modalRegister.css('z-index', '-1');
   register.css('overflow', 'auto');
   $('.overlay').hide()
 });
-
-
-
-
-
 
 
 

@@ -19,7 +19,7 @@
     &-aside {
         background-color: #e6e6e6;
         width: 330px;
-        height: 683px;
+        height: 450px;
         margin-top: 41px;
         color: #221F39;
         border-radius: 8px;
@@ -137,7 +137,7 @@ input[type="checkbox"]:checked + label:after {
     position : relative;
     width: 100%;
     margin-bottom: 25px;
-    margin-left: 18px;
+    // margin-left: 18px;
     @media (max-width: 769px) {
         width: 95%;
     }
@@ -188,7 +188,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .form-drop {
-    display: none;
+    display: block;
 }
 
 

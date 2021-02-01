@@ -2145,6 +2145,10 @@ label > span {
     padding-top: calc(var(--flip-y) * var(--ticks-height));
 }
 
+.range--range2 {
+    --completed: calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 1050);
+}
+
 .range[data-ticks-position='top'] {
     --flip-y: 1;
 }
@@ -2324,7 +2328,7 @@ label > span {
 }
 
 .range > output::after {
-    content: "$";
+    content: "cум";
     display: block;
     font-size: 20px;
     letter-spacing: 0.07em;
@@ -3794,6 +3798,19 @@ label > span {
     display: block;
 }
 
+.file__img1 {
+    width: 145px;
+    height: 145px;
+    border-radius: 4px;
+}
+
+.addimg-title {
+    font-size: 20px;
+    width: 140px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
 .list-block {
     margin-bottom: 50px;
 }
@@ -4178,7 +4195,7 @@ label > span {
 .decor-aside {
     background-color: #e6e6e6;
     width: 330px;
-    height: 683px;
+    height: 450px;
     margin-top: 41px;
     color: #221F39;
     border-radius: 8px;
@@ -4289,7 +4306,6 @@ input[type="checkbox"]:checked + label:after {
     position: relative;
     width: 100%;
     margin-bottom: 25px;
-    margin-left: 18px;
 }
 
 .select,
@@ -4339,7 +4355,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .form-drop {
-    display: none;
+    display: block;
 }
 
 .form-drop2 {
@@ -4433,7 +4449,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .policyholder-form__price span {
-    margin-left: 25px;
+    margin-left: 10px;
     font-size: 35px;
     font-weight: bold;
 }

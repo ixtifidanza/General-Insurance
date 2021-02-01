@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>General Insuranse-Калькулятор</title>
+    <title>General Insuranse-Страхование Транспортного средства</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
@@ -69,7 +69,7 @@
                         <li class="nav__list-item"><a class="nav__link nav__link black" href="#">Uz</a></li>
                         <li class="nav__list-item"><a class="nav__link nav__link--lang black" href="#">Ru</a></li>
                         <li class="nav__list-item"><a class="nav__link nav__link black" href="#">En</a></li>
-                        <li class="nav__list-item"><a class="nav__link nav__link--menu black" id="menu-btn"
+                        <li class="nav__list-item"><a id="menu-btn" class="nav__link nav__link--menu black"
                                 href="#">Меню</a></li>
                     </ul>
                 </div>
@@ -100,7 +100,6 @@
                         <li class="menu__item"> <a class="menu__link" href="reporting.html">Отчетность</a></li>
                         <li class="menu__item"> <a class="menu__link" href="document.html">Документы</a></li>
                     </ul>
-
                     <ul class="menu-list">
                         <div class="menu__name">
                             <a class="menu-link__product" href="product-2.html">Продукты для Юр. Лиц</a>
@@ -111,7 +110,6 @@
                             <a class="menu-link__product" href="product.html">Продукты для Физ. Лиц</a>
                         </div>
                     </ul>
-
                     <ul class="menu-list">
                         <div class="menu__name">Обращение</div>
                         <li class="menu__item"><a class="menu__link" href="director.html">Обращение к директору</a></li>
@@ -120,7 +118,7 @@
                     </ul>
                     <ul class="menu-list">
                         <div class="menu__name">Информационная служба</div>
-  <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
+                        <li class="menu__item"><a class="menu__link" href="announ.html">Новости</a></li>
                         <li class="menu__item"><a class="menu__link" href="announ-2.html">Объявления</a></li>
 
                     </ul>
@@ -173,15 +171,17 @@
         <div class="container">
             <div class="decor">
                 <section class="decor-calculator">
+
                     <div class="calculator-block">
 
                         <div class="calculator-item">
                             <h4 class="calculator-item__title">
-                                Страхование имущество
+                                Страхование от несчастных случае
                             </h4>
                             <div class="calculator-item__step">
                                 <div class="calculator-step">
                                     <img src="assets/img/step-2.png" alt="">
+
                                     <div class="calculator-step__text">
                                         <span>Расчет стоимости</span>
                                         <span>Оформление полюса</span>
@@ -190,57 +190,39 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
-
-
-
                     <div class="policyholder">
                         <h4 class="policyholder-title">
-                            Вводные поля
+                            Паспортные данные
                         </h4>
                         <div class="policyholder-form__group padding-0">
                             <div class="policyholder-input">
-                                <input type="text" placeholder="Номер кадастра" id="indeksNumber">
+                                <input type="text" placeholder="Серия и номер паспорта">
                             </div>
                             <div class="policyholder-input">
-                                <input type="text" placeholder="Общ. площадь">
+                                <input type="text" placeholder="Дата выдачи" id="datePassport">
                             </div>
                         </div>
                         <div class="policyholder-form__group padding-0">
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Город имущество">
+                            <div class="policyholder-input policyholder-input--long">
+                                <input type="text" placeholder="Кем выдан">
                             </div>
-                            <div class="policyholder-input">
-                                <input type="text" placeholder="Улица/Квартал">
-                            </div>
-                        </div>
-                        <div class="policyholder-form__group padding-0">
-                            <form class="form-drop2">
-                                <div class="select-box4">
-                                    <label for="select-box1" class="label select-box1"><span class="label-desc">Вид
-                                            имущество </span> </label>
-                                    <select id="select-box1" class="select">
-                                        <option value="Choice 1">Дом</option>
-                                        <option value="Choice 2">Квартира</option>
-                                    </select>
-                                </div>
-                            </form> 
-
                         </div>
                     </div>
-
                     <div class="policyholder-form__price">
                         <div class="policyholder-form__text">
                             <p>Цена к оплате:
-                                <span>10000 сум</span>
+                                <span id="price-1">10000 сум</span>
                             </p>
                         </div>
-                        <a id="payBtn" class="policyholder-form__btn btn" href="#">Оплатить полюс</a>
+
+                        <a class="policyholder-form__btn btn" href="decor-2.html">Оплатить полюс</a>
                     </div>
                 </section>
 
                 <aside class="decor-aside">
-                    <h4 class="decor-aside__title">Страхование имущество</h4>
+                    <h4 class="decor-aside__title">Страхование от несчастных <br> случае</h4>
                     <div class="decor-aside__line"></div>
                     <ul class="decor-aside__block">
                         <li class="decor-aside__list">
@@ -249,7 +231,7 @@
                             </p>
                             <span>0 сум</span>
                         </li>
-                      
+                     
                         <div class="decor-aside__line"></div>
                         <li class="decor-aside__list">
                             Полис действует <br>
@@ -257,49 +239,12 @@
                         </li>
                         <div class="decor-aside__line"></div>
                     </ul>
-
                     <div class="decor-aside__price">
                         <span>10000 сум</span>
                     </div>
-                    <a id="payBtn1" class="decor-aside__btn btn" href="#">Оформить полюс</a>
+                    <a class="decor-aside__btn btn" href="decor-2.html">Оформить полюс</a>
                 </aside>
-
             </div>
-        </div>
-
-        <div id="modalPay" class="modal modal--calmodal2">
-
-            <div class="modal-main">
-                <h4 class="modal-title title modal-title--register">
-                    ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
-                </h4>
-            </div>
-            <p style="padding: 30px 0; margin: 0 auto; max-width: 500px; overflow-y: scroll; max-height: 450px; line-height: 25px">
-                Политика конфиденциальности приложения OOO «DD General Insurance» на мобильных устройствах
-                Настоящая Политика конфиденциальности приложения OOO «DD General Insurance» (далее — Политика) действует в отношении всей информации, которую OOO «DD General Insurance» может получить о пользователе во время использования им данного приложения.
-                Использование приложения означает безоговорочное согласие пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации; в случае несогласия с этими условиями пользователь должен воздержаться от использования приложения. <br>
-                OOO «DD General Insurance» вправе в одностороннем порядке вносить изменения в настоящую политику конфиденциальности и информировать Пользователя путём информационных сообщений через все каналы связи.
-                Персональная информация пользователей, которую получает и обрабатывает OOO «DD General Insurance». <br>
-                В рамках настоящей Политики под «персональной информацией пользователя» понимаются: Персональная информация, которую пользователь предоставляет о себе самостоятельно при регистрации и создании учётной записи (номер телефона, ФИО, серия паспорта, год рождения, ИНН и информация о месте жительстве-прописка и др.) или в процессе приобретения услуг (реквизиты банковской карты, номер техпаспорта и талона, государственный регистрационный номер и марка транспортного средства, данные кадастра недвижимого имущества, ФИО, серия паспорт и номер телефона супруги/а и детей).
-                Информация об использовании страховых услуг ООО «DD General Insurance». При использовании страховых услуг ООО «DD General Insurance» (оплата на покупку или продления срока полиса) собираются данные о сумме, времени, и виде страхового продукта и иной информации, которая связана с данными операциями. Информация, полученная ООО «DD General Insurance» может быть использована лишь в исследовательских целях для усовершенствования сервисов компании. <br>
-                ООО «DD General Insurance» принимает необходимые и достаточные организационные и технические меры для защиты персональной информации пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.
-                В рамках настоящей политики конфиденциальности Пользователь соглашается, а ООО «DD General Insurance» гарантирует, что: <br>
-                ООО «DD General Insurance» не производит передачу третьим лицам персональной и/или личной информации Пользователя, за исключением случаев, предусмотренных действующим законодательством Республики Узбекистан;
-                пароль Пользователя хранится в зашифрованном виде;
-                персональная информация Пользователя хранится и обрабатывается в соответствие с условиями Политики конфиденциальности.
-                
-            </p>
-            <form>
-             
-                <input type="hidden" name="merchantId" value="a0b1fc5a50164f4ca69a522b0cc40c69dU1QOTZLUmxBblhlV1R5d0dKT1MzTVJPY1ZYaUIxS2RzSk9DOHRlVUtXZG0vNDFqd2ZmZkloNWcvZ29VbkJvZQ==">
-                <input type="hidden" name="amount" value="10000">
-                <input type="hidden" name="description" value="title">
-                <input type="hidden" name="callback" value="https://ddgi.uz">
-            
-                <input type="hidden" name="order_id" value="1">
-                <input  class="decor-aside__btn btn" style="width: 300px" type="submit" value="Оплатить полюсь">
-            </form>
-        
         </div>
 
         <footer class="footer">
@@ -489,6 +434,7 @@
             </div>
 
         </div>
+
     </div>
 
     <script src="assets/js/libs.min.js"></script>

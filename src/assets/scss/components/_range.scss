@@ -59,6 +59,11 @@ label {
     --tickInterval: 100/((var(--max) - var(--min)) / var(--step)) * var(--tickEvery, 1);
     --tickIntervalPerc: calc((100% - var(--thumb-size))/( (var(--max) - var(--min)) / var(--x-step)) * var(--tickEvery, 1));
     --completed: calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 100);
+    &--range2 {
+        --completed: calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 1050);
+        
+    }
+   
     @mixin thumb {
         box-shadow: none;
         border: 0px solid #fff;
@@ -203,7 +208,7 @@ label {
         font-size: 16px;
         font-weight: 400;
         &::after {
-            content: "$";
+            content: "cум";
             display: block;
             font-size: 20px;
             letter-spacing: 0.07em;
@@ -221,3 +226,4 @@ label {
         }
     }
 }
+
